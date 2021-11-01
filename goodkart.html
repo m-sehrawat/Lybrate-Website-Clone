@@ -1,196 +1,430 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .material-icons {
-  font-family: 'Material Icons';
-  font-weight: normal;
-  font-style: normal;
-  font-size: 10px;  /* Preferred icon size */
-  display: inline-block;
-  line-height: 1;
-  text-transform: none;
-  letter-spacing: normal;
-  word-wrap: normal;
-  white-space: nowrap;
-  direction: ltr;
-
-  /* Support for all WebKit browsers. */
-  -webkit-font-smoothing: antialiased;
-  /* Support for Safari and Chrome. */
-  text-rendering: optimizeLegibility;
-
-  /* Support for Firefox. */
-  -moz-osx-font-smoothing: grayscale;
-
-  /* Support for IE. */
-  font-feature-settings: 'liga';
-}
-#container{
- max-width: 1300px;
- font-family: 'Roboto', sans-serif;
-}
-        div{
-            border:1px solid black;
+        body {
+            font-family: 'Roboto', sans-serif;
         }
-#topnav{
-    display:flex;
 
-}
-#Categories>li{
-    max-width: 100%;
-list-style: none;
-text-align: left;
-text-decoration: none;
+        .material-icons {
+            font-family: 'Material Icons';
+            font-weight: normal;
+            font-style: normal;
+            font-size: 14px;
+            /* Preferred icon size */
+            display: inline-block;
+            line-height: 1;
+            text-transform: none;
+            letter-spacing: normal;
+            word-wrap: normal;
+            white-space: nowrap;
+            direction: ltr;
 
-}
-#Categories{
-    max-width: 100%;
-    background-color: black;
-    color:white;
+            /* Support for all WebKit browsers. */
+            -webkit-font-smoothing: antialiased;
+            /* Support for Safari and Chrome. */
+            text-rendering: optimizeLegibility;
 
-}
-.listitems{
-    display:flex;
-    flex-direction: column;
-    width:100%;
-    
-}
+            /* Support for Firefox. */
+            -moz-osx-font-smoothing: grayscale;
 
- a{
-    color:white;
-    text-decoration: none;
-}
-.listitems > li {
-    display:none;
-   border: 1px solid rgb(235, 229, 229);
-   background-color: white;
-   height:50px;
-   float:left;
-   list-style: none;
-color:black;
-   
-}
-#Categories>ul{
- max-width: 100%;
- display:flex;
- width:100%;
- margin:auto;
- list-style:none;
- gap:40px;
- height: 32px;
- padding-top: 2px;
+            /* Support for IE. */
+            font-feature-settings: 'liga';
+        }
+
+        #container {
+            max-width: 1300px;
+            font-family: 'Roboto', sans-serif;
+        }
 
 
-}#Categories  li:hover .listitems>li{
-  display:block;
-  
-  color:black;
 
-}
+        #topnav {
+            max-width: 100%;
+            display: flex;
+            font-family: 'Roboto', sans-serif;
+            gap: 3%;
+            padding: 1% 4% 0 4%;
+            font-size: 14px;
+            justify-content: center;
+        }
+
+        #search {
+            width: 45%;
+            justify-content: center;
+        }
 
 
+        #searchBox {
+            width: 85%;
+            padding: 8px;
+            background-color: rgb(222, 222, 222);
+            border: none;
+            margin-left: 10%;
+            justify-content: center;
+        }
+
+        #btn {
+            height: 30px;
+            background-color: white;
+            border: 0.5px solid black;
+            border-radius: 5px;
+            justify-content: center;
+        }
+
+        #lebrateCash> {
+            width: 35%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+
+        #Categories>li {
+            max-width: 100%;
+            list-style: none;
+            text-align: center;
+            text-decoration: none;
+            color: white;
+
+
+        }
+
+        #Categories {
+            max-width: 100%;
+            background-color: black;
+            color: white;
+            justify-content: center;
+
+
+        }
+
+        .listitems {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            margin-top: 20px;
+            white-space: nowrap;
+            margin-left: 0%;
+        }
+
+        a {
+
+            text-decoration: none;
+        }
+
+        .listitems>li {
+            display: none;
+            border: 1px solid rgb(235, 229, 229);
+            background-color: white;
+            height: 40px;
+            float: left;
+            list-style: none;
+            color: black;
+            position: relative;
+            left: -50px;
+            justify-content: center;
+
+        }
+
+        #Categories>ul {
+            max-width: 100%;
+            display: flex;
+            width: 100%;
+            margin-top: 0px;
+            list-style: none;
+            gap: 30px;
+            height: 32px;
+            padding-top: 2px;
+            text-align: left;
+
+            position: relative;
+
+
+        }
+
+        #Categories li:hover .listitems>li {
+            display: block;
+            text-decoration: black;
+            color: black;
+
+        }
+
+        #logo img {
+            max-width: 80%
+        }
+
+        #offersDiv {
+            width: 45%;
+            border: 1px solid red;
+            background-color: rgb(232, 201, 190);
+            justify-content: center;
+        }
+
+        #offersDiv>div {
+            margin: 5% 2% 5% 2%;
+            display: flex;
+            width: 96%;
+            border: 1px solid blue;
+
+
+
+        }
+
+        #offersDiv>div>div {
+            width: 49.5%;
+            border: 1px dashed white;
+            text-align: center;
+            justify-content: center;
+            background-color: white;
+            padding: 25% 5% 25% 5%;
+        }
+
+        #offersDiv>div>div img {
+            width: 90%;
+        }
+
+        #offersDiv>div>div:nth-child(2) {
+            margin-left: 1px;
+        }
+
+        .products {
+            max-width: 100%;
+            justify-content: center;
+            margin: 0 5% 0 5%;
+            display: flex;
+
+        }
+
+        .bestinProtineFit {
+            width: 45%;
+            margin-left: 2%;
+            background-color: white;
+            padding: 1%;
+        }
+
+        .bestinProtineFit>div {
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-template-rows: 49% 49%;
+
+        }
+
+        .bestinProtineFit>div>div {
+            border: 2px solid rgb(238, 238, 238);
+            padding: 4%;
+
+        }
+
+        .bestinProtineFit>div>div img {
+            width: 30%;
+        }
+
+        #allData {
+            background-color: rgb(238, 238, 238);
+            text-align: center;
+        }
     </style>
 </head>
+
 <body>
     <div id="container">
-    <div id="topnav">
-       <div id="logo">logo</div>
-       <div id="search">searchbar </div>
-       <div>login signup</div>
-    </div>
-  
-        <div>
+        <div id="topnav">
+            <div id="logo"><img src="https://www.lybrate.com/img/Lybrate-Goodkart-Logo.png" /></div>
+            <div id="search"><input type="text" id="searchBox" placeholder="Search for Health Products" /></div>
+
+            <div>login/signup</div>
+            <span> <img
+                    src="https://assets.lybrate.com/q_auto,f_auto,h_15,w_15/imgs/product/d2d/PatientGoldMembership/lybrate_icon_red_large.png" />
+                LybrateCash </span>
+            <a href="index.html"></a><button id="btn">Home</button></a>
+            <span style=" font-size: 40px;" class="material-icons">shopping_cart</span>
+
+        </div>
+    </div id="allData">
+
+    <div>
         <nav id="Categories">
             <ul>
-                <li><a href="#" class="">Shop By Category<span class="material-icons">chevron_right</span></a>
+                <li>Shop By Category<span class="material-icons">expand_more</span>
                     <ul class="listitems">
-                        <li><a href="#">Sexual Wellness<span class="material-icons">chevron_right</span></a></li>
-                        <li><a href="#">Food & Drink<span class="material-icons">chevron_right</span></a></li>
-                        <li><a href="#">Vitamin & supplement<span class="material-icons">chevron_right</span></a></li>
-                        <li><a href="#">Weight Management<span class="material-icons">chevron_right</span></a></li>
-                        <li><a href="#">Child Care<span class="material-icons">chevron_right</span></a></li>
-                        <li><a href="#">Protine & Fitness<span class="material-icons">chevron_right</span></a></li>
-                        <li><a href="#">Skin & Health Care<span class="material-icons">chevron_right</span></a></li>
-                        <li><a href="#">Personal Care<span class="material-icons">chevron_right</span></a></li>
+                        <li>Sexual Wellness<span class="material-icons">chevron_right</span></li>
+                        <li>Food & Drink<span class="material-icons">chevron_right</span></li>
+                        <li>Vitamin & supplement<span class="material-icons">chevron_right</span></li>
+                        <li>Weight Management<span class="material-icons">chevron_right</span></li>
+                        <li>Child Care<span class="material-icons">chevron_right</span></li>
+                        <li>Protine & Fitness<span class="material-icons">chevron_right</span></li>
+                        <li>Skin & Health Care<span class="material-icons">chevron_right</span></li>
+                        <li>Personal Care<span class="material-icons">chevron_right</span></li>
                     </ul>
                 </li>
 
-                <li><a href="#" class="head">Redeem LybrateCash</a></li>
+                <li>Redeem LybrateCash</li>
 
-                <li><a href="#" class="head">Sexual Wellness<span class="material-icons">chevron_right</span></a>
+                <li>Sexual Wellness<span class="material-icons">expand_more</span>
                     <ul class="listitems">
-                        <li><a href="#">Women Sexual Wellness</a></li>
-                        <li><a href="#">Men Performance Enhancers</a></li>
+                        <li>Women Sexual Wellness</li>
+                        <li>Men Performance Enhancers</li>
 
                     </ul>
                 </li>
 
-                <li><a href="#" class="head">Food & Drink<span class="material-icons">chevron_right</span></a>
+                <li>Food & Drink<span class="material-icons">expand_more</span>
                     <ul class="listitems">
-                        <li><a href="#">Healthy BreakFast</a></li>
-                        <li><a href="#">Jams ,Honey and Spreads</a></li>
-                        <li><a href="#">Ready to Eat</a></li>
-                        <li><a href="#">Healthy Drinks</a></li>
-                        <li><a href="#">Oils and Ghees</a></li>
-                        <li><a href="#">Snack Food</a></li>
-                        <li><a href="#">Tea and Coffee</a></li>
+                        <li>Healthy BreakFast</li>
+                        <li>Jams ,Honey and Spreads</li>
+                        <li>Ready to Eat</li>
+                        <li>Healthy Drinks</li>
+                        <li>Oils and Ghees</li>
+                        <li>Snack Food</li>
+                        <li>Tea and Coffee</li>
                     </ul>
                 </li>
 
-                <li><a href="#" class="head">Vitamin & supplement</a>
+                <li>Vitamin & supplement<span class="material-icons">expand_more</span>
                     <ul class="listitems">
-                        <li><a href="#">Liver Care</a></li>
-                        <li><a href="#">Multivitamin</a></li>
-                        <li><a href="#">Gut Care</a></li>
-                        <li><a href="#">Bone & Joint Care</a></li>
-                        <li><a href="#">Eye Care</a></li>
-                        <li><a href="#">Brain Care</a></li>
-                        <li><a href="#">Hair & Care</a></li>
-                        <li><a href="#">Lung Care</a></li>
-                        <li><a href="#">Menstural Health</a></li>
+                        <li>Liver Care</li>
+                        <li>Multivitamin</li>
+                        <li>Gut Care</li>
+                        <li>Bone & Joint Care</li>
+                        <li>Eye Care</li>
+                        <li>Brain Care</li>
+                        <li>Hair & Care</li>
+                        <li>Lung Care</li>
+                        <li>Menstural Health</li>
                     </ul>
                 </li>
 
-                <li><a href="#" class="head">Weight Management<span class="material-icons">chevron_right</span></a>
+                <li>Weight Management<span class="material-icons">expand_more</span>
                     <ul class="listitems">
-                        <li><a href="#">Drinks for Weight Loss</a></li>
-                        <li><a href="#">Fat Burner</a> </li>
-                        <li><a href="#">Meal Replacement</a></li>
+                        <li>Drinks for Weight Loss</li>
+                        <li>Fat Burner </li>
+                        <li>Meal Replacement</li>
                     </ul>
                 </li>
 
-                <li><a href="#" class="head">Child Care<span class="material-icons">chevron_right</span></a>
+                <li>Child Care<span class="material-icons">expand_more</span>
                     <ul class="listitems">
-                        <li><a href="#">Child Skin products</a> </li>
-                        <li><a href="#">Child Hair Shampoo</a></li>
-                        <li><a href="#">Child Immunity</a></li>
-                        <li><a href="#">Child Snack Food</a></li>
+                        <li>Child Skin products </li>
+                        <li>Child Hair Shampoo</li>
+                        <li>Child Immunity</li>
+                        <li>Child Snack Food</li>
                     </ul>
                 </li>
             </ul>
 
         </nav>
     </div>
-    <div id="slideShow">
+    <div id="allData">
+        <div id="slideShow">
 
+        </div>
+        <div class="products">
+
+            <div id="offersDiv">
+                <p>Exclusively for <span style="font-weight: 600">gold</span> Members<span style="margin-left:45%">View
+                        All</span></p>
+
+                <div>
+                    <div>
+                        <img
+                            src="https://assets.lybrate.com/q_auto,f_auto,w_125,h_125,c_pad,b_white/rio/drvaidyas/dvmp/drvaidyas1/nirgundi1.jpg" />
+                        <p>Nirgundi Joint Guard: Ayurvedic Oil fo...</p>
+                        <p class="rs">₹1.00 <span class="line">₹200</span></p>
+                        <p class="rs">Deal Ended</p>
+                    </div>
+                    <div>
+                        <img
+                            src="https://assets.lybrate.com/q_auto,f_auto,w_125,h_125,c_pad,b_white/rio/healtherio/gingerpac2.jpg" />
+                        <p>Rich in anti oxidants</p>
+                        <p class="rs">₹199<span class="line">₹700</span></p>
+                        <p class="rs">Deal Ended</p>
+                    </div>
+                </div>
+            </div>
+            <div class="productsGrid4x4">
+                <p style="margin-top:2%">Best In Protein & Fitness - Your Workout Buddies</p>
+                <div id="protine"></div>
+
+            </div>
+        </div>
+        <div class="products">
+            <div class="">
+                <p style="margin-top:2%">New Arrival in Kart | Check Now</p>
+                <div id=""></div>
+
+            </div>
+            <div class="productsGrid4x4">
+                <p style="margin-top:2%">Money Saving Deals</p>
+                <div id="protine"></div>
+
+            </div>
+
+            <div class="productsGrid4x4">
+                <p style="margin-top:2%">Sexual Wellness Products - Feel The Pleasure</p>
+                <div id="protine"></div>
+
+            </div>
+        </div>
     </div>
-
-</div>
+    </div>
 </body>
+
 </html>
 <script>
-let slides=document.getElementById("slideShow")
+    let bestinProfit = [{
+        "img": "https://assets.lybrate.com/q_auto,f_auto,w_125,h_125,c_pad,b_white/rio/welark/product_2021-07-14/preworkout_v1.png",
+        "name": "Wel Ark Muscle & Energy Booster Pre Workout 60 capsules",
+        "newprice": "₹1280.00", "oldprce": "₹1600.00", "off": "20% OFF"
+    },
+    {
+        "img": "https://assets.lybrate.com/q_auto,f_auto,w_125,h_125,c_pad,b_white/rio/welark/product_2021-07-14/preworkout_v1.png",
+        "name": "Wel Ark Muscle & Energy Booster Pre Workout 60 capsules",
+        "newprice": "₹1280.00", "oldprce": "₹1600.00", "off": "20% OFF"
+    },
+    {
+        "img": "https://assets.lybrate.com/q_auto,f_auto,w_125,h_125,c_pad,b_white/rio/welark/product_2021-07-14/preworkout_v1.png",
+        "name": "Wel Ark Muscle & Energy Booster Pre Workout 60 capsules",
+        "newprice": "₹1280.00", "oldprce": "₹1600.00", "off": "20% OFF"
+    },
+    {
+        "img": "https://assets.lybrate.com/q_auto,f_auto,w_125,h_125,c_pad,b_white/rio/welark/product_2021-07-14/preworkout_v1.png",
+        "name": "Wel Ark Muscle & Energy Booster Pre Workout 60 capsules",
+        "newprice": "₹1280.00", "oldprce": "₹1600.00", "off": "20% OFF"
+    }];
+
+    let parent = document.getElementById("protine");
+    function showProducts1() {
+        bestinProfit.forEach((product) => {
 
 
+            let div = document.createElement("div");
+            let img = document.createElement("img");
+            img.src = product.img;
+            let Name = document.createElement("p");
+            Name.textContent = product.name;
+            let price = document.createElement("p");
+            let Newprice = document.createElement("span");
+            Newprice.textContent = product.newprice;
+            let Oldprice = document.createElement("span");
+            Oldprice.textContent = product.oldprice;
+            let off = document.createElement("span");
+            off.textContent = product.off;
+            price.append(Newprice, Oldprice, off)
+            div.append(img, Name, price);
+
+            parent.append(div)
+        });
+
+    }
+    showProducts1();
 
 </script>
