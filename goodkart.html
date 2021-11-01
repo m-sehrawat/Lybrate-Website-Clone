@@ -9,7 +9,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>GoodKart page</title>
     <style>
         body {
             font-family: 'Roboto', sans-serif;
@@ -233,6 +233,13 @@
             background-color: rgb(238, 238, 238);
             text-align: center;
         }
+        /*----------////----css start--------slideshow top----------------------////------------------------*/
+        #slideShow > img{
+            
+                width: 100%;
+                height: 300px;
+            
+        }
        /*------------/////--css start-------------bottom part written information-----------//////----------------*/
        #informationParagrahBottom{
          text-align: left;
@@ -357,9 +364,7 @@
         </nav>
     </div>
     <div id="allData">
-        <div id="slideShow">
-
-        </div>
+        <div id="slideShow"></div>
         <div class="products">
 
             <div id="offersDiv">
@@ -431,7 +436,7 @@
 
             <!-------------------------------go back to home------------------------------->
 
-        <p class="backToHomePage"><a href="index.html"><strong id="textRed">Home</strong></a>>GoodKart</p>
+        <p class="backToHomePage"><a href="index.html"><strong id="textRed">Home </strong></a>> GoodKart</p>
 
          <!----------------------------Information---------------------------------------------->
         <h4>GoodKart: Buy Health Care and Wellness Products Online</h4>
@@ -551,5 +556,35 @@
 
     }
     showProducts1();
+ /*-------------//////---------------slide show-------------------------/////-----------------*/
 
+
+ let images = ["./GoodKartImages/slide1.png","./GoodKartImages/slide2.png","./GoodKartImages/slide3.png","./GoodKartImages/slide4.png","./GoodKartImages/slide5.png","./GoodKartImages/slide6.png","./GoodKartImages/slide7.png","./GoodKartImages/slide8.png","./GoodKartImages/slide9.png","./GoodKartImages/slide10.png","./GoodKartImages/slide11.png","./GoodKartImages/slide12.png","./GoodKartImages/slide13.png","./GoodKartImages/slide14.png","./GoodKartImages/slide15.png"];
+
+
+let containers = document.getElementById("slideShow");
+let interval;
+function startSlideshow() {
+
+
+   let counter =0;
+    interval = setInterval(function(){
+
+        containers.innerHTML = null;
+    if(counter === images.length){
+        counter = 0;
+    }
+        let img = document.createElement("img");
+    img.src = images[counter];
+
+    containers.append(img);
+ counter+= 1;
+
+    },1500)
+
+  
+}
+
+startSlideshow();
+/*----------/////////////////--------end slideshow--------------/////////////////////--------------------*/
 </script>
