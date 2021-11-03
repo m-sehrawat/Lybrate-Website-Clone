@@ -4,6 +4,13 @@ body{
 *{
     font-family: "Roboto","HelveticaNeue",Arial, Helvetica, sans-serif;
 }
+a:link {
+    text-decoration: none;
+    color: black;
+}
+a:hover {
+    text-decoration: none;
+}
 
 .navbar{
     background: #ffffff;
@@ -28,9 +35,11 @@ body{
     margin-right: 25px;
 }
 .navBarLarge{
-    width: 100%;
+    width: 80%;
     height: 65px;
     background: white;
+    margin: auto;
+    display: flex;
 }
 .navBarSmall{
     width: 70%;
@@ -54,4 +63,34 @@ body{
     width: 100%;
     border: 0.5px solid grey;
 }
+.LybrateLogo{
+    width: 15%;
+    height:100%;
+}
+#imgLogo{
+    max-width: 70%;
+    margin-top: 8%;
+}
+.GotocartBtn{
+    width: 10%;
+    height:70%;
+    border-radius: 30%;
+    color: red;
+    margin: auto;
+    background: black;
+}
+.clickSection{
+    width:15%;
+    height: 5%;
+    margin:5px;
 
+}
+.cartbtnlogo{
+    width: 5%;
+    height: 50%;
+    margin: auto;
+    background: yellow;
+}
+.ForInline{
+    display: inline-flex;
+}
