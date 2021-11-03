@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <style>
+
+ .topnavbar {
+    font-size: 14px;
+    background-color: #eee;
+    padding: 3px 0;
+    font-weight: inherit;
+    font-family: inherit;
+    color: rgb(105, 93, 93);
+    margin-left: 55%;
+    }
+
+ #topnavbar {
+    background-color: #eee;
+    }
+
+ #navbar > a {
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    margin: auto 1%;        
+    }
+
+ #navbar > :nth-child(1){
+    margin-left: 2%;
+    margin-right: 15%;
+    margin-top: 20px;
+    }
+
+ #navbar >a> button {
+    background-color: red;
+    border: 1px solid red;
+    border-radius: 20px;
+    width: 8%;
+    height: 35px;
+    font-size: 20px;
+    color: white;
+    margin-top: 0px;
+    }
+
+ #bckimg {
+    background-image: url("https://assets.lybrate.com/q_auto,f_auto/imgs/product/Homepage/Web_Home-Page_Banner_03.jpg");
+    background-size: cover;
+    background-position: center -60px;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 100%;
+    height: 500px;
+    margin: 0 auto;
+    margin-top: 10px;
+    padding: 48px 0;
+    }
+     
+ #bckimg > h2 {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 35px;
+    color: white;
+    }
+
+ #bckimg > input {
+    width: 55%;
+    height: 38px;
+    margin-top: 50px;
+    margin-left: 16%;
+    }
+
+ #bckimg > button {
+    width: 13%;
+    height: 40px;
+    border: 1px solid red;
+    background-color: red;
+    color: white;
+    }
+
+ #bckimg > button:hover {
+    background-color: rgb(219, 137, 137);
+    }
+
+ .trending {
+    color: white;
+    margin-top: 55px;
+    }
+
+ .trending > div {
+   
+    margin-top: 35px;
+    }
+
+ .block {
+    background-color: rgb(54, 54, 54);
+    color: white;
+    text-align: center;
+    padding: 7px 0px;
+}
+
+ .b {
+    padding: 20px 50px;
+    text-align: center;
+    background-color: #ffffff;
+    line-height: 200%;
+    font-size: large;
+    }
+
+button {
+    border: 2px solid white;
+    padding: 10px 10px;
+    background-color: #ee0606;
+    color: white;
+    }
+
+.lybrate-section {
+    padding-top: 52px;
+    text-align: left;
+    background: #eee;
+    color: #676767
+    }
+#diet {
+    background-image: url("https://assets.lybrate.com/q_auto,f_auto/code/img/dietitian-nutritionist.jpg");
+    background-size: cover;
+    width: 25%;
+    height: 150px;
+    margin: 5px 1%
+}
+#gyan {
+    background-image: url("https://assets.lybrate.com/q_auto,f_auto/code/img/gynaecologist.jpg");
+    background-size: cover;
+    width: 25%;
+    height: 150px;
+    margin: 5px 1%
+}
+#psy {
+    background-image: url("https://assets.lybrate.com/q_auto,f_auto/code/img/psychologist.jpg");
+    background-size: cover;
+    width: 25%;
+    height: 150px;
+    margin: 5px 1%
+}
+#derm {
+    background-image: url("https://assets.lybrate.com/q_auto,f_auto/code/img/dermatologist.jpg");
+    background-size: cover;
+    width: 25%;
+    height: 150px;
+    margin: 5px 1%
+}
+
+#delhi {
+    background-image: url("https://assets.lybrate.com/q_auto,f_auto/code/img/cities/delhi_city.jpg");
+    background-size: cover;
+    width: 25%;
+    height: 150px;
+    margin: 5px 1%
+}
+#bang {
+    background-image: url("https://assets.lybrate.com/q_auto,f_auto/code/img/cities/bangalore_city.jpg");
+    background-size: cover;
+    width: 25%;
+    height: 150px;
+    margin: 5px 1%
+}
+#mumb {
+    background-image: url("https://assets.lybrate.com/q_auto,f_auto/code/img/cities/mumbai_city.jpg");
+    background-size: cover;
+    width: 25%;
+    height: 150px;
+    margin: 5px 1%
+}
+#kolk {
+    background-image: url("https://assets.lybrate.com/q_auto,f_auto/code/img/cities/kolkata_city.jpg");
+    background-size: cover;
+    width: 25%;
+    height: 150px;
+    margin: 5px 1%
+}
+#topcat, #topci {
+    background-color: #eee;
+}
+
+.about-section {
+    padding: 50px 0px;
+    text-align: left;
+    background: #eee;
+}
+.cardd {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px 16px;
+    text-align: left;
+    background-color: #f1f1f1;
+    margin-top: 20px;
+}
+
+.column {
+    float: left;
+    width: 50%;
+    padding: 0 10px;
+}
+
+.row {
+    margin: 0 -5px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+button {
+    border: 2px solid white;
+    padding: 10px 10px;
+    background-color: #616060;
+    color: white;
+}
+
+
+
+        
+    
+        
+
+</style>
+
+</head>
+<style>
+   
+</style>
+<body>
+<div id="topnavbar">
+    <div class="conatiner-fluid topnavbar" >
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-2 col-lg-3" ></div>
+            <div class="col-12 col-sm-12 col-md-2 col-lg-2" >Get theApp</div>
+            <div class="col-12 col-sm-12 col-md-2 col-lg-2 ">for Doctors</div>
+            <div class="col-12 col-sm-12 col-md-2 col-lg-2 ">HealthFeed</div>
+            <div class="col-12 col-sm-12 col-md-2 col-lg-2 ">Login/SignUP</div>
+            <div class="col-12 col-sm-12 col-md-2 col-lg-1 "></div>
+        </div>
+    </div>
+</div>
+
+   <div id="navbar">
+
+        <a href=""><img style="width: 10%; height: 35px; "  src="https://assets.lybrate.com/q_auto,f_auto//imgs/product/logos/Lybrate-Logo.png" alt=""></a>
+        <a href=""><img src="https://assets.lybrate.com/q_auto,f_auto,h_28,w_28,c_fill/imgs/product/Homepage/Ask-Question.png" alt="">Ask Question</a>
+        <a href=""><img src="https://assets.lybrate.com/q_auto,f_auto,h_28,w_28,c_fill/imgs/product/Homepage/Book-Appointment.png" alt="">Book Appointment</a>
+        <a href=""><img src="https://assets.lybrate.com/q_auto,f_auto,h_28,w_28,c_fill/imgs/product/Homepage/Consult-Online.png" alt="">Consult Online</a>
+        <a href=""><img src="https://assets.lybrate.com/q_auto,f_auto,h_28,w_28,c_fill/imgs/product/Homepage/Book-Lab-test.png" alt="">Book Lab Test</a>
+        <a href=""><button><span style="font-size: 18px; display:block; padding: 0; margin-bottom: 0px;">goodkart</span><span style="margin-top: 0px;">goodkart</span></button></a>
+        <a href=""><img style="color: red; height: 50px; width: 4%;" src="https://github.com/adyasha9/medical-website-frontend/blob/master/lybrate-homepage/cart.png?raw=true" alt=""></a>
+
+    </div>
+
+    <hr style="margin-top: 5px;">
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-4 col-lg-1" style="font-size: 15px;">Home</div>
+            <div class="col-12 col-md-4 col-lg-2" style="font-size: 15px; text-align: center;">Health Feed</div>
+            <div class="col-12 col-md-4 col-lg-1" style="font-size: 15px;">GoodKart</div>
+            <div class="col-12 col-md-4 col-lg-2" style="font-size: 15px; text-align: center;">Ask a Question</div>
+            <div class="col-12 col-md-4 col-lg-2" style="font-size: 15px;">Consult Online</div>
+            <div class="col-12 col-md-4 col-lg-2"style="font-size: 15px;">Book a lab test</div>
+            <div class="col-12 col-md-4 col-lg-2" style="font-size: 15px;">Gold Membership</div>
+        </div>
+        
+    </div>
+
+
+    <div id="bckimg">
+        <h2>Stay at Home.Consult Doctors Online.<b>#India Fights Corona.</b></h2>
+        <input type="text" placeholder="Search for any Health Keyword">
+        <button>Search</button>
+        <div class="container" >
+            <div class="row trending">
+                <div class="col-12 col-md-5 col-lg-1 "></div>
+                <div class="col-12 col-md-5 col-lg-2 " >Trending Topics:</div>
+                <div class="col-12 col-md-5 col-lg-1">COVID19</div>
+               <div class="col-12 col-md-5 col-lg-1">BlackFungus</div>
+               <div style="text-align: center;" class="col-12 col-md-5 col-lg-2">DengueFever</div>
+               <div class="col-12 col-md-5 col-lg-1">Asthama</div>
+               <div class="col-12 col-md-5 col-lg-1">Infertility</div>
+               <div class="col-12 col-md-5 col-lg-1">Daibties</div>
+               <div class="col-12 col-md-5 col-lg-1">Dehdryation</div>
+               <div class="col-12 col-md-5 col-lg-1"></div>
+            </div>
+        </div>
+        <p style="margin: 50px 0; color: white;text-align: center;"><span style="border: 1px dotted white;">5 min ago</span><span style="margin-left: 2%;">28 Year Old Men from Kolkata asked about Neck Pain</span></p>
+
+    </div>
+
+  
+
+
+
+    <div class="block">
+        <h4>Coronavirus - Know all about it, watch doctor videos and track numbers across world <span style="border: 1px solid red; background-color: red; border-radius: 10px;" class="badge badge-danger">KNOW MORE</span></h4>
+    </div>
+
+    <div id="about" class="about-section">
+        <div class="container-fluid">
+            <div>
+                <h3>Questions & Answers</h3>
+                <h6>
+                    <strong>10 million+</strong> "questions answered by doctors"
+                </h6>
+            </div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="column">
+                        <div class="cardd">
+                            <div class="row">
+                                <h5>Hello doc,A calculus of 5 mm is diagnosed in midpole of rle is it a serious issue.</h5>
+                            </div>
+                            <div class="row">
+                                <img style="width: 50px; border-radius: 25px;" src="https://assets.lybrate.com/q_auto:eco,f_auto,h_50,w_50,c_fill,g_auto/img/documents/doctor/dp/f1239b539da0aa7b0ff9e3709101df14/Orthopaedics-NCGupta-Delhi-5b270e.png" height="50px">
+                                <p>
+                                   <span style="color: red;">Dr N C Gupta</span> <br>Nuerosurgeon, Mohali</p>
+                            </div>
+                            <p>Hello sir the size of the stone is small enough to pass in urine! consume at least 5 litres of water every day! Start Cap. </p>
+                            <span style="float: right; padding:0px 10px;" class="fa fa-bookmark-o"></span>
+                            <span style="float: right;" class="fa fa-heart-o"></span>
+                         </div>
+
+                        <div class="cardd">
+                            <div class="row">
+                                <h5>My dates was started on 14th April at around 10 pm. Can you please tell m the safe period for sex.</h5>
+                            </div>
+                            <div class="row">
+                                <img style="width: 50px; border-radius: 25px;" src="https://assets.lybrate.com/q_auto:eco,f_auto,h_50,w_50,c_fill,g_auto/img/documents/doctor/dp/5909ce093b9c062bf31c6ec4a60305c0/Sexology-DineshKumarJagpal-PANCHKULA.-a1b475.jpg" height="50px">
+                                <p>
+                                    <span style="color: red;">Dr Simmi Goel</span> <br>Sexologist, Vadodra</p>
+                            </div>
+                            <p>Your safe periods for sex is 5 days after end of period and 5 days before the next due date. </p>
+                            <span style="float: right; padding:0px 10px;" class="fa fa-bookmark-o"></span>
+                            <span style="float: right;" class="fa fa-heart-o"></span> 
+                        </div>
+
+                        <div class="cardd">
+                            <div class="row">
+                                <h5>I am 28 year old, suffering from ECZEMA from last 2 years,Please Help</h5>
+                            </div>
+                            <div class="row">
+                                <img style="width: 50px; border-radius: 25px;" src="https://assets.lybrate.com/q_auto:eco,f_auto,h_50,w_50,c_fill,g_auto/img/documents/doctor/dp/57ae2a7b41a88ae9c70c4436e4d8f180/Dermatology-AtulJain-jaipur-9907d7.jpg" height="50px">
+                                <p>
+                                    <span style="color: red;">Dr Atul Jain</span> <br>dermatologist, Pune</p>
+                            </div>
+                            <p>This is one type of allergy. There are most of time precipitating factors you can avoid such factors. Apply coconut oil. Don't itch, take medicine for itching.</p>
+                            <span style="float: right; padding:0px 10px;" class="fa fa-bookmark-o"></span>
+                            <span style="float: right;" class="fa fa-heart-o"></span> </div>
+
+                        <div class="cardd">
+                            <div class="row">
+                                <h4 style="text-align: center; color:red;"><b>View more Questions and Answers</b></h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="column">
+                        <div class="cardd">
+                            <div class="row">
+                                <h5>Hi, I'm Deepak malhotra my age is 40 years suffering from diabetes frm d past.</h5>
+                                   
+                            </div>
+                            <div class="row">
+                                <img style="width: 50px; border-radius: 25px;" src="https://assets.lybrate.com/q_auto:eco,f_auto,h_50,w_50,c_fill,g_auto/img/documents/doctor/dp/643439f69251dd5fb2aec5c55c9f4d8c/Urology-SatyajeetPPattnaik-Mumbai-63156c" height="50px">
+                                <p>
+                                    <span style="color: red;">Dr Satyajeet</span> <br>Urologist, Mumbai</p>
+                            </div>
+                            <p>Controlling your blood pressure and diabetes may help prevent ED. Also, avoid drinking too much alcohol. ...</p>
+                            <span style="float: right; padding:0px 10px;" class="fa fa-bookmark-o"></span>
+                            <span style="float: right;" class="fa fa-heart-o"></span> </div>
+                        <div class="cardd">
+                            <div class="row">
+                                <h5>I have a dry and itchy skin on my groin. This started after my periods</h5>
+                            </div>
+                            <div class="row">
+                                <img style="width: 50px; border-radius: 25px;" src="https://assets.lybrate.com/q_auto:eco,f_auto,h_50,w_50,c_fill,g_auto/img/documents/doctor/dp/951615c921ff7458c7a76558b235a8c9/Dermatology-JollyShah-mumbai-60a379.jpg" height="50px">
+                                <p>
+                                    <span style="color: red;">Dr Jolly Shah</span> <br>Dermatologist, Mumbai</p>
+                            </div>
+                            <p>Hi! You could be having fungal infection. These are common due to hot humid weather. Wear loose cotton clothes. Keep body parts dry.</p>
+                            <span style="float: right; padding:0px 10px;" class="fa fa-bookmark-o"></span>
+                            <span style="float: right;" class="fa fa-heart-o"></span> </div>
+
+                        <div class="cardd">
+                            <div class="row">
+                                <img style="height: 30px; width: 70px;" src="https://assets.lybrate.com/q_auto,f_auto,h_28,w_28,c_fill/imgs/product/Homepage/ic_ask_question_color_48x48.png" width="30px">
+                                <h5>Ask a question</h5>
+
+                            </div>
+                            <p>Get free multiple opinions from doctor</p>
+                            <textarea rows="8" cols="67">
+ 
+                            </textarea>
+                            <button style="background-color:rgb(180, 7, 7);; color:white;">Submit</button>
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="image">
+        <h4 class="ms-3" >HEALTH Tips</h4>
+        <p class="ms-3 mb-4" style="color: gray;">Prevent and manage health issues better</p>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-7">
+                    <img class="img-fluid" src="https://assets.lybrate.com/q_auto,f_auto,h_400,w_700,g_auto,c_fill/eagle/uploads/cca97c80d89ae5468547088748abbee7/94bd68.jpg" alt="">
+                </div>
+                <div class="col-5">
+                    <div class="list-group">
+                        <a href="#" class="list-group-item list-group-item-action list-group-item-dark">
+                          <div class="d-flex w-100 justify-content-between">
+                            <h5 class="mb-1">Suicidal Tendencies - Can Your Immune System Influence it?</h5>
+                          </div>
+                          <small>Ms.Sunita Panday, Psychologist</small>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action list-group-item-dark">
+                            <div class="d-flex w-100 justify-content-between">
+                              <h5 class="mb-1">Heartburn, Gas & Indigestion - Quick Steps That Can Help You Recover!</h5>
+                            </div>
+                            <small>Dr.Bharat Kumar Nara, Gastroenterologist</small>
+                          </a>
+                          <a href="#" class="list-group-item list-group-item-action list-group-item-dark ">
+                            <div class="d-flex w-100 justify-content-between">
+                              <h5 class="mb-1">Ovarian Cancer - 4 Signs You Must Know About!</h5>
+                            </div>
+                            <small>Dr.Manish Bhatia, Oncologist</small>
+                          </a>
+                          <a href="#" class="list-group-item list-group-item-action list-group-item-dark">
+                            <div class="d-flex w-100 justify-content-between">
+                              <h5 class="mb-1">All About Ovarian Cancer</h5>
+                            </div>
+                            <small>Dr.Prashant Mehta, Oncologist</small>
+                          </a>
+                          <a href="#" class="list-group-item list-group-item-action list-group-item-dark">
+                            <div class="d-flex w-100 justify-content-between">
+                              <h5 class="mb-1">Texting Non Stop - Can It Be The Reason Behind Your Sore Thumb?</h5>
+                            </div>
+                            <small>Dr.Neeraj Jain, Pain Management Specialist</small>
+                          </a>
+                         
+                       
+                      </div>
+    
+                </div>
+            </div>
+    
+        </div>
+    
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-7" style="background-color: rgb(204, 195, 195);">
+                    <h4>3 Best Alternatives to IVF</h4>
+                    <small>IVF is not the only solution to every infertility problem. You can choose from amongst a number of options.</small><br>
+                    <button>READ MORE</button>
+                    <span style="float: right; padding:0px 10px;" class="fa fa-bookmark-o"></span>
+                    <span style="float: right;" class="fa fa-heart-o"></span>
+                </div>
+                <div class="col-5">
+                    <div class="list-group">
+                        <a href="#" class="list-group-item list-group-item-action list-group-item-dark">
+                          <div class="d-flex w-100 justify-content-between">
+                            <h5 class="mb-1">Suicidal Tendencies - Can Your Immune System Influence it?</h5>
+                          </div>
+                          <small>Ms.Sunita Panday, Psychologist</small>
+                        </a>
+                   
+    
+                </div>
+            </div>
+        </div>
+    
+    </div>
+
+    
+   
+    <div class="b">
+        <h3>Are you a Doctor?</h3>
+        <h6>Be a part of the next big thing in healthcare. Join us in our journey of revolutionizing healthcare delivery by harnessing technology to help millions lead healthier lives.</h6>
+        <button class="btt bg-danger">Know More</button> 
+    </div>
+
+
+
+
+    <div id="topcat">
+     <h3 style="margin-left: 2%; padding-top: 2%;">TOP CATEGORIES</h3>
+    <div id="categories" style="display: flex; width: 100%; margin: 0 1%;">
+        <div id="diet">
+            <h6 style="color: white; text-align: center; margin-top: 50px;">Dietition/Nutritionist</h6>
+        </div>
+        <div id="gyan">
+            <h6 style="color: white; text-align: center; margin-top: 50px;">Gynaecologist</h6>
+        </div>
+        <div id="psy">
+            <h6 style="color: white; text-align: center; margin-top: 50px;">psychologist</h6>
+        </div>
+        <div id="derm">
+            <h6 style="color: white; text-align: center; margin-top: 50px;">dermatologist</h6>
+        </div>
+       
+    </div>
+</div>
+
+<div id="topci">
+    <h3 style="margin-left: 2%; padding-top: 2%;">TOP CITIES</h3>
+   <div id="categories" style="display: flex; width: 100%; margin: 0 1%;">
+       <div id="delhi">
+           <h6 style="color: white; text-align: center; margin-top: 50px;">delhi</h6>
+       </div>
+       <div id="bang">
+           <h6 style="color: white; text-align: center; margin-top: 50px;">Banglore</h6>
+       </div>
+       <div id="mumb">
+           <h6 style="color: white; text-align: center; margin-top: 50px;">Mumbai</h6>
+       </div>
+       <div id="kolk">
+           <h6 style="color: white; text-align: center; margin-top: 50px;">Kolkata</h6>
+       </div>
+      
+   </div>
+</div>
+
+
+
+    <section id="lybrate" class="lybrate-section">
+        <div class="container ">
+            <h5 style="font-style:inherit; color:rgb(80, 75, 75); padding: 30px 0px; ">About Lybrate</h5>
+            <div>
+                <p style="font-size: 14px;">Are you looking for a simple way to get the best medical care available? Lybrate.com innovative online doctor database gives you access to over 150,000 highly trained medical experts. So you can ask a doctor anything you want, simple with
+                    a touch of a finger. You can save as much as 70% of your time and money at your next visit to the doctor and with the assurance that the medical professional you are seeing is highly trained and experienced. We use a stringent verification
+                    process to ensure you are 100% satisfied every time. Subscribe to the Lybrate Online Doctor network today to get the very best access to free questions, consultations and easy appointments. Join today!
+                </p>
+                <p style="font-size: 14px;" >Looking to ask a doctor questions about your health online? Lybrate offers a fast, easy and friendly way to gain access to general practitioners, dieticians, nutritionists, gynaecologists, psychologist, dermatologist, sexologist, ayurveda,
+                    homeopathy and more. You can get in touch with online doctors 24 hours a day, 7 days a week with this simple application. No matter what your condition, Lybrate can get you in touch with a doctor online straight away. To find out more,
+                    subscribe to our ask a doctor service online or download the app and get access to doctors on the go! </p>
+                <p style="font-size: 14px;" >Not only does Lybrate give you access to online medical professionals, we also have regular blogs from respected experts that give you tips and advice on health and well being. Our doctors discuss a range of topics from everyday living,
+                    parenting, pregnancy and how to manage your conditions, all online and accessible from your computer, phone or tablet. Simply download the app and get access to free questions, consultations and easy appointments. Get your health feed
+                    now with Lybrate and ask a doctor what you've always wanted to know!</p>
+            </div>
+        </div>
+    </section>
+
+   
+    
+
+</body>
+</html> 
