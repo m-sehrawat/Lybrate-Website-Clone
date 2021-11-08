@@ -204,27 +204,27 @@
 
         }
 
-        .productsGrid4x4 {
+        .productsGrid2x2 {
             width: 45%;
             margin-left: 2%;
             background-color: white;
             padding: 1%;
         }
 
-        .productsGrid4x4>div {
+        .productsGrid2x2>div {
             display: grid;
             grid-template-columns: 50% 50%;
             grid-template-rows: 49% 49%;
 
         }
 
-        .productsGrid4x4>div>div {
+        .productsGrid2x2>div>div {
             border: 2px solid rgb(238, 238, 238);
             padding: 4%;
 
         }
 
-        .productsGrid4x4>div>div img {
+        .productsGrid2x2>div>div img {
             width: 80%;
         }
 
@@ -388,43 +388,43 @@
                     </div>
                 </div>
             </div>
-            <div class="productsGrid4x4">
+            <div class="productsGrid2x2">
                 <p style="margin-top:2%">Best In Protein & Fitness - Your Workout Buddies</p>
                 <div id="protine"></div>
 
             </div>
         </div>
         <div class="products">
-            <div class="productsGrid4x4">
+            <div class="productsGrid2x2">
                 <p style="margin-top:2%">New Arrival in Kart | Check Now</p>
                 <div id="newArrival"></div>
 
             </div>
-            <div class="productsGrid4x4">
+            <div class="productsGrid2x2">
                 <p style="margin-top:2%">Money Saving Deals</p>
                 <div id="moneySaving"></div>
 
             </div>
         </div>
         <div class="products">
-            <div class="productsGrid4x4">
+            <div class="productsGrid2x2">
                 <p style="margin-top:2%">Sexual Wellness Products - Feel The Pleasure</p>
                 <div id="sexWell"></div>
 
             </div>
-            <div class="productsGrid4x4">
+            <div class="productsGrid2x2">
                 <p style="margin-top:2%">Immunity Boosting Products - Boost Immunity</p>
                 <div id="immunity"></div>
 
             </div>
         </div>
         <div class="products">
-            <div class="productsGrid4x4">
+            <div class="productsGrid2x2">
                 <p style="margin-top:2%">Best In Weight Management - Achieve Your Fitness Goals</p>
                 <div id="weightManage"></div>
 
             </div>
-            <div class="productsGrid4x4">
+            <div class="productsGrid2x2">
                 <p style="margin-top:2%">Best In Vitamins & Joint Care - Get Charged</p>
                 <div id="vitamines"></div>
 
@@ -531,7 +531,12 @@
         "newprice": "₹1280.00", "oldprce": "₹1600.00", "off": "20% OFF"
     }];
 
-    let parent = document.getElementById("protine");
+   
+    let parent1 = document.getElementById("protine");
+    let parent1 = document.getElementById("protine");
+    let parent1 = document.getElementById("protine");
+    let parent1 = document.getElementById("protine");
+    let parent1 = document.getElementById("protine");
     function showProducts1() {
         bestinProfit.forEach((product) => {
 
@@ -551,7 +556,7 @@
             price.append(Newprice, Oldprice, off)
             div.append(img, Name, price);
 
-            parent.append(div)
+            parent1.append(div)
         });
 
     }
