@@ -279,7 +279,7 @@
     <div id="container">
         <div id="topnav">
             <div id="logo"><img src="https://www.lybrate.com/img/Lybrate-Goodkart-Logo.png" /></div>
-            <div id="search"><input type="text" id="searchBox" placeholder="Search for Health Products" /></div>
+            <div id="search"><input type="text" id="searchBox" oninput="debounce(main,1000)" placeholder="Search for Health Products" /></div>
 
             <div>login/signup</div>
             <span> <img
@@ -289,7 +289,7 @@
             <span style=" font-size: 40px;" class="material-icons">shopping_cart</span>
 
         </div>
-    </div id="allData">
+   <div id="search_div"></div>
 
     <div>
         <nav id="Categories">
@@ -517,20 +517,86 @@
   let parent5=document.getElementById("immunity") 
   let parent6=document.getElementById("weightManage")
   let parent7=document.getElementById("vitamines")
+ 
   async function getdata(url,parent){
       let res=await fetch(url);
        let data =await res.json();
       console.log(data);
        showProducts(data,parent);
   }
-  getdata("http://localhost:1000/api/bestinporfit",parent1);
-  getdata("http://localhost:1000/api/newArrival",parent2);
-  getdata("http://localhost:1000/api/moneySaving",parent3);
-  getdata("http://localhost:1000/api/sexwell",parent4);
-  getdata("http://localhost:1000/api/immunity",parent5);
-  getdata("http://localhost:1000/api/weightmanagement",parent6);
-  getdata("http://localhost:1000/api/vitamins",parent7);
+  getdata("http://localhost:2000/api/bestinporfit",parent1);
+  getdata("http://localhost:2000/api/newArrival",parent2);
+  getdata("http://localhost:2000/api/moneySaving",parent3);
+  getdata("http://localhost:2000/api/sexwell",parent4);
+  getdata("http://localhost:2000/api/immunity",parent5);
+  getdata("http://localhost:2000/api/weightmanagement",parent6);
+  getdata("http://localhost:2000/api/vitamins",parent7);
     
+  var timerId;
+    let search=document.getElementById("searchproducts")
+async function searchproduct(productname){
+    let res =await fetch(`http://localhost:2000/api/Searchproducts`);
+    let data = await res.json();
+     return data;
+      }
+    
+      let search_div=document.getElementById("search_div");
+
+ function appendproduct(search_data){
+     if(search_data===undefined){
+         return false;
+     }
+     search_div.innerHTML=null;
+     search_data.forEach((el)=>{
+        let p=document.createElement("p");
+     p.innerText=el.name;
+     p.onclick=()=>{
+        addtolocal(el);
+        window.location.href="Product Description.html"
+        
+        };
+        search_div.append(p)
+    
+     });
+    
+ }
+   async function main(){
+       let name=document.getElementById("searchBox").value;
+      if(name.length<3){
+          return false;
+      }
+     
+     
+       let res = await searchproduct();
+     
+      let product_data=res;
+      var search_data=[];
+      product_data.forEach((el)=>{
+      if(el.name.includes(name)){
+          console.log(el);
+        search_data.push(el);
+      
+      }
+    });
+      
+     
+       appendproduct(search_data);
+   }
+   
+  function debounce(func,delay){
+     
+    if(timerId){
+    clearTimeout(timerId)
+    }
+
+
+
+     timerID=setTimeout(function(){
+        func();
+    },delay);
+       
+  }
+
   
   function showProducts(data,parent) {
         data.forEach((product) => {
