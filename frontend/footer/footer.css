@@ -33,18 +33,24 @@ a{
     width: 100%;
     margin-top: 30px;
     margin-bottom: 10px;
-    
+    border: 1px solid red;
+    display: inline-flex;
 }
 .Index{
     width: 85%;
-
+    border: 1px solid red;
 }
 .SocialMedia{
     width: 14%;
-
+    border: 1px solid red;
+    display: inline-flex;
 }
 #IndexAncher{
     margin-right: 20px;
     margin-bottom: 12px;
     font-size: 14px;
+}
+svg{
+    margin-right: 15px;
+    margin-top: 15px;
 }
