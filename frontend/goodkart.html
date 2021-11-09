@@ -11,6 +11,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GoodKart page</title>
     <style>
+        div{
+            border:1px solid red;
+        }
         body {
             font-family: 'Roboto', sans-serif;
         }
@@ -279,8 +282,11 @@
     <div id="container">
         <div id="topnav">
             <div id="logo"><img src="https://www.lybrate.com/img/Lybrate-Goodkart-Logo.png" /></div>
-            <div id="search"><input type="text" id="searchBox" oninput="debounce(main,1000)" placeholder="Search for Health Products" /></div>
-
+            <div id="search">
+            <input type="text" id="searchBox" oninput="debounce(main,1000)" placeholder="Search for Health Products" />
+            <div id="search_div"></div>
+        </div>
+        </div>
             <div>login/signup</div>
             <span> <img
                     src="https://assets.lybrate.com/q_auto,f_auto,h_15,w_15/imgs/product/d2d/PatientGoldMembership/lybrate_icon_red_large.png" />
@@ -289,7 +295,7 @@
             <span style=" font-size: 40px;" class="material-icons">shopping_cart</span>
 
         </div>
-   <div id="search_div"></div>
+  
 
     <div>
         <nav id="Categories">
