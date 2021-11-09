@@ -537,6 +537,10 @@
 
 
             let div = document.createElement("div");
+            div.onclick=()=>{
+                addtolocal(product);
+                window.location.href="Product Description.html"
+            }
             let img = document.createElement("img");
             img.src = product.img;
             let Name = document.createElement("p");
@@ -555,6 +559,26 @@
         });
 
     }
+  if(localStorage.getItem("Single_products")==null){
+      localStorage.setItem("Single_products",JSON.stringify([]));
+  }
+   
+   function  addtolocal(product) {
+        let singleprod = JSON.parse(localStorage.getItem("Single_products"));
+       
+              singleprod[0]=product;
+              localStorage.setItem("Single_products", JSON.stringify(singleprod));
+            
+    
+        }
+    
+
+
+
+
+
+
+
    
  /*-------------//////---------------slide show-------------------------/////-----------------*/
 
