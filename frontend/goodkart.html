@@ -11,6 +11,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GoodKart page</title>
     <style>
+        div{
+            border:1px solid red;
+        }
         body {
             font-family: 'Roboto', sans-serif;
         }
@@ -72,6 +75,19 @@
             margin-left: 10%;
             justify-content: center;
         }
+        #search li{
+            display: none;
+            border: 1px solid rgb(235, 229, 229);
+            background-color: white;
+            height: 40px;
+            float: left;
+            list-style: none;
+            color: black;
+            position: relative;
+            left: -50px;
+            justify-content: center;
+        }
+        #searchBox:ho
 
         #btn {
             height: 30px;
@@ -87,7 +103,7 @@
             flex-direction: row;
             justify-content: center;
         }
-
+        
         #Categories>li {
             max-width: 100%;
             list-style: none;
@@ -292,8 +308,11 @@
     <div id="container">
         <div id="topnav">
             <div id="logo"><img src="https://www.lybrate.com/img/Lybrate-Goodkart-Logo.png" /></div>
-            <div id="search"><input type="text" id="searchBox" oninput="debounce(main,1000)" placeholder="Search for Health Products" /></div>
-
+            <div id="search">
+            <input type="text" id="searchBox" oninput="debounce(main,1000)" placeholder="Search for Health Products" />
+            <ul id="search_div"></ul>
+        </div>
+       
             <div>login/signup</div>
             <span> <img
                     src="https://assets.lybrate.com/q_auto,f_auto,h_15,w_15/imgs/product/d2d/PatientGoldMembership/lybrate_icon_red_large.png" />
@@ -302,7 +321,7 @@
             <span style=" font-size: 40px;" class="material-icons">shopping_cart</span>
 
         </div>
-   <div id="search_div"></div>
+  
 
     <div>
         <nav id="Categories">
@@ -593,14 +612,14 @@ async function searchproduct(productname){
      }
      search_div.innerHTML=null;
      search_data.forEach((el)=>{
-        let p=document.createElement("p");
-     p.innerText=el.name;
-     p.onclick=()=>{
+        let li=document.createElement("li");
+     li.innerText=el.name;
+     li.onclick=()=>{
         addtolocal(el);
         window.location.href="Product Description.html"
         
         };
-        search_div.append(p)
+        search_div.append(li)
     
      });
     

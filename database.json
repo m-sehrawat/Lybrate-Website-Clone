@@ -20,7 +20,6 @@
             "newprice": "₹1349.00",
             "oldprce": "₹1499.00",
             "off": "10% OFF"
-          
         },
         {
             "img": "https://assets.lybrate.com/q_auto,f_auto,w_100,h_100,c_pad,b_white/swan/pwpma/pwpma_vanilla_2kg.jpg",
@@ -28,7 +27,7 @@
             "newprice": "₹1280.00",
             "oldprce": "₹1600.00",
             "off": "20% OFF"
-        } 
+        }
     ],
     "newArrival": [
         {
@@ -51,7 +50,6 @@
             "newprice": "₹599.00",
             "oldprce": "₹1400.00",
             "off": "57% OFF"
-          
         },
         {
             "img": "https://assets.lybrate.com/q_auto,f_auto,w_100,h_100,c_pad,b_white/rio/butterfly/pyrexofly-3.png",
@@ -59,7 +57,7 @@
             "newprice": "₹649.00",
             "oldprce": "₹750.00",
             "off": "13% OFF"
-        } 
+        }
     ],
     "moneySaving": [
         {
@@ -82,7 +80,6 @@
             "newprice": "₹599.00",
             "oldprce": "₹1400.00",
             "off": "57% OFF"
-          
         },
         {
             "img": "https://assets.lybrate.com/q_auto,f_auto,w_100,h_100,c_pad,b_white//rio/800x800/best-diabetic-socks-for-men-women-syounaa_v10.jpg",
@@ -90,7 +87,7 @@
             "newprice": "₹697.00",
             "oldprce": "₹995.00",
             "off": "29% OFF"
-        } 
+        }
     ],
     "sexwell": [
         {
@@ -113,7 +110,6 @@
             "newprice": "₹599.00",
             "oldprce": "₹1400.00",
             "off": "57% OFF"
-          
         },
         {
             "img": "https://assets.lybrate.com/q_auto,f_auto,w_100,h_100,c_pad,b_white/rio/butterfly/pyrexofly-3.png",
@@ -121,7 +117,7 @@
             "newprice": "₹649.00",
             "oldprce": "₹750.00",
             "off": "13% OFF"
-        } 
+        }
     ],
     "immunity": [
         {
@@ -144,7 +140,6 @@
             "newprice": "₹99.00",
             "oldprce": "₹126.00",
             "off": "57% OFF"
-          
         },
         {
             "img": "https://assets.lybrate.com/q_auto,f_auto,w_100,h_100,c_pad,b_white/rio/maharishiayurveda/mahp_ayur_defence.jpg",
@@ -152,7 +147,7 @@
             "newprice": "₹249.00",
             "oldprce": "₹270.00",
             "off": "7% OFF"
-        } 
+        }
     ],
     "weightmanagement": [
         {
@@ -175,7 +170,6 @@
             "newprice": "₹450.00",
             "oldprce": "₹540.00",
             "off": "16% OFF"
-          
         },
         {
             "img": "https://assets.lybrate.com/q_auto,f_auto,w_100,h_100,c_pad,b_white//rio/800x800/Neem1_v10.jpg",
@@ -183,7 +177,7 @@
             "newprice": "₹270.00",
             "oldprce": "₹399.00",
             "off": "32% OFF"
-        } 
+        }
     ],
     "vitamins": [
         {
@@ -206,7 +200,6 @@
             "newprice": "₹99.00",
             "oldprce": "₹126.00",
             "off": "21% OFF"
-          
         },
         {
             "img": "https://assets.lybrate.com/q_auto,f_auto,w_100,h_100,c_pad,b_white/rio/maharishiayurveda/mahp_ayur_defence_pack3.jpg",
@@ -214,10 +207,9 @@
             "newprice": "₹249.00",
             "oldprce": "₹270.00",
             "off": "7% OFF"
-        } 
+        }
     ],
-
-    "Searchproducts":[
+    "Searchproducts": [
         {
             "img": "https://assets.lybrate.com/q_auto,f_auto,w_125,h_125,c_pad,b_white/rio/welark/product_2021-07-14/preworkout_v1.png",
             "name": "Wel Ark Muscle & Energy Booster Pre Workout 60 capsules",
@@ -238,7 +230,6 @@
             "newprice": "₹1349.00",
             "oldprce": "₹1499.00",
             "off": "10% OFF"
-          
         },
         {
             "img": "https://assets.lybrate.com/q_auto,f_auto,w_100,h_100,c_pad,b_white/swan/pwpma/pwpma_vanilla_2kg.jpg",
@@ -267,7 +258,6 @@
             "newprice": "₹99.00",
             "oldprce": "₹126.00",
             "off": "21% OFF"
-          
         },
         {
             "img": "https://assets.lybrate.com/q_auto,f_auto,w_100,h_100,c_pad,b_white/rio/maharishiayurveda/mahp_ayur_defence_pack3.jpg",
@@ -296,7 +286,6 @@
             "newprice": "₹450.00",
             "oldprce": "₹540.00",
             "off": "16% OFF"
-          
         },
         {
             "img": "https://assets.lybrate.com/q_auto,f_auto,w_100,h_100,c_pad,b_white//rio/800x800/Neem1_v10.jpg",
@@ -305,7 +294,6 @@
             "oldprce": "₹399.00",
             "off": "32% OFF"
         },
-
         {
             "img": "https://assets.lybrate.com/q_auto,f_auto,w_100,h_100,c_pad,b_white/rio/GoodLyfeProject/prod_2021-04-09/triphala-v1.webp",
             "name": "Good Lyfe Triphala Superherbal Powder 200g",
@@ -326,7 +314,6 @@
             "newprice": "₹99.00",
             "oldprce": "₹126.00",
             "off": "57% OFF"
-          
         },
         {
             "img": "https://assets.lybrate.com/q_auto,f_auto,w_100,h_100,c_pad,b_white/rio/maharishiayurveda/mahp_ayur_defence.jpg",
@@ -355,7 +342,6 @@
             "newprice": "₹599.00",
             "oldprce": "₹1400.00",
             "off": "57% OFF"
-          
         },
         {
             "img": "https://assets.lybrate.com/q_auto,f_auto,w_100,h_100,c_pad,b_white//rio/800x800/best-diabetic-socks-for-men-women-syounaa_v10.jpg",
@@ -384,7 +370,6 @@
             "newprice": "₹599.00",
             "oldprce": "₹1400.00",
             "off": "57% OFF"
-          
         },
         {
             "img": "https://assets.lybrate.com/q_auto,f_auto,w_100,h_100,c_pad,b_white/rio/butterfly/pyrexofly-3.png",
@@ -393,7 +378,6 @@
             "oldprce": "₹750.00",
             "off": "13% OFF"
         },
-
         {
             "img": "https://assets.lybrate.com/q_auto,f_auto,w_500,h_500,c_pad,b_white/rio/zerobeli/lot2/zerobeli_strwbry_cornflake_pack.png",
             "name": "Zerobeli Real Strawberry Corn Flakes 320g Pack of 3 ",
@@ -414,7 +398,6 @@
             "newprice": "₹599.00",
             "oldprce": "₹1400.00",
             "off": "57% OFF"
-          
         },
         {
             "img": "https://assets.lybrate.com/q_auto,f_auto,w_100,h_100,c_pad,b_white/rio/butterfly/pyrexofly-3.png",
@@ -422,28 +405,6 @@
             "newprice": "₹649.00",
             "oldprce": "₹750.00",
             "off": "13% OFF"
-        } 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-         ]
+        }
+    ]
 }
