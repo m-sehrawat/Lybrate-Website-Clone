@@ -55,26 +55,13 @@
             <div class="col-8">
                 <!-- Display Fetch Data Div -->
                 <div id="display" class="row">
-                    <!-- Gold Membership Div -->
-                    <div class="col-12 mb-3 border shadow" style="height: 100px; background-color: #c8df95; cursor: pointer;">
-                        <a class="text-decoration-none text-dark" href="goldmembership.html">
-                            <div class="row">
-                                <div class="col-2">
-                                    <img class="img-fluid" src="https://assets.lybrate.com/swan/patmem/LybrateGold_Color.png">
-                                </div>
-                                <div class="col">
-                                    <h6 class="fw-bold mt-4">Lybrate gold</h6>
-                                    <p>Become a member today and enjoy limitless health privileges, Good health made easy!</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
+                    <!-- Display Gold Membership Div -->
+                    <div id="showGoldmembershipDiv" class="col-12 mb-3 border shadow" style="height: 100px; background-color: #c8df95; cursor: pointer;"></div>
                 </div>
             </div>
             <div id="bookAppointmentSection" class="col-4"></div>
         </div>
     </div>
-
 
 
 
@@ -85,54 +72,48 @@
 
 <script type="module">
 
+    // --------------------Calling HTML elements------------------------
     let navbarComponents = document.getElementById('navbarComponents');
-
     let display = document.getElementById('display');
-
+    let showGoldmembershipDiv = document.getElementById('showGoldmembershipDiv');
     let bookAppointmentSection = document.getElementById('bookAppointmentSection');
 
-    // Importing HTML Contents
-    import { bottomNavbar, appointmentSection } from './Components/feedPage.js'
+    
+    // --------------------Importing HTML Contents------------------------
+    import { bottomNavbar, appointmentSection, showGoldMembership } from './Components/feedPage.js'
 
+    // Display bottom navbar
     bottomNavbar().then((response) => {
         navbarComponents.innerHTML = response;
     })
 
-    appointmentSection().then((res) => {
-        bookAppointmentSection.innerHTML = res;
+    // Display Gold membership Div
+    showGoldMembership().then((response) => {
+        showGoldmembershipDiv.innerHTML = response;
     })
 
-    // async function fetchData(URL, parent) {
+    // Display Book Appointment Div
+    appointmentSection().then((response) => {
+        bookAppointmentSection.innerHTML = response;
+    })
 
-    //     let response = await fetch(URL);
 
-    //     let data= await response.json();
+    // --------------------Fetching data from own server------------------------
+    // async function fetchData() {
 
-    //     console.log(data.healthFeed);
+    //     let response = await fetch(`http://localhost:2000/api/feedData`);
+
+    //     let data = await response.json();
+
+    //     data = data.healthPackages
+
+    //     appendData(data);
     // }
-
-    // fetchData("http://localhost:2000/api/depression", 0)
-
-
-    let feedData = {
-        depression: {
-            healthFeed: [
-                {
-                    heading: "Hello doctor I am suffering from depression anxiety so am taking pari cr plus and nerve plus 75 tablet together and am trying to get baby we not possible yet, and I want to stop this medicine but I can't any suggestions fro ayurvedic.",
-                    img: "https://assets.lybrate.com/q_auto:eco,f_auto,w_850/imgs/tic/overcoming-anxiety-and-stress/male/Overcoming-Anxiety-Stress-male-02-4.jpg",
-                    description: "The decision to continue, taper down or stop medicine is a mutual discussion between the doctor-patient, considering the risk-benefits of the same. So consult your treating psychiatrist regarding this and do not worry since majority of the medications are relatively safe coming under category c of risks in pregnancy. For further details, discuss with your treating doctors. Good luck.",
-                },
-                {
-                    heading: "Dear sir/mam, I take stalopam for depression and anxiety, and my doctor had to raise my dose twice in last two years. Now I take 10 mg. I fear that if this goes on like this, i'll cross the maximum dose of 20 mg and then there will be nothing to help me. What will happen if stalopam 20 mg also stops working sometime in future? Are there any further options? Please help!",
-                    img: "https://assets.lybrate.com/q_auto:eco,f_auto,w_850/imgs/tic/overcoming-anxiety-and-stress/male/Overcoming-Anxiety-Stress-male-02-11.jpg",
-                    description: "the dose depends on the need, so don't worry. There are also other medications which are as effective or more effective if this does not work out. So do not lose hope, get your symptoms under control and live life to the fullest. Good luck.",
-                }
-            ]
-        }
-    }
+    // // Calling Fetch Function
+    // fetchData()
 
 
-
+    // --------------------Appending Data into the Div------------------------
     function appendData(data) {
 
         data.forEach((element) => {
@@ -159,9 +140,6 @@
             display.append(div);
         });
     }
-    appendData(feedData.depression.healthFeed);
 
-
-    
 
 </script>
