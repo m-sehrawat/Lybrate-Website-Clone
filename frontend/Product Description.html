@@ -216,7 +216,21 @@
 
         let cart = JSON.parse(localStorage.getItem('addToCart'));
 
-        cart.push(product);
+        // Checking Duplicate products
+        let flag = false;
+        cart.forEach((element) => {
+            if (element.name == product.name) {
+                flag = true;
+            }
+        });
+
+        if (flag == true) {
+            alert(`Product is already added`);
+        } else if (flag == false) {
+            cart.push(product);
+            alert(`Product is added to the Cart`);
+        }
+
 
         console.log(cart);
 
