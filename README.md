@@ -83,7 +83,7 @@ After successful payment, this page confirms you that your order is placed.
 > [Linkedin](https://www.linkedin.com/in/)
 
 ### Nitin gupta:boy:
-> [Linkedin](https://www.linkedin.com/in/)
+> [Linkedin](https://www.linkedin.com/in/nitin-gupta-1b4b17209)
 
 ### Harish Reyya:boy:
 > [Linkedin](https://www.linkedin.com/in/r-harish-832793218)
