@@ -208,3 +208,11 @@ button {
     background-color: #616060;
     color: white;
 }
+.btn:hover {
+    color: red;
+
+}
+
+.dropdown-header {
+  color: black;
+}
