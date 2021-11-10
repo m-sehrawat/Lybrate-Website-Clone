@@ -111,7 +111,8 @@
                     <p class="text-black-50 m-1">Also get ₹516 LybrateCash for your future purchases</p>
                 </div>
                 <div class="deliveryFontColor">
-                    <p class="m-0 fw-bold ">Helps speed up recovery after workouts</p>
+                    <p class="m-0 mb-2">Wel-Ark Pre-Workout Capsule is a natural and unique formulation to support the intense workout activities of athletes, gymers, bodybuilders as well as beginners. It brings out the best in the workout lovers and boosts their confidence to achieve peak performance.</p>
+                    <p class="m-0 fw-bold">Helps speed up recovery after workouts</p>
                     <p class="mt-0 mb-2 fw-bold " style="font-size: 13px;">Expiry Date: 31-Jan-2023</p>
                     <p class="m-1 ms-4 ">Free Shipping Applicable</p>
                     <p class="m-1 ms-4 ">Cash on delivery available</p>
@@ -133,7 +134,7 @@
 
 <script>
 
-    let productImg = document.getElementById("productImage");
+    let productImage = document.getElementById("productImage");
     let productName = document.getElementById("productName");
     let productPrice = document.getElementById("productPrice");
     let ProductsmallImage1 = document.getElementById("ProductsmallImage1");
@@ -149,35 +150,51 @@
 
         data.forEach((element) => {
 
-            let { img, name, newprice, oldprce, off } = element
+            let { img, name, newprice, oldprice, off } = element;
 
-            console.log(el)
-            let imga = document.createElement("img");
-            img.src = el.img;
+            let image = document.createElement("img");
+            image.src = img;
+            image.style = "width:100%"
+            image.setAttribute('class', "img-fluid");
 
             let img1 = document.createElement("img");
-            img1.src = el.img;
+            img1.src = img;
+            img1.setAttribute('class', "img-fluid")
 
             let img2 = document.createElement("img");
-            img2.src = el.img;
+            img2.src = img;
 
             let img3 = document.createElement("img");
-            img3.src = el.img;
+            img3.src = img;
 
-            let p1 = document.createElement("p");
-            p1.innerText = el.name;
+            let heading = document.createElement("p");
+            heading.innerText = name;
+            heading.setAttribute('class', "fw-bold");
 
-            let p2 = document.createElement("p");
-            p2.innerText = el.newprice + " " + " " + el.oldprce + " " + el.off;
+            let priceNew = document.createElement("span");
+            priceNew.innerText = newprice + " ";
+            priceNew.setAttribute('class', "fs-3 fw-bold");
 
-            productImg.append(img);
-            productName.append(p1);
-            productPrice.append(p2)
+            let priceOld = document.createElement("span");
+            priceOld.innerText = oldprice;
+            priceOld.setAttribute('class', "text-muted text-decoration-line-through");
+
+            let priceOff = document.createElement("span");
+            priceOff.innerText = " " + off;
+            priceOff.setAttribute('class', "fw-bold priceColor");
+
+            let totalPrice = document.createElement("div");
+            totalPrice.append(priceNew, priceOld, priceOff)
+
+            productImage.append(image);
+            productName.append(heading);
+            productPrice.append(totalPrice)
             ProductsmallImage1.append(img1);
             ProductsmallImage2.append(img2);
             ProductsmallImage3.append(img3);
         });
     }
+    displayProducts(product)
 
 
 
