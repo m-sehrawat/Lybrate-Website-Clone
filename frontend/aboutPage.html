@@ -17,10 +17,6 @@
             background-color: #f7f7f7;
         }
 
-        /* div {
-            border: 1px solid red;
-        } */
-
         .upperBox {
             max-width: 1200px;
             min-height: 60px;
@@ -47,7 +43,6 @@
 
     <!-- navigation for different tabs -->
     <div id="navbarComponents" class="container upperBox mt-4"></div>
-
 
     <!-- Health Feed -->
     <div class="container upperBox mt-5">
@@ -76,63 +71,48 @@
     </div>
 
 
-
-
-
 </body>
 
 </html>
 
 <script type="module">
 
+    // --------------------Calling HTML elements------------------------
     let navbarComponents = document.getElementById('navbarComponents');
-
     let display = document.getElementById('display');
-
     let bookAppointmentSection = document.getElementById('bookAppointmentSection');
 
-    // Importing HTML Contents
+
+    // --------------------Importing HTML Contents------------------------
     import { bottomNavbar, appointmentSection } from './Components/feedPage.js'
 
+    // Display bottom navbar
     bottomNavbar().then((response) => {
         navbarComponents.innerHTML = response;
     })
 
+    // Display Book Appointment Div
     appointmentSection().then((res) => {
         bookAppointmentSection.innerHTML = res;
     })
 
-    // async function fetchData(URL, parent) {
 
-    //     let response = await fetch(URL);
+    // --------------------Fetching data from own server------------------------
+    // async function fetchData() {
 
-    //     let data= await response.json();
+    //     let response = await fetch(`http://localhost:2000/api/feedData`);
 
-    //     console.log(data.healthFeed);
+    //     let data = await response.json();
+
+    //     data = data.healthPackages
+
+    //     appendData(data);
     // }
-
-    // fetchData("http://localhost:2000/api/depression", 0)
-
-
-    let feedData = {
-        depression: {
-            healthFeed: [
-                {
-                    heading: "Hello doctor I am suffering from depression anxiety so am taking pari cr plus and nerve plus 75 tablet together and am trying to get baby we not possible yet, and I want to stop this medicine but I can't any suggestions fro ayurvedic.",
-                    img: "https://assets.lybrate.com/q_auto:eco,f_auto,w_850/imgs/tic/overcoming-anxiety-and-stress/male/Overcoming-Anxiety-Stress-male-02-4.jpg",
-                    description: "The decision to continue, taper down or stop medicine is a mutual discussion between the doctor-patient, considering the risk-benefits of the same. So consult your treating psychiatrist regarding this and do not worry since majority of the medications are relatively safe coming under category c of risks in pregnancy. For further details, discuss with your treating doctors. Good luck.",
-                },
-                {
-                    heading: "Dear sir/mam, I take stalopam for depression and anxiety, and my doctor had to raise my dose twice in last two years. Now I take 10 mg. I fear that if this goes on like this, i'll cross the maximum dose of 20 mg and then there will be nothing to help me. What will happen if stalopam 20 mg also stops working sometime in future? Are there any further options? Please help!",
-                    img: "https://assets.lybrate.com/q_auto:eco,f_auto,w_850/imgs/tic/overcoming-anxiety-and-stress/male/Overcoming-Anxiety-Stress-male-02-11.jpg",
-                    description: "the dose depends on the need, so don't worry. There are also other medications which are as effective or more effective if this does not work out. So do not lose hope, get your symptoms under control and live life to the fullest. Good luck.",
-                }
-            ]
-        }
-    }
+    // // Calling Fetch Function
+    // fetchData()
 
 
-
+    // --------------------Appending Data into the Div------------------------
     function appendData(data) {
 
         data.forEach((element) => {
@@ -151,17 +131,18 @@
             image.src = img;
             image.setAttribute('class', 'img-fluid my-3');
 
-            let desc = document.createElement('p');
-            desc.textContent = description;
+            let desc = document.createElement('div');
+            description.forEach((el) => {
+                let p = document.createElement('p');
+                p.textContent = el;
+                desc.append(p);
+            })
 
             div.append(head, image, desc);
 
             display.append(div);
         });
     }
-    appendData(feedData.depression.healthFeed);
 
-
-    
 
 </script>

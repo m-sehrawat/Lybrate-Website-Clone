@@ -30,7 +30,7 @@ async function bottomNavbar() {
     </div>
     <!-- Find Doctors -->
     <div class="col border hoverEffect">
-        <a class="text-decoration-none hoverEffect" href="#">
+        <a class="text-decoration-none hoverEffect" href="findDoctors.html">
             <div class="row">
                 <div class="col-3 offset-2">
                     <img class="img-fluid icon-width offset-7" src="https://assets.lybrate.com/imgs/product/icons/ic-doctor-64x64.png" alt="">
@@ -43,7 +43,7 @@ async function bottomNavbar() {
     </div>
     <!-- Health Packages -->
     <div class="col border hoverEffect">
-        <a class="text-decoration-none hoverEffect" href="#">
+        <a class="text-decoration-none hoverEffect" href="healthPackages.html">
             <div class="row">
                 <div class="col-3 offset-1">
                     <img class="img-fluid icon-width offset-7" src="https://assets.lybrate.com/imgs/product/icons/ic-condition-64x64.png" alt="">
@@ -97,6 +97,20 @@ async function appointmentSection() {
 </div>`
 }
 
+// Gold Membership Div
+async function showGoldMembership(){
+    return `<a class="text-decoration-none text-dark" href="goldmembership.html">
+        <div class="row">
+            <div class="col-2">
+                <img class="img-fluid" src="https://assets.lybrate.com/swan/patmem/LybrateGold_Color.png">
+            </div>
+            <div class="col">
+                <h6 class="fw-bold mt-4">Lybrate gold</h6>
+                <p>Become a member today and enjoy limitless health privileges, Good health made easy!</p>
+            </div>
+        </div>
+    </a>`
+}
 
 // Exporting functions
-export { bottomNavbar, appointmentSection }
+export { bottomNavbar, appointmentSection, showGoldMembership }
