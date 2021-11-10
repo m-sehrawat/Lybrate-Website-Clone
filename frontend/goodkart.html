@@ -11,14 +11,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GoodKart page</title>
     <style>
-        div {
-            border: 1px solid red;
-        }
-
+<<<<<<< HEAD
+       
+=======
+      
+>>>>>>> ccf0941a1d58dea6cf6305867d8d21db3dc78e69
         body {
             font-family: 'Roboto', sans-serif;
+           
         }
-
+  
         .material-icons {
             font-family: 'Material Icons';
             font-weight: normal;
@@ -69,11 +71,11 @@
 
 
         #searchBox {
-            width: 85%;
-            padding: 8px;
+            width: 100%;
+            padding: 10px;
             background-color: rgb(222, 222, 222);
             border: none;
-            margin-left: 10%;
+          
             justify-content: center;
         }
 
@@ -174,16 +176,17 @@
             color: black;
 
         }
-
+        
         #logo img {
             max-width: 80%
         }
 
         #offersDiv {
-            width: 49%;
-            border: 1px solid red;
+            width: 47%;
+           
             background-color: rgb(232, 201, 190);
             justify-content: center;
+            margin-left:2%;
         }
 
         #offersDiv>div {
@@ -246,24 +249,30 @@
         }
 
         #allData {
-
+          width: 100%;
             background-color: rgb(238, 238, 238);
             text-align: center;
+          
+           
         }
 
         /*----------////----css start--------slideshow top----------------------////------------------------*/
+        #slideShow{
+            width:86.5%;
+            margin-left:7.5%;
+        }
         #slideShow>img {
 
             width: 100%;
-            height: 300px;
+            height: 250px;
 
         }
 
         /*------------/////--css start-------------bottom part written information-----------//////----------------*/
         #informationParagrahBottom {
             text-align: left;
-            padding-left: 3%;
-            padding-right: 3%;
+            padding-left: 7.5%;
+            padding-right: 7%;
             font-size: small;
 
         }
@@ -296,26 +305,33 @@
 
        /*--------------///////////---------------shop now banner css start----------//////-------------------*/
        .shopnowBanner{
-           width: 100%;
+           width: 90%;
            display: flex;
            gap: 1%;
-       }
+           margin-left: 6%;    }
        .shopnowBanner > img{
            width: 30%;
            margin-left:2%;
           
+       }
+       #bggray{
+           background-color: rgb(238, 238, 238);
+       }
+       #alignall{
+        margin-left: 5%;
        }
         /*--------------///////////---------------shop now banner css end----------//////-------------------*/
     </style>
 </head>
 
 <body>
+    <div id="alignall">
     <div id="container">
         <div id="topnav">
             <div id="logo"><img src="https://www.lybrate.com/img/Lybrate-Goodkart-Logo.png" /></div>
             <div id="search">
                 <input type="text" id="searchBox" oninput="debounce(main,1000)" placeholder="Search for Health Products" />
-                <ul id="search_div"></ul>
+              
             </div>
 
             <div>login/signup</div>
@@ -325,9 +341,9 @@
             <span style=" font-size: 40px;" class="material-icons">shopping_cart</span>
 
         </div>
+        <div id="search_div"></div>
 
-
-        <div>
+        <div id="allData">
             <nav id="Categories">
                 <ul>
                     <li>Shop By Category<span class="material-icons">expand_more</span>
@@ -398,8 +414,8 @@
                 </ul>
 
             </nav>
-        </div>
-        <div id="allData">
+      
+       
             <div id="slideShow"></div>
             <div class="products">
 
@@ -428,7 +444,7 @@
 
                 </div>
             </div>
-        </div>
+        
 
 <!-------------/////-------shop now banner static-------------/////----------------------->
 <br>
@@ -451,7 +467,7 @@
 
                 </div>
             </div>
-        </div>
+      
 
 <!-------------/////-------shop now banner static-------------/////----------------------->
 <br>
@@ -476,7 +492,7 @@
 
                 </div>
             </div>
-        </div>
+       
 <!-------------//////-------shop now banner static-------------/////----------------------->
 <br>
 <div class="shopnowBanner">
@@ -499,8 +515,9 @@
 
                 </div>
             </div>
+           
             <!---------///--------------bottom part written information-------------///-------------->
-
+            <br>
             <div id="informationParagrahBottom">
 
                 <!-------------------------------go back to home------------------------------->
@@ -571,8 +588,8 @@
            <br>
             <br>
         </div>
-
-
+    </div>
+</div>
 </body>
 
 </html>
@@ -682,10 +699,10 @@
             let Newprice = document.createElement("span");
             Newprice.textContent = product.newprice;
             let Oldprice = document.createElement("span");
-            Oldprice.textContent = product.oldprice;
+            Oldprice.textContent = product.oldprce;
             let off = document.createElement("span");
             off.textContent = product.off;
-            price.append(Newprice, Oldprice, off)
+            price.append(Newprice, Oldprice , off)
             div.append(img, Name, price);
 
             parent.append(div)
