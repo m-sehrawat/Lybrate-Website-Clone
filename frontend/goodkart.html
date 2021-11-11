@@ -23,12 +23,13 @@
                 <div id="logo"><img src="https://www.lybrate.com/img/Lybrate-Goodkart-Logo.png" /></div>
                 <div id="search">
                     <input type="text" id="searchBox" oninput="debounce(main,1000)" placeholder="Search for Health Products" />
-
                 </div>
 
                 <div>login/signup</div>
-                <span> <img src="https://assets.lybrate.com/q_auto,f_auto,h_15,w_15/imgs/product/d2d/PatientGoldMembership/lybrate_icon_red_large.png" />
-                    LybrateCash </span>
+                <span>
+                    <img src="https://assets.lybrate.com/q_auto,f_auto,h_15,w_15/imgs/product/d2d/PatientGoldMembership/lybrate_icon_red_large.png" />
+                    LybrateCash
+                </span>
                 <a href="landingpage.html"><button class="btn btn-sm btn-outline-dark py-0">Home</button></a>
                 <span style=" font-size: 40px;" class="material-icons">shopping_cart</span>
 
@@ -57,7 +58,6 @@
                             <ul class="listitems">
                                 <li>Women Sexual Wellness</li>
                                 <li>Men Performance Enhancers</li>
-
                             </ul>
                         </li>
 
@@ -104,7 +104,6 @@
                             </ul>
                         </li>
                     </ul>
-
                 </nav>
 
 
@@ -114,7 +113,6 @@
                     <div class="fs-5" id="offersDiv">
                         <p class="mt-2">Exclusively for <span style="font-weight: 600">gold</span> Members<span style="margin-left:45%">View
                                 All</span></p>
-
                         <div>
                             <div>
                                 <img src="https://assets.lybrate.com/q_auto,f_auto,w_125,h_125,c_pad,b_white/rio/drvaidyas/dvmp/drvaidyas1/nirgundi1.jpg" />
@@ -133,10 +131,8 @@
                     <div class="productsGrid2x2">
                         <p class="fs-5" style="margin-top:2%">Best In Protein & Fitness - Your Workout Buddies</p>
                         <div id="protine"></div>
-
                     </div>
                 </div>
-
 
                 <!-------------/////-------shop now banner static-------------/////----------------------->
                 <br>
@@ -151,15 +147,12 @@
                     <div class="productsGrid2x2">
                         <p class="fs-5" style="margin-top:2%">New Arrival in Kart | Check Now</p>
                         <div id="newArrival"></div>
-
                     </div>
                     <div class="productsGrid2x2">
                         <p class="fs-5" style="margin-top:2%">Money Saving Deals</p>
                         <div id="moneySaving"></div>
-
                     </div>
                 </div>
-
 
                 <!-------------/////-------shop now banner static-------------/////----------------------->
                 <br>
@@ -168,8 +161,7 @@
                     <img src="https://assets.lybrate.com/q_auto:low,f_auto,w_600//rio/800x800/banner_Top-Multivitamin-Products_04.jpg" />
                     <img src="https://assets.lybrate.com/q_auto:low,f_auto,w_600//rio/800x800/banner_Top-Face-Care-Product_05.jpg" />
                 </div>
-                <!------------/////------------shop now banner ending------------------////-------------------------------->
-
+                <!------------/////------------shop now banner ending------------------////----------------->
 
 
                 <div class="products">
@@ -192,33 +184,25 @@
                     <img src="https://assets.lybrate.com/q_auto:low,f_auto,w_600//rio/800x800/banner_Top-Food-Drink-Products_07.jpg" />
                     <img src="https://assets.lybrate.com/q_auto:low,f_auto,w_600//rio/800x800/banner_Top-Hair-Care-Products_8.jpg" />
                 </div>
-                <!------------/////------------shop now banner ending------------------////-------------------------------->
+                <!------------/////------------shop now banner ending------------------////-------------------->
 
 
                 <div class="products">
                     <div class="productsGrid2x2">
                         <p class="fs-5" style="margin-top:2%">Best In Weight Management - Achieve Your Fitness Goals</p>
                         <div id="weightManage"></div>
-
                     </div>
                     <div class="productsGrid2x2">
                         <p class="fs-5" style="margin-top:2%">Best In Vitamins & Joint Care - Get Charged</p>
                         <div id="vitamines"></div>
-
                     </div>
                 </div>
 
                 <!---------///--------------bottom part written information-------------///-------------->
                 <br>
                 <div id="informationParagrahBottom">
-
                     <!-------------------------------go back to home------------------------------->
-
                     <p class="backToHomePage"><a href="landingpage.html"><strong id="textRed">Home </strong></a>> GoodKart</p>
-
-                    
-                    <br>
-                    
                 </div>
             </div>
         </div>
@@ -227,7 +211,10 @@
 </body>
 
 </html>
+
+
 <script type="module">
+
     let parent1 = document.getElementById("protine")
     let parent2 = document.getElementById("newArrival")
     let parent3 = document.getElementById("moneySaving")
@@ -271,19 +258,16 @@
             li.onclick = () => {
                 addtolocal(el);
                 window.location.href = "Product Description.html"
-
             };
             search_div.append(li)
-
         });
-
     }
+
     async function main() {
         let name = document.getElementById("searchBox").value;
         if (name.length < 3) {
             return false;
         }
-
 
         let res = await searchproduct();
 
@@ -293,10 +277,8 @@
             if (el.name.includes(name)) {
                 console.log(el);
                 search_data.push(el);
-
             }
         });
-
         appendproduct(search_data);
     }
 
@@ -313,13 +295,14 @@
 
 
     function showProducts(data, parent) {
+
         data.forEach((element) => {
 
             let { img, name, newprice, oldprice, off } = element;
 
             let div = document.createElement("div");
             div.onclick = () => {
-                localStorage.setItem("Single_products", JSON.stringify(product));
+                localStorage.setItem("Single_products", JSON.stringify(element));
                 window.location.href = "Product Description.html"
             }
 
@@ -332,7 +315,6 @@
             heading.setAttribute('class', 'fw-bold')
 
             let price = document.createElement("p");
-
             let priceNew = document.createElement("span");
             priceNew.textContent = "₹" + Number(newprice).toFixed(2) + " ";
             priceNew.setAttribute('class', 'fw-bold text-danger')
@@ -355,14 +337,10 @@
 
     /*-------------//////---------------slide show-------------------------/////-----------------*/
 
-
     let images = ["./GoodKartImages/slide1.png", "./GoodKartImages/slide2.png", "./GoodKartImages/slide3.png", "./GoodKartImages/slide4.png", "./GoodKartImages/slide5.png", "./GoodKartImages/slide6.png", "./GoodKartImages/slide7.png", "./GoodKartImages/slide8.png", "./GoodKartImages/slide9.png", "./GoodKartImages/slide10.png", "./GoodKartImages/slide11.png", "./GoodKartImages/slide12.png", "./GoodKartImages/slide13.png", "./GoodKartImages/slide14.png", "./GoodKartImages/slide15.png"];
-
-
     let containers = document.getElementById("slideShow");
     let interval;
     function startSlideshow() {
-
 
         let counter = 0;
         interval = setInterval(function () {
@@ -378,20 +356,18 @@
             counter += 1;
 
         }, 1500)
-
-
     }
 
     startSlideshow();
-/*----------/////////////////--------end slideshow--------------/////////////////////--------------------*/
+    /*----------/////////////////--------end slideshow--------------/////////////////////--------------------*/
 
+
+    /*----------/////////////////--------Display Footer Start--------------/////////////////////--------------------*/
     let footerDisplay = document.getElementById('footerDisplay');
-
     import footer from './JS/footer.js';
-
     footer().then((response) => {
         footerDisplay.innerHTML = response;
     })
-
+    /*----------/////////////////--------Display Footer End--------------/////////////////////--------------------*/
 
 </script>
