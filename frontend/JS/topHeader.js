@@ -16,7 +16,7 @@ async function topHeader(){
 
     <div id="navbar">
 
-        <a href=""><img style="width: 10%; height: 35px; " src="https://assets.lybrate.com/q_auto,f_auto//imgs/product/logos/Lybrate-Logo.png" alt=""></a>
+        <a href="landingpage.html"><img style="width: 10%; height: 35px;" src="https://assets.lybrate.com/q_auto,f_auto//imgs/product/logos/Lybrate-Logo.png"></a>
         <a href=""><img src="https://assets.lybrate.com/q_auto,f_auto,h_28,w_28,c_fill/imgs/product/Homepage/Ask-Question.png" alt="">Ask Question</a>
         <a href=""><img src="https://assets.lybrate.com/q_auto,f_auto,h_28,w_28,c_fill/imgs/product/Homepage/Book-Appointment.png" alt="">Book Appointment</a>
         <a href=""><img src="https://assets.lybrate.com/q_auto,f_auto,h_28,w_28,c_fill/imgs/product/Homepage/Consult-Online.png" alt="">Consult Online</a>

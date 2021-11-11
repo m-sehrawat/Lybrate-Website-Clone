@@ -45,7 +45,7 @@
         </div>
     </div>
 
-    <div id="footerDisplay"></div>
+    <div class="mt-5" id="footerDisplay"></div>
 
 </body>
 
@@ -54,7 +54,6 @@
 <script type="module">
     // --------------------Calling HTML elements------------------------
     let navbarComponents = document.getElementById('navbarComponents');
-    let display = document.getElementById('display');
     let bookAppointmentSection = document.getElementById('bookAppointmentSection');
     let topHeaderDisplay = document.getElementById('topHeaderDisplay');
     let footerDisplay = document.getElementById('footerDisplay');
@@ -90,6 +89,8 @@
 
 
 <script>
+
+    let display = document.getElementById('display');
 
     // --------------------Fetching data from own server------------------------
     let newsVariable = localStorage.getItem('newsTopic');
