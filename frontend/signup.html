@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./CSS/footer.css">
     <link rel="stylesheet" href="./CSS/topNavbar.css">
-    <link rel="stylesheet" href="./CSS/signup.css">
+    <link rel="stylesheet" href="./CSS/signup login.css">
 
 </head>
 
@@ -28,7 +28,7 @@
                         <p style="text-align: center; color: rgb(189, 175, 175); font-size: 24px;">Welcome to Lybrate</p>
                         <div class="col" style="padding-top: 3%;">
                             <form action="" id="myForm" onsubmit="signup(event)">
-                                <div class="card-header text-left" style="border: 1px solid whitesmoke; background-color: white;"><a href="signin.html">LOGIN </a><span id="signupid" style="color: red; margin-left: 5%;">SIGNUP</span></div>
+                                <div class="card-header text-left" style="border: 1px solid whitesmoke; background-color: white;"><a id="anchorTag" href="signin.html">LOGIN </a><span id="signupid" style="color: red; margin-left: 5%;">SIGNUP</span></div>
                                 <div class="card-body text-center" style="border: 1px solid rgb(236, 225, 225); border-top: none;">
                                     <div class="card-title text-center"><input style="width: 100%;" type="text" placeholder="Name*"></div>
                                     <div class="card-text">
@@ -59,7 +59,7 @@
 </html>
 
 <script type="module">
- // --------------------Calling HTML elements------------------------
+    // --------------------Calling HTML elements------------------------
     let topHeaderDisplay = document.getElementById('topHeaderDisplay');
     let footerDisplay = document.getElementById('footerDisplay');
 
@@ -115,6 +115,18 @@
         } else {
             alert("Password should minimum 8 characters")
         }
+    }
+
+
+    // ------------Navbar Functions----------------------
+    function displayNews(name) {
+        localStorage.setItem('newsTopic', name);
+        window.location.href = "aboutPage.html";
+    }
+
+    function bookAppointment(name) {
+        localStorage.setItem('newsTopic', name);
+        window.location.href = "findDoctors.html";
     }
 
 </script>
