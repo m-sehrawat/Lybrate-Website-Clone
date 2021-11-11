@@ -347,27 +347,32 @@
 
     /*-------------//////---------------slide show-------------------------/////-----------------*/
 
-    let images = ["./GoodKartImages/slide1.png", "./GoodKartImages/slide2.png", "./GoodKartImages/slide3.png", "./GoodKartImages/slide4.png", "./GoodKartImages/slide5.png", "./GoodKartImages/slide6.png", "./GoodKartImages/slide7.png", "./GoodKartImages/slide8.png", "./GoodKartImages/slide9.png", "./GoodKartImages/slide10.png", "./GoodKartImages/slide11.png", "./GoodKartImages/slide12.png", "./GoodKartImages/slide13.png", "./GoodKartImages/slide14.png", "./GoodKartImages/slide15.png"];
-    let containers = document.getElementById("slideShow");
-    let interval;
+
+
     function startSlideshow() {
 
+        let images = ["./GoodKartImages/slide1.png", "./GoodKartImages/slide2.png", "./GoodKartImages/slide3.png", "./GoodKartImages/slide4.png", "./GoodKartImages/slide5.png", "./GoodKartImages/slide6.png", "./GoodKartImages/slide7.png", "./GoodKartImages/slide8.png", "./GoodKartImages/slide9.png", "./GoodKartImages/slide10.png", "./GoodKartImages/slide11.png", "./GoodKartImages/slide12.png", "./GoodKartImages/slide13.png", "./GoodKartImages/slide14.png", "./GoodKartImages/slide15.png"];
+        let containers = document.getElementById("slideShow");
+        let img = document.createElement("img");
+        img.src = images[9];
+        containers.append(img);
+
         let counter = 0;
-        interval = setInterval(function () {
+
+        setInterval(() => {
 
             containers.innerHTML = null;
-            if (counter === images.length) {
+
+            if (counter == images.length) {
                 counter = 0;
             }
-            let img = document.createElement("img");
+
             img.src = images[counter];
-
             containers.append(img);
-            counter += 1;
+            counter++;
 
-        }, 1500)
+        }, 2000)
     }
-
     startSlideshow();
     /*----------/////////////////--------end slideshow--------------/////////////////////--------------------*/
 

@@ -49,7 +49,7 @@
                 <div onclick="displayNews('diabetes')" style="cursor: pointer;" class="col-12 col-md-5 col-lg-1">Diabetes</div>
             </div>
         </div>
-        <p style="margin: 50px 0; color: white;text-align: center;"><span style="border: 1px dotted white;">5 min ago</span><span style="margin-left: 2%;">28 Year Old Men from Kolkata asked about Neck Pain</span></p>
+        <div id="headline"></div>
 
     </div>
 
@@ -482,7 +482,41 @@
 
 
 <script>
-// ------------Navbar Functions----------------------
+
+    // -------------------Slide Show of Heading---------------------
+
+
+
+    function slidingHeadline() {
+
+        let arr = ["20 year old Female from Bhopal just asked about Hair Growth", "35 year old Male from Gangtok just asked about Throat Ache", "25 year old Female from Navi Mumbai just asked about Heel Pain", "48 year old Female from Mumbai just asked about Diarrhoea", "31 year old Female from Hyderabad just asked about Rashes", "36 year old Male from Mahabubnagar just asked about Hemorrhoids", "23 year old Female from Bangalore just asked about Avoid Pregnancy", "31 year old Female from Mumbai just asked about Female Hair Loss"]
+
+        let headline = document.getElementById('headline');
+        let p = document.createElement('p');
+        p.style = "margin: 50px 0; color: white;text-align: center;"
+        p.textContent = arr[7];
+        headline.append(p);
+        let count = 0;
+
+        setInterval(() => {
+
+            headline.innerHTML = null;
+
+            if (count == arr.length) {
+                count = 0;
+            }
+
+            p.textContent = arr[count];
+            headline.append(p);
+            count++;
+
+        }, 2000)
+    }
+    slidingHeadline();
+
+
+
+    // ------------Navbar Functions----------------------
     function displayNews(name) {
         localStorage.setItem('newsTopic', name);
         window.location.href = "aboutPage.html";
