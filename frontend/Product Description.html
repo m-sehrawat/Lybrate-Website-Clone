@@ -17,9 +17,9 @@
             max-width: 1250px;
         }
 
-        div {
+        /* div {
             border: 1px solid red;
-        }
+        } */
 
         .mainBox {
             height: 600px;
@@ -111,8 +111,7 @@
                     <p class="text-black-50 m-1">Also get ₹516 LybrateCash for your future purchases</p>
                 </div>
                 <div class="deliveryFontColor">
-                    <p class="m-0 mb-2">Wel-Ark Pre-Workout Capsule is a natural and unique formulation to support the intense workout activities of athletes, gymers, bodybuilders as well as beginners. It brings out the best in the workout lovers and boosts their confidence to achieve peak performance.</p>
-                    <p class="m-0 fw-bold">Helps speed up recovery after workouts</p>
+                    <div id="detailsDiv"></div>
                     <p class="mt-0 mb-2 fw-bold " style="font-size: 13px;">Expiry Date: 31-Jan-2023</p>
                     <p class="m-1 ms-4 ">Free Shipping Applicable</p>
                     <p class="m-1 ms-4 ">Cash on delivery available</p>
@@ -137,6 +136,7 @@
     let productImage = document.getElementById("productImage");
     let productName = document.getElementById("productName");
     let productPrice = document.getElementById("productPrice");
+    let detailsDiv = document.getElementById("detailsDiv");
     let imgBox1 = document.getElementById("imgBox1");
     let imgBox2 = document.getElementById("imgBox2");
     let imgBox3 = document.getElementById("imgBox3");
@@ -172,7 +172,11 @@
 
         let heading = document.createElement("p");
         heading.innerText = name;
-        heading.setAttribute('class', "fw-bold");
+        heading.setAttribute('class', "fs-5 fw-bold");
+
+        let details = document.createElement("p");
+        details.innerText = `${name} is a natural and unique formulation to support all the workout and normal activities of athletes, gymers, bodybuilders as well as beginners. It brings out the best in the workouts and also boosts their confidence to achieve peak performance`;
+        details.setAttribute('class', "m-0 mb-2");
 
         let priceNew = document.createElement("span");
         priceNew.innerText = newprice + " ";
@@ -191,6 +195,7 @@
 
         productImage.append(image);
         productName.append(heading);
+        detailsDiv.append(details);
         productPrice.append(totalPrice)
         imgBox1.append(img1);
         imgBox2.append(img2);
