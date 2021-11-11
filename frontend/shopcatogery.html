@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <title>shop by cateogary</title>
+    <style>
+         
+      * {
+        font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+
+    body {
+        padding: 0px;
+        margin: 0px;
+        background-color: #eee;
+    }
+
+    .material-icons {
+        font-family: 'Material Icons';
+        font-weight: normal;
+        font-style: normal;
+        font-size: 14px;
+        /* Preferred icon size */
+        display: inline-block;
+        line-height: 1;
+        text-transform: none;
+        letter-spacing: normal;
+        word-wrap: normal;
+        white-space: nowrap;
+        direction: ltr;
+
+        /* Support for all WebKit browsers. */
+        -webkit-font-smoothing: antialiased;
+        /* Support for Safari and Chrome. */
+        text-rendering: optimizeLegibility;
+
+        /* Support for Firefox. */
+        -moz-osx-font-smoothing: grayscale;
+
+        /* Support for IE. */
+        font-feature-settings: 'liga';
+    }
+
+
+
+
+
+    #topnav {
+        max-width: 100%;
+        display: flex;
+        gap: 3%;
+        padding: 1% 4% 0 4%;
+        font-size: 14px;
+        justify-content: center;
+    }
+
+    #search {
+        width: 45%;
+        justify-content: center;
+    }
+
+
+    #searchBox {
+        width: 100%;
+        padding: 10px;
+        background-color: rgb(222, 222, 222);
+        border: none;
+      
+        justify-content: center;
+    }
+
+    #search li {
+        display: none;
+        border: 1px solid rgb(235, 229, 229);
+        background-color: white;
+        height: 40px;
+        float: left;
+        list-style: none;
+        color: black;
+        position: relative;
+        left: -50px;
+        justify-content: center;
+    }
+
+    #searchBox:ho #btn {
+        height: 30px;
+        background-color: white;
+        border: 0.5px solid black;
+        border-radius: 5px;
+        justify-content: center;
+    }
+
+    #lebrateCash> {
+        width: 35%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    #Categories>li {
+        max-width: 100%;
+        list-style: none;
+        text-align: center;
+        text-decoration: none;
+        color: white;
+
+
+    }
+
+    #Categories {
+        max-width: 100%;
+        background-color: black;
+        color: white;
+        justify-content: center;
+
+
+    }
+
+    .listitems {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 20px;
+        white-space: nowrap;
+        margin-left: 0%;
+    }
+
+    a {
+
+        text-decoration: none;
+    }
+
+    .listitems>li {
+        display: none;
+        border: 1px solid rgb(235, 229, 229);
+        background-color: white;
+        height: 40px;
+        float: left;
+        list-style: none;
+        color: black;
+        position: relative;
+        left: -50px;
+        justify-content: center;
+
+    }
+
+    #Categories>ul {
+        max-width: 100%;
+        display: flex;
+        width: 100%;
+        margin-top: 0px;
+        list-style: none;
+        gap: 30px;
+        height: 32px;
+        padding-top: 2px;
+        text-align: left;
+
+        position: relative;
+
+
+    }
+
+    #Categories li:hover .listitems>li {
+        display: block;
+        text-decoration: black;
+        color: black;
+
+    }
+    
+    #logo img {
+        max-width: 80%
+    }
+    #slideShow{
+        width:90.5%;
+        margin-left:4.5%;
+    }
+    #slideShow>img {
+
+        width: 100%;
+        height: 250px;
+
+    }
+    /*-------------------------filter and product section start-------------------------------------*/
+#filterGrid{
+    width: 100%;
+    display: flex;
+    gap: 2%;
+    margin-left: 3%;
+    margin-right: 2%;
+    font-size: small;
+}
+.leftFilter{
+    width: 25%;
+    height: 300px;
+   
+    overflow: scroll;
+    padding-left: 1%;
+   background-color: white;
+}
+
+
+.rightProducts{
+    width: 64%;
+    height: 300px;
+    
+    overflow: scroll;
+    padding-left: 1%;
+    background-color: white;
+}
+.flex{
+    display: flex;
+    gap: 3%;
+}
+.red{
+    color: rgb(190, 9, 9);
+    font-weight: normal;
+}
+.colorChange:hover{
+color:rgb(190, 9, 9) ;
+text-decoration: underline;
+}
+.bold{
+    font-weight: bold;
+}
+/*-----------------------products grid right side-----------------------------------------------------------*/
+.grid{
+    display: grid;
+    grid-template-columns: 45% 45%;
+  
+    gap: 3%;
+}
+.grid > div{
+  border: 1px solid black;
+  height: 200px;
+}
+.insideDiv{
+    display: flex;
+    gap: 1%;
+    width: 100%;
+   
+}
+.insideDiv > div{
+    width: 60%;
+}
+.insideDiv > img{
+    width: 30%;
+}
+.insideDiv strong{
+    text-decoration-line:line-through ;
+    color: red;
+    font-weight: normal;
+}
+.insideDiv span{
+    background-color: brown;
+    color:white;
+    border-radius: 5px;
+    float: right;
+}
+.insideDiv span:hover{
+    background-color: rgb(104, 100, 100);
+    color:white;
+    border-radius: 5px;
+    float: right;
+}
+
+    </style>
+</head>
+<body>
+    <div id="alignall">
+        <div id="container">
+            <div id="topnav">
+                <div id="logo"><img src="https://www.lybrate.com/img/Lybrate-Goodkart-Logo.png" /></div>
+                <div id="search">
+                    <input type="text" id="searchBox" oninput="debounce(main,1000)" placeholder="Search for Health Products" />
+                  
+                </div>
+    
+                <div>login/signup</div>
+                <span> <img src="https://assets.lybrate.com/q_auto,f_auto,h_15,w_15/imgs/product/d2d/PatientGoldMembership/lybrate_icon_red_large.png" />
+                    LybrateCash </span>
+                <a href="landingpage.html"><button id="btn">Home</button></a>
+                <span style=" font-size: 40px;" class="material-icons">shopping_cart</span>
+    
+            </div>
+            <div id="search_div"></div>
+    
+            <div id="allData">
+                <nav id="Categories">
+                    <ul>
+                        <li>Shop By Category<span class="material-icons">expand_more</span>
+                            <ul class="listitems">
+                                <li>Sexual Wellness<span class="material-icons">chevron_right</span></li>
+                                <li>Food & Drink<span class="material-icons">chevron_right</span></li>
+                                <li>Vitamin & supplement<span class="material-icons">chevron_right</span></li>
+                                <li>Weight Management<span class="material-icons">chevron_right</span></li>
+                                <li>Child Care<span class="material-icons">chevron_right</span></li>
+                                <li>Protine & Fitness<span class="material-icons">chevron_right</span></li>
+                                <li>Skin & Health Care<span class="material-icons">chevron_right</span></li>
+                                <li>Personal Care<span class="material-icons">chevron_right</span></li>
+                            </ul>
+                        </li>
+    
+                        <li>Redeem LybrateCash</li>
+    
+                        <li>Sexual Wellness<span class="material-icons">expand_more</span>
+                            <ul class="listitems">
+                                <li>Women Sexual Wellness</li>
+                                <li>Men Performance Enhancers</li>
+    
+                            </ul>
+                        </li>
+    
+                        <li>Food & Drink<span class="material-icons">expand_more</span>
+                            <ul class="listitems">
+                                <li>Healthy BreakFast</li>
+                                <li>Jams ,Honey and Spreads</li>
+                                <li>Ready to Eat</li>
+                                <li>Healthy Drinks</li>
+                                <li>Oils and Ghees</li>
+                                <li>Snack Food</li>
+                                <li>Tea and Coffee</li>
+                            </ul>
+                        </li>
+    
+                        <li>Vitamin & supplement<span class="material-icons">expand_more</span>
+                            <ul class="listitems">
+                                <li>Liver Care</li>
+                                <li>Multivitamin</li>
+                                <li>Gut Care</li>
+                                <li>Bone & Joint Care</li>
+                                <li>Eye Care</li>
+                                <li>Brain Care</li>
+                                <li>Hair & Care</li>
+                                <li>Lung Care</li>
+                                <li>Menstural Health</li>
+                            </ul>
+                        </li>
+    
+                        <li>Weight Management<span class="material-icons">expand_more</span>
+                            <ul class="listitems">
+                                <li>Drinks for Weight Loss</li>
+                                <li>Fat Burner </li>
+                                <li>Meal Replacement</li>
+                            </ul>
+                        </li>
+    
+                        <li>Child Care<span class="material-icons">expand_more</span>
+                            <ul class="listitems">
+                                <li>Child Skin products </li>
+                                <li>Child Hair Shampoo</li>
+                                <li>Child Immunity</li>
+                                <li>Child Snack Food</li>
+                            </ul>
+                        </li>
+                    </ul>
+    
+                </nav>
+            </div>
+            <!-----------///---------slideshow-------------------////---------------->
+                <div id="slideShow"></div>
+            <!-----------//-----------slideshow ends---------------///----------------------------->
+            <br>
+            </div>
+            <div id="filterGrid">
+                <div class="leftFilter">
+                    <div>
+                        <h4>Filters</h4>
+                        <hr>
+                        <h4>Price</h4>
+                        <p><input type="checkbox"/> ₹ 200</p>
+                        <p><input type="checkbox"/>₹ 200 to ₹ 500</p>
+                        <p><input type="checkbox"/>₹ 500 to ₹ 1000</p>
+                        <p><input type="checkbox"/>Above ₹ 1000</p>
+                        <hr>
+                        <h4>Discount</h4>
+                        <p><input type="checkbox"/>10% or more</p>
+                        <p><input type="checkbox"/>20% or more</p>
+                        <p><input type="checkbox"/>30% or more</p>
+                        <p><input type="checkbox"/>40% or more</p>
+                    </div>
+                </div>
+                <div class="rightProducts">
+                    <div >
+                        <p><a href="landingpage.html"><strong class="red">home</strong></a> > <a href="goodkart.html"><strong class="red"> GoodKart</strong></a> > Vitamin & Supplement</p>
+                        <p class="bold">Vitamin & Supplement</p>
+                        <div class="flex">
+                     <div>Sort by</div>
+                     <div class="colorChange">Popularity</div>
+                     <div class="colorChange">Price - Low to High</div>
+                     <div class="colorChange">Price - High to Low</div>
+                    </div>
+                    <hr>
+                    </div>
+                    <!-----------------right side product divs------------------------------->
+                    <div class="grid">
+                         <div class="insideDiv">
+                             <img src="https://assets.lybrate.com/q_auto,f_auto,w_500,h_500,c_pad,b_white/rio/3M_designs/Pd/PD/2195_PD_Image1.jpg"/>
+                             <div>
+                                <h4>Unmadvati: Ayurvedic Medicine for Stress and Anxiety (24 Pills)</h4>
+                                <p>Dr. Vaidya’s Unmadvati is a natural herbal supplement that promotes deep relaxation, helping you beat stress</p>
+                                <p>₹140.00
+                                    <strong>₹150.00</strong>
+                                    6% OFF</p>
+                                <span>Add to Cart</span>
+                             </div>
+                         </div>
+                         <div></div>
+                         <div></div>
+                         <div></div>
+                         <div></div>
+                         <div></div>
+                         <div></div>
+                         <div></div>
+                         <div></div>
+                         <div></div>
+                         <div></div>
+                         <div></div>
+                    </div>
+                </div>
+
+            </div>
+            </div>
+
+          
+</body>
+</html>
+<script>
+    /*-------------//////---------------slide show-------------------------/////-----------------*/
+
+
+    let images = ["./GoodKartImages/filterslide1.png", "./GoodKartImages/filterslide2.png"]
+
+
+    let containers = document.getElementById("slideShow");
+    let interval;
+    function startSlideshow() {
+
+
+        let counter = 0;
+        interval = setInterval(function () {
+
+            containers.innerHTML = null;
+            if (counter === images.length) {
+                counter = 0;
+            }
+            let img = document.createElement("img");
+            img.src = images[counter];
+
+            containers.append(img);
+            counter += 1;
+
+        }, 1500)
+
+
+    }
+
+    startSlideshow();
+/*----------/////////////////--------end slideshow--------------/////////////////////--------------------*/
+</script>
