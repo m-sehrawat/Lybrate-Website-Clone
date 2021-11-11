@@ -79,6 +79,8 @@
 
         data.forEach((element) => {
 
+            let { name, img, newprice, oldprice, off } = element;
+
             let div = document.createElement('div');
             div.setAttribute('class', 'border ')
             div.style = "min-height:80px; display:grid; grid-template-columns: 10% 40% 19% 20% 11%"
@@ -90,10 +92,28 @@
             let div5 = document.createElement('div');
 
             let image = document.createElement('img');
+            image.src = img;
+            image.setAttribute('class', 'img-fluid');
+
+            let heading = document.createElement('p');
+            heading.textContent = name;
+            heading.setAttribute('class', 'mt-4');
+
+            let priceNew = document.createElement('span');
+            priceNew.textContent = newprice;
+            priceNew.setAttribute('class', 'fs-5');
+
+            let priceOld = document.createElement('span');
+            priceOld.textContent = oldprice;
+
 
             let removeBtn = document.createElement('button');
             removeBtn.textContent = "Remove"
             removeBtn.setAttribute('class', 'btn btn-sm btn-outline-dark rounded-0 mt-4')
+
+            div1.append(image)
+            div2.append(heading)
+            div3.append(priceNew, priceOld)
 
             div5.append(removeBtn)
 
