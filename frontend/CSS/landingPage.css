@@ -8,44 +8,6 @@ body {
     max-width: 1300px;
 }
 
-.topnavbar {
-    font-size: 14px;
-    background-color: #eee;
-    padding: 3px 0;
-    font-weight: inherit;
-    font-family: inherit;
-    color: rgb(105, 93, 93);
-    margin-left: 55%;
-    }
-
- #topnavbar {
-    background-color: #eee;
-    }
-
- #navbar > a {
-    text-decoration: none;
-    color: black;
-    font-size: 15px;
-    margin: auto 1%;        
-    }
-
- #navbar > :nth-child(1){
-    margin-left: 2%;
-    margin-right: 15%;
-    margin-top: 20px;
-    }
-
- #navbar >a> button {
-    background-color: red;
-    border: 1px solid red;
-    border-radius: 20px;
-    width: 8%;
-    height: 35px;
-    font-size: 20px;
-    color: white;
-    margin-top: 0px;
-    }
-
  #bckimg {
     background-image: url("https://assets.lybrate.com/q_auto,f_auto/imgs/product/Homepage/Web_Home-Page_Banner_03.jpg");
     background-size: cover;
