@@ -1,3 +1,13 @@
+* {
+    font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+body {
+    padding: 0px;
+}
+.cardBoxSize {
+    max-width: 1300px;
+}
+
 .topnavbar {
     font-size: 14px;
     background-color: #eee;
