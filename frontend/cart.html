@@ -18,7 +18,8 @@
         }
 
         div {
-            /* border: 1px solid red; */
+            border: 1px solid red;
+            /* min-height: 80px; */
         }
 
         #mainBox {
@@ -27,6 +28,7 @@
 
         .bg-white {
             background-color: white;
+
         }
     </style>
 </head>
@@ -37,7 +39,7 @@
     <div id="mainBox" class="container">
         <div class="row">
             <div class="col-8">
-                <div id="productBox" class="p-1 bg-white"></div>
+                <div id="productBox" class=" bg-white"></div>
             </div>
             <div class="col-4">
                 <div class="m-1 bg-white">
@@ -46,11 +48,11 @@
                             <p class="px-4 pt-2">ORDER SUMMARY</p>
                         </div>
                         <hr class="col-11 ms-3">
-                        <div class="col-12 px-4 pt-2">2676</div>
+                        <div id="totalMRP" class="col-12 px-4 pt-2"></div>
                         <hr class="col-10 offset-1">
-                        <div class="col-12 px-4 pt-2">3</div>
+                        <div id="cartTotal" class="col-12 px-4 pt-2"></div>
                         <hr class="col-10 offset-1">
-                        <div class="col-12 px-4 pt-2">4</div>
+                        <div id="amountPayable" class="col-12 px-4 pt-2"></div>
                         <hr class="col-10 offset-1">
                     </div>
                 </div>
@@ -65,7 +67,64 @@
 
 <script type="module">
 
+    let cartdata = JSON.parse(localStorage.getItem('addToCart'))
+    console.log('cartdata:', cartdata);
+
     let productBox = document.getElementById('productBox');
+    let totalMRP = document.getElementById('totalMRP');
+    let cartTotal = document.getElementById('cartTotal');
+    let amountPayable = document.getElementById('amountPayable');
+
+    function showData(data) {
+
+        data.forEach((element) => {
+
+            let { name, img, newprice, oldprice, off } = element;
+
+            let div = document.createElement('div');
+            div.setAttribute('class', 'border ')
+            div.style = "min-height:80px; display:grid; grid-template-columns: 10% 40% 19% 20% 11%"
+
+            let div1 = document.createElement('div');
+            let div2 = document.createElement('div');
+            let div3 = document.createElement('div');
+            let div4 = document.createElement('div');
+            let div5 = document.createElement('div');
+
+            let image = document.createElement('img');
+            image.src = img;
+            image.setAttribute('class', 'img-fluid');
+
+            let heading = document.createElement('p');
+            heading.textContent = name;
+            heading.setAttribute('class', 'mt-4');
+
+            let priceNew = document.createElement('span');
+            priceNew.textContent = newprice;
+            priceNew.setAttribute('class', 'fs-5');
+
+            let priceOld = document.createElement('span');
+            priceOld.textContent = oldprice;
+
+
+            let removeBtn = document.createElement('button');
+            removeBtn.textContent = "Remove"
+            removeBtn.setAttribute('class', 'btn btn-sm btn-outline-dark rounded-0 mt-4')
+
+            div1.append(image)
+            div2.append(heading)
+            div3.append(priceNew, priceOld)
+
+            div5.append(removeBtn)
+
+            div.append(div1, div2, div3, div4, div5)
+
+            productBox.append(div);
+        });
+    }
+    showData(cartdata)
+
+
 
 
 </script>

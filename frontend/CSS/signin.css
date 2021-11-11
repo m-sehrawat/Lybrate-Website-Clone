@@ -1,0 +1,77 @@
+* {
+    font-family: "Roboto","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+
+.topnavbar {
+font-size: 14px;
+background-color: #eee;
+padding: 3px 0;
+font-weight: inherit;
+font-family: inherit;
+color: rgb(105, 93, 93);
+margin-left: 55%;
+}
+
+#topnavbar {
+background-color: #eee;
+}
+
+#navbar > a {
+text-decoration: none;
+color: black;
+font-size: 15px;
+margin: auto 1%;        
+}
+
+#navbar > :nth-child(1){
+margin-left: 2%;
+margin-right: 15%;
+margin-top: 20px;
+}
+
+#navbar >a> button {
+background-color: red;
+border: 1px solid red;
+border-radius: 20px;
+width: 8%;
+height: 35px;
+font-size: 20px;
+color: white;
+margin-top: 0px;
+}
+
+input {
+margin: 6% 1%;
+border-top: none;
+border-left: none;
+border-right: none;
+border-bottom: 1px solid rgb(114, 107, 107);
+background-color: #eee;
+}
+
+input:hover {
+border-bottom: 1px solid red;
+border-top: none;
+border-left: none;
+border-right: none;
+}
+
+button {
+width: 100%;
+margin-top: 5%;
+height: 40px;
+margin-bottom: 0%;
+background-color: rgb(235, 51, 51);
+color: white;
+border: 1px solid red;
+}
+#signinid:hover {
+text-decoration: 2px underline red ;
+margin-bottom: 10%;
+
+}
+a {
+text-decoration: none;
+color: black;
+}
