@@ -425,8 +425,8 @@ text-decoration: underline;
                         <div class="flex">
                      <div>Sort by</div>
                      <div class="colorChange">Popularity</div>
-                     <div class="colorChange">Price - Low to High</div>
-                     <div class="colorChange">Price - High to Low</div>
+                     <div onclick="sort1()" class="colorChange">Price - Low to High</div>
+                     <div  onclick="sort2()"class="colorChange">Price - High to Low</div>
                     </div>
                    
                     </div>
@@ -475,11 +475,12 @@ text-decoration: underline;
     }
 
     startSlideshow();
-  
+  var data;
      async function getallproducts(){
       
         let res = await fetch(`http://localhost:2000/api/Searchproducts`);
-        let data = await res.json();
+         data = await res.json();
+        
         appendData(data);
 
 
@@ -492,15 +493,20 @@ text-decoration: underline;
         data.forEach((el)=>{
            
             let div = document.createElement("div");
-             div.onclick = () => {
+            
+            let div1 = document.createElement("div");
+            let image=document.createElement("img");
+            image.src=el.img[0];
+            image.onclick = () => {
                 localStorage.setItem("Single_products", JSON.stringify(el));
                 window.location.href = "Product Description.html"
             }
-            let div1 = document.createElement("div");
-            let image=document.createElement("img");
-            image.src=el.img;
             let h4=document.createElement("h4");
             h4.innerText=el.name;
+            h4.onclick = () => {
+                localStorage.setItem("Single_products", JSON.stringify(el));
+                window.location.href = "Product Description.html"
+            }
          
             let p1=document.createElement("p");
              p1.innerText= el.name +" " + "is a natural herbal supplement that promotes deep relaxation, helping you beat stress";
@@ -517,14 +523,71 @@ text-decoration: underline;
           
             let btn=document.createElement("button");
             btn.innerText="Add to Cart"
-           
-           
+          
              div1.append(h4,p1,p,btn);
              div.append(image,div1);
              data_div.append(div);
+             btn.onclick=function(){
+                addProductsToCart(el);
+                btn.innerText="Go to Cart"
+                btn.style.backgroundColor="green"
+                btn.addEventListener("click", function () {
+                  window.location.href="cart.html"
+            });
+           
+        }
         })
       
     }
+    function sort1(){
+        sortLtoH(data);
+    }
+    function sort2(){
+        sortHtoL(data)
+    }
+  function sortLtoH(data){
+      data.sort((a,b)=>{
+      return a.newprice-b.newprice;
+      });
+      appendData(data)
+  } 
   
+  function sortHtoL(data){
+     
+      data.sort((a,b)=>{
+      return b.newprice - a.newprice;
+      });
+      appendData(data);
+  }
+
+ 
+ if (localStorage.getItem('addToCart') === null) {
+        localStorage.setItem('addToCart', JSON.stringify([]))
+    }
+
+  function addProductsToCart(el) {
+
+let cart = JSON.parse(localStorage.getItem('addToCart'));
+
+
+let flag = false;
+cart.forEach((product) => {
+    if (product.name == el.name) {
+        flag = true;
+    }
+});
+
+if (flag == true) {
+    
+} else if (flag == false) {
+    cart.push(product);
+    alert(`Product is added to the Cart`);
+}
+
+console.log(cart);
+
+localStorage.setItem('addToCart', JSON.stringify(cart));
+}
+
 /*----------/////////////////--------end slideshow--------------/////////////////////--------------------*/
 </script>
