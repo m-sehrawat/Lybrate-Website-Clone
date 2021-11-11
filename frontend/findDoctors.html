@@ -198,19 +198,21 @@
     let box9 = document.getElementById('box9');
 
 
-    // --------------------Fetching data from own server------------------------
-    // async function fetchData() {
+// --------------------Fetching data from own server------------------------
+    let newsVariable = localStorage.getItem('newsTopic');
+    
+    async function fetchData() {
 
-    //     let response = await fetch(`http://localhost:2000/api/feedData`);
+        let response = await fetch(`http://localhost:2000/api/feedData`);
 
-    //     let data = await response.json();
+        let data = await response.json();
 
-    //     data = data.healthPackages
+        data = data[newsVariable].findDoctors;
 
-    //     appendData(data);
-    // }
-    // // Calling Fetch Function
-    // fetchData()
+        appendData(data);
+    }
+    // Calling Fetch Function
+    fetchData()
 
 
 
