@@ -212,8 +212,17 @@
 
 </html>
 
-
 <script type="module">
+    // --------------Footer Imported-------------------------
+    let footerDisplay = document.getElementById('footerDisplay');
+    import footer from './JS/footer.js';
+    footer().then((response) => {
+        footerDisplay.innerHTML = response;
+    })
+</script>
+
+
+<script>
 
     let parent1 = document.getElementById("protine")
     let parent2 = document.getElementById("newArrival")
@@ -361,13 +370,5 @@
     startSlideshow();
     /*----------/////////////////--------end slideshow--------------/////////////////////--------------------*/
 
-
-    /*----------/////////////////--------Display Footer Start--------------/////////////////////--------------------*/
-    let footerDisplay = document.getElementById('footerDisplay');
-    import footer from './JS/footer.js';
-    footer().then((response) => {
-        footerDisplay.innerHTML = response;
-    })
-    /*----------/////////////////--------Display Footer End--------------/////////////////////--------------------*/
 
 </script>
