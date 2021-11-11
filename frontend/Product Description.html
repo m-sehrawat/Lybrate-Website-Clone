@@ -117,11 +117,13 @@
                 <div id="productPrice">
                     <p class="priceColor fw-bold">Special Price</p>
                 </div>
-                <div id="goldMember" class="mx-1 my-4 px-3 border rounded-3">
-                    <p class="fw-bold m-0">Become a <span style="color: #9b8338;">Gold member</span> today and you get
-                        this for <span style="color: #c82506;">Free</span> using bonus LybrateCash</p>
-                    <p class="text-black-50 m-1">Also get ₹516 LybrateCash for your future purchases</p>
-                </div>
+                <a class="text-black" href="goldmembership.html">
+                    <div id="goldMember" class="mx-1 my-4 px-3 border rounded-3">
+                        <p class=" m-0 fw-bold">Become a <span style="color: #9b8338;">Gold member</span> today and you get
+                            this for <span style="color: #c82506;">Free</span> using bonus LybrateCash</p>
+                        <p class="text-black-50 m-1">Also get ₹516 LybrateCash for your future purchases</p>
+                    </div>
+                </a>
                 <div class="deliveryFontColor">
                     <div id="detailsDiv"></div>
                     <p class="mt-0 mb-2 fw-bold " style="font-size: 13px;">Expiry Date: 31-Jan-2023</p>
@@ -147,7 +149,7 @@
 </html>
 
 <script type="module">
- // --------------Header Imported-------------------------
+    // --------------Header Imported-------------------------
     let headerDisplay = document.getElementById('headerDisplay');
     import showHeader from './JS/smallHeader.js';
     showHeader().then((response) => {
