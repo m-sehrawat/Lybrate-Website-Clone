@@ -8,6 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="./CSS/healthpackages.css">
     <link rel="stylesheet" href="./CSS/footer.css">
+    <link rel="stylesheet" href="./CSS/topNavbar.css">
     <title>Health Packages</title>
     <link rel="icon" type="image/x-icon" href="https://nu.lybcdn.com/img/push-crew/logo_192_by_192.png">
 
@@ -21,7 +22,7 @@
     <!-- navigation for different tabs -->
     <div id="navbarComponents" class="container upperBox mt-4"></div>
 
-    <p class="fs-4 text-center my-4">Health Packages for Depression</p>
+    <p class="fs-4 text-center my-4">Health Packages</p>
 
     <!-- Display Health Packages -->
     <div id="displayPackages" class="container"></div>
@@ -116,6 +117,18 @@
 
             displayPackages.append(div);
         });
+    }
+
+
+    // ------------Navbar Functions----------------------
+    function displayNews(name) {
+        localStorage.setItem('newsTopic', name);
+        window.location.href = "aboutPage.html";
+    }
+
+    function bookAppointment(name) {
+        localStorage.setItem('newsTopic', name);
+        window.location.href = "findDoctors.html";
     }
 
 
