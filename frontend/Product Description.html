@@ -148,13 +148,12 @@
 </html>
 
 <script type="module">
-
+ // --------------Header Imported-------------------------
     let headerDisplay = document.getElementById('headerDisplay');
     import showHeader from './JS/smallHeader.js';
     showHeader().then((response) => {
         headerDisplay.innerHTML = response;
     })
-
 
     // --------------Footer Imported-------------------------
     let footerDisplay = document.getElementById('footerDisplay');
