@@ -35,7 +35,7 @@ async function topHeader() {
         <a href="cart.html"><img style="width:80%;" src="https://github.com/adyasha9/medical-website-frontend/blob/master/lybrate-homepage/cart.png?raw=true" alt=""></a>
     </div>
 </div>
-<hr style="margin-top: 3px;">`
+<hr style="margin-top: 5px; margin-bottom: 0px;">`
 }
 
 export default topHeader;
