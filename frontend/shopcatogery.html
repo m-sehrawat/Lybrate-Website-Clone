@@ -232,7 +232,7 @@ text-decoration: underline;
     font-weight: bold;
 }
 /*-----------------------products grid right side-----------------------------------------------------------*/
-.grid{
+#grid{
     display: grid;
     grid-template-columns: 47% 47%;
     
@@ -242,38 +242,36 @@ text-decoration: underline;
     margin-left: none;
  
 }
-.grid > div{
+#grid >div{
   border-radius: 10px;
   height: 150px;
   box-shadow: 2px 2px 2px 2px #EEEEEE;
   padding-bottom:7%;
- 
-}
-.insideDiv{
+  border:1px solid red; 
     display: flex;
     gap: 1%;
     width: 100%;
    
 }
-.insideDiv > div{
+#grid >div div{
     width: 60%;
     padding-left: 10px;
 }
-.insideDiv > img{
+#grid >div img{
     width: 30%;
 }
-.insideDiv strong{
+#grid >div span:nth-child(2){
     text-decoration-line:line-through ;
     color: red;
     font-weight: normal;
 }
-.insideDiv span{
-    background-color: brown;
-    color:white;
+#grid >div span:nth-child(1){
+   
+   
     border-radius: 5px;
     float: right;
 }
-.insideDiv span:hover{
+#grid >div span:nth-child(3){
     background-color: rgb(104, 100, 100);
     color:white;
     border-radius: 5px;
@@ -289,14 +287,15 @@ text-decoration: underline;
     box-shadow: 0px 10px 10px 0px #EEEEEE;
  
 }
-#button1{
+#grid >div button{
     background-color: red;
-    margin-left: 70%;
+    
     border-radius: 10px;
     width:80px;
     color:white;
     height:20px;
  border:none;
+ margin-left:70%;
 }
     </style>
 </head>
@@ -427,29 +426,10 @@ text-decoration: underline;
                    
                     </div>
                     <!-----------------right side product divs------------------------------->
-                    <div class="grid">
-                         <div class="insideDiv">
-                             <img src="https://assets.lybrate.com/q_auto,f_auto,w_500,h_500,c_pad,b_white/rio/3M_designs/Pd/PD/2195_PD_Image1.jpg"/>
-                             <div>
-                                <h4>Unmadvati: Ayurvedic Medicine for Stress and Anxiety (24 Pills)</h4>
-                                <p>Dr. Vaidya’s Unmadvati is a natural herbal supplement that promotes deep relaxation, helping you beat stress</p>
-                                <p>₹140.00
-                                    <strong>₹150.00</strong>
-                                    6% OFF</p>
-                                <button id="button1">Add to Cart</button> 
-                             </div>
+                    <div id="grid">
+                         
                          </div>
-                         <div></div>
-                         <div></div>
-                         <div></div>
-                         <div></div>
-                         <div></div>
-                         <div></div>
-                         <div></div>
-                         <div></div>
-                         <div></div>
-                         <div></div>
-                         <div></div>
+                         
                     </div>
                 </div>
 
@@ -490,5 +470,51 @@ text-decoration: underline;
     }
 
     startSlideshow();
+  
+     async function getallproducts(){
+      
+        let res = await fetch(`http://localhost:2000/api/Searchproducts`);
+        let data = await res.json();
+        appendData(data);
+
+
+    }
+    getallproducts();
+    let data_div=document.getElementById("grid");
+  
+    function appendData(data){
+          data_div.innerHTML=null;
+        data.forEach((el)=>{
+           
+            let div = document.createElement("div");
+            let div1 = document.createElement("div");
+            let image=document.createElement("img");
+            image.src=el.img;
+            let h4=document.createElement("h4");
+            h4.innerText=el.name;
+         
+            let p1=document.createElement("p");
+             p1.innerText= el.name + "is a natural herbal supplement that promotes deep relaxation, helping you beat stress";
+             
+             let p=document.createElement("p");
+           let span1 =document.createElement("span");
+            span1.innerHTML= el.newprice;
+            let span2 =document.createElement("span");
+            span2.innerHTML= el.oldprice;
+            let span3 =document.createElement("span");
+             span3.innerHTML= el.off;
+              p.append(span3,span2,span1);
+
+          
+            let btn=document.createElement("button");
+            btn.innerText="Add to Cart"
+           
+             div1.append(h4,p1,p,btn);
+           div.append(image,div1);
+           data_div.append(div);
+        })
+      
+    }
+  
 /*----------/////////////////--------end slideshow--------------/////////////////////--------------------*/
 </script>

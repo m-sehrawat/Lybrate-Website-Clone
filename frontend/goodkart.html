@@ -248,7 +248,7 @@
 
     var timerId;
     let search = document.getElementById("searchproducts")
-    async function searchproduct(productname) {
+    async function searchproduct() {
         let res = await fetch(`http://localhost:2000/api/Searchproducts`);
         let data = await res.json();
         return data;
