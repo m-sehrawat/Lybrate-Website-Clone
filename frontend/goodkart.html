@@ -9,277 +9,278 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="./CSS/goodkart.css">
     <title>GoodKart page</title>
-    
+
 </head>
 
 <body>
     <div id="alignall">
-    <div id="container">
-        <div id="topnav">
-            <div id="logo"><img src="https://www.lybrate.com/img/Lybrate-Goodkart-Logo.png" /></div>
-            <div id="search">
-                <input type="text" id="searchBox" oninput="debounce(main,1000)" placeholder="Search for Health Products" />
-              
+        <div id="container">
+            <div id="topnav">
+                <div id="logo"><img src="https://www.lybrate.com/img/Lybrate-Goodkart-Logo.png" /></div>
+                <div id="search">
+                    <input type="text" id="searchBox" oninput="debounce(main,1000)" placeholder="Search for Health Products" />
+
+                </div>
+
+                <div>login/signup</div>
+                <span> <img src="https://assets.lybrate.com/q_auto,f_auto,h_15,w_15/imgs/product/d2d/PatientGoldMembership/lybrate_icon_red_large.png" />
+                    LybrateCash </span>
+                <a href="landingpage.html"><button id="btn">Home</button></a>
+                <span style=" font-size: 40px;" class="material-icons">shopping_cart</span>
+
             </div>
+            <div id="search_div"></div>
 
-            <div>login/signup</div>
-            <span> <img src="https://assets.lybrate.com/q_auto,f_auto,h_15,w_15/imgs/product/d2d/PatientGoldMembership/lybrate_icon_red_large.png" />
-                LybrateCash </span>
-            <a href="landingpage.html"><button id="btn">Home</button></a>
-            <span style=" font-size: 40px;" class="material-icons">shopping_cart</span>
+            <div id="allData">
+                <nav id="Categories">
+                    <ul>
+                        <li>Shop By Category<span class="material-icons">expand_more</span>
+                            <ul class="listitems">
+                                <li>Sexual Wellness<span class="material-icons">chevron_right</span></li>
+                                <li>Food & Drink<span class="material-icons">chevron_right</span></li>
+                                <li>Vitamin & supplement<span class="material-icons">chevron_right</span></li>
+                                <li>Weight Management<span class="material-icons">chevron_right</span></li>
+                                <li>Child Care<span class="material-icons">chevron_right</span></li>
+                                <li>Protine & Fitness<span class="material-icons">chevron_right</span></li>
+                                <li>Skin & Health Care<span class="material-icons">chevron_right</span></li>
+                                <li>Personal Care<span class="material-icons">chevron_right</span></li>
+                            </ul>
+                        </li>
 
-        </div>
-        <div id="search_div"></div>
+                        <li>Redeem LybrateCash</li>
 
-        <div id="allData">
-            <nav id="Categories">
-                <ul>
-                    <li>Shop By Category<span class="material-icons">expand_more</span>
-                        <ul class="listitems">
-                            <li>Sexual Wellness<span class="material-icons">chevron_right</span></li>
-                            <li>Food & Drink<span class="material-icons">chevron_right</span></li>
-                            <li>Vitamin & supplement<span class="material-icons">chevron_right</span></li>
-                            <li>Weight Management<span class="material-icons">chevron_right</span></li>
-                            <li>Child Care<span class="material-icons">chevron_right</span></li>
-                            <li>Protine & Fitness<span class="material-icons">chevron_right</span></li>
-                            <li>Skin & Health Care<span class="material-icons">chevron_right</span></li>
-                            <li>Personal Care<span class="material-icons">chevron_right</span></li>
-                        </ul>
-                    </li>
+                        <li>Sexual Wellness<span class="material-icons">expand_more</span>
+                            <ul class="listitems">
+                                <li>Women Sexual Wellness</li>
+                                <li>Men Performance Enhancers</li>
 
-                    <li>Redeem LybrateCash</li>
+                            </ul>
+                        </li>
 
-                    <li>Sexual Wellness<span class="material-icons">expand_more</span>
-                        <ul class="listitems">
-                            <li>Women Sexual Wellness</li>
-                            <li>Men Performance Enhancers</li>
+                        <li>Food & Drink<span class="material-icons">expand_more</span>
+                            <ul class="listitems">
+                                <li>Healthy BreakFast</li>
+                                <li>Jams ,Honey and Spreads</li>
+                                <li>Ready to Eat</li>
+                                <li>Healthy Drinks</li>
+                                <li>Oils and Ghees</li>
+                                <li>Snack Food</li>
+                                <li>Tea and Coffee</li>
+                            </ul>
+                        </li>
 
-                        </ul>
-                    </li>
+                        <li>Vitamin & supplement<span class="material-icons">expand_more</span>
+                            <ul class="listitems">
+                                <li>Liver Care</li>
+                                <li>Multivitamin</li>
+                                <li>Gut Care</li>
+                                <li>Bone & Joint Care</li>
+                                <li>Eye Care</li>
+                                <li>Brain Care</li>
+                                <li>Hair & Care</li>
+                                <li>Lung Care</li>
+                                <li>Menstural Health</li>
+                            </ul>
+                        </li>
 
-                    <li>Food & Drink<span class="material-icons">expand_more</span>
-                        <ul class="listitems">
-                            <li>Healthy BreakFast</li>
-                            <li>Jams ,Honey and Spreads</li>
-                            <li>Ready to Eat</li>
-                            <li>Healthy Drinks</li>
-                            <li>Oils and Ghees</li>
-                            <li>Snack Food</li>
-                            <li>Tea and Coffee</li>
-                        </ul>
-                    </li>
+                        <li>Weight Management<span class="material-icons">expand_more</span>
+                            <ul class="listitems">
+                                <li>Drinks for Weight Loss</li>
+                                <li>Fat Burner </li>
+                                <li>Meal Replacement</li>
+                            </ul>
+                        </li>
 
-                    <li>Vitamin & supplement<span class="material-icons">expand_more</span>
-                        <ul class="listitems">
-                            <li>Liver Care</li>
-                            <li>Multivitamin</li>
-                            <li>Gut Care</li>
-                            <li>Bone & Joint Care</li>
-                            <li>Eye Care</li>
-                            <li>Brain Care</li>
-                            <li>Hair & Care</li>
-                            <li>Lung Care</li>
-                            <li>Menstural Health</li>
-                        </ul>
-                    </li>
+                        <li>Child Care<span class="material-icons">expand_more</span>
+                            <ul class="listitems">
+                                <li>Child Skin products </li>
+                                <li>Child Hair Shampoo</li>
+                                <li>Child Immunity</li>
+                                <li>Child Snack Food</li>
+                            </ul>
+                        </li>
+                    </ul>
 
-                    <li>Weight Management<span class="material-icons">expand_more</span>
-                        <ul class="listitems">
-                            <li>Drinks for Weight Loss</li>
-                            <li>Fat Burner </li>
-                            <li>Meal Replacement</li>
-                        </ul>
-                    </li>
+                </nav>
 
-                    <li>Child Care<span class="material-icons">expand_more</span>
-                        <ul class="listitems">
-                            <li>Child Skin products </li>
-                            <li>Child Hair Shampoo</li>
-                            <li>Child Immunity</li>
-                            <li>Child Snack Food</li>
-                        </ul>
-                    </li>
-                </ul>
 
-            </nav>
-      
-       
-            <div id="slideShow"></div>
-            <div class="products">
+                <div id="slideShow"></div>
+                <div class="products">
 
-                <div id="offersDiv">
-                    <p>Exclusively for <span style="font-weight: 600">gold</span> Members<span style="margin-left:45%">View
-                            All</span></p>
+                    <div id="offersDiv">
+                        <p>Exclusively for <span style="font-weight: 600">gold</span> Members<span style="margin-left:45%">View
+                                All</span></p>
 
-                    <div>
                         <div>
-                            <img src="https://assets.lybrate.com/q_auto,f_auto,w_125,h_125,c_pad,b_white/rio/drvaidyas/dvmp/drvaidyas1/nirgundi1.jpg" />
-                            <p>Nirgundi Joint Guard: Ayurvedic Oil fo...</p>
-                            <p class="rs">₹1.00 <span class="line">₹200</span></p>
-                            <p class="rs">Deal Ended</p>
-                        </div>
-                        <div>
-                            <img src="https://assets.lybrate.com/q_auto,f_auto,w_125,h_125,c_pad,b_white/rio/healtherio/gingerpac2.jpg" />
-                            <p>Rich in anti oxidants</p>
-                            <p class="rs">₹199<span class="line">₹700</span></p>
-                            <p class="rs">Deal Ended</p>
+                            <div>
+                                <img src="https://assets.lybrate.com/q_auto,f_auto,w_125,h_125,c_pad,b_white/rio/drvaidyas/dvmp/drvaidyas1/nirgundi1.jpg" />
+                                <p>Nirgundi Joint Guard: Ayurvedic Oil fo...</p>
+                                <p class="rs">₹1.00 <span class="line">₹200</span></p>
+                                <p class="rs">Deal Ended</p>
+                            </div>
+                            <div>
+                                <img src="https://assets.lybrate.com/q_auto,f_auto,w_125,h_125,c_pad,b_white/rio/healtherio/gingerpac2.jpg" />
+                                <p>Rich in anti oxidants</p>
+                                <p class="rs">₹199<span class="line">₹700</span></p>
+                                <p class="rs">Deal Ended</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="productsGrid2x2">
-                    <p style="margin-top:2%">Best In Protein & Fitness - Your Workout Buddies</p>
-                    <div id="protine"></div>
+                    <div class="productsGrid2x2">
+                        <p style="margin-top:2%">Best In Protein & Fitness - Your Workout Buddies</p>
+                        <div id="protine"></div>
 
+                    </div>
+                </div>
+
+
+                <!-------------/////-------shop now banner static-------------/////----------------------->
+                <br>
+                <div class="shopnowBanner">
+                    <img src="https://assets.lybrate.com/q_auto:low,f_auto,w_600//rio/800x800/product_banner_01.jpg" />
+                    <img src="https://assets.lybrate.com/q_auto:low,f_auto,w_600//rio/800x800/banner-COVID-19-Protection-Kit_01.jpg" />
+                    <img src="https://assets.lybrate.com/q_auto:low,f_auto,w_600//rio/800x800/banner_Fitness-Supplement-Products_02.jpg" />
+                </div>
+                <!------------/////------------shop now banner ending------------------////-------------------------------->
+
+                <div class="products">
+                    <div class="productsGrid2x2">
+                        <p style="margin-top:2%">New Arrival in Kart | Check Now</p>
+                        <div id="newArrival"></div>
+
+                    </div>
+                    <div class="productsGrid2x2">
+                        <p style="margin-top:2%">Money Saving Deals</p>
+                        <div id="moneySaving"></div>
+
+                    </div>
+                </div>
+
+
+                <!-------------/////-------shop now banner static-------------/////----------------------->
+                <br>
+                <div class="shopnowBanner">
+                    <img src="https://assets.lybrate.com/q_auto:low,f_auto,w_600//rio/800x800/banner_Top-Sexual-Wellness-Products_03.jpg" />
+                    <img src="https://assets.lybrate.com/q_auto:low,f_auto,w_600//rio/800x800/banner_Top-Multivitamin-Products_04.jpg" />
+                    <img src="https://assets.lybrate.com/q_auto:low,f_auto,w_600//rio/800x800/banner_Top-Face-Care-Product_05.jpg" />
+                </div>
+                <!------------/////------------shop now banner ending------------------////-------------------------------->
+
+
+
+                <div class="products">
+                    <div class="productsGrid2x2">
+                        <p style="margin-top:2%">Sexual Wellness Products - Feel The Pleasure</p>
+                        <div id="sexWell"></div>
+
+                    </div>
+                    <div class="productsGrid2x2">
+                        <p style="margin-top:2%">Immunity Boosting Products - Boost Immunity</p>
+                        <div id="immunity"></div>
+
+                    </div>
+                </div>
+
+                <!-------------//////-------shop now banner static-------------/////----------------------->
+                <br>
+                <div class="shopnowBanner">
+                    <img src="https://assets.lybrate.com/q_auto:low,f_auto,w_600//rio/800x800/banner_Top-Baby-Care-Products.jpg" />
+                    <img src="https://assets.lybrate.com/q_auto:low,f_auto,w_600//rio/800x800/banner_Top-Food-Drink-Products_07.jpg" />
+                    <img src="https://assets.lybrate.com/q_auto:low,f_auto,w_600//rio/800x800/banner_Top-Hair-Care-Products_8.jpg" />
+                </div>
+                <!------------/////------------shop now banner ending------------------////-------------------------------->
+
+
+                <div class="products">
+                    <div class="productsGrid2x2">
+                        <p style="margin-top:2%">Best In Weight Management - Achieve Your Fitness Goals</p>
+                        <div id="weightManage"></div>
+
+                    </div>
+                    <div class="productsGrid2x2">
+                        <p style="margin-top:2%">Best In Vitamins & Joint Care - Get Charged</p>
+                        <div id="vitamines"></div>
+
+                    </div>
+                </div>
+
+                <!---------///--------------bottom part written information-------------///-------------->
+                <br>
+                <div id="informationParagrahBottom">
+
+                    <!-------------------------------go back to home------------------------------->
+
+                    <p class="backToHomePage"><a href="landingpage.html"><strong id="textRed">Home </strong></a>> GoodKart</p>
+
+                    <!----------------------------Information---------------------------------------------->
+                    <h4>GoodKart: Buy Health Care and Wellness Products Online</h4>
+                    <p>GoodKart is Lybrate’s endeavour to deliver the best of the best Health care products at your doorstep. GoodKart brings to you a vibrant mix of health products, both from reputed international brands to local Indian brands. We feel privileged to offer you the convenience to buy these health care products 24*7 from the comfort of your home through GoodKart. Determined to offer a better choice to our citizens, Lybrate is working against all odds for bringing you specially curated top of the line health products. We firmly believe that healthy living starts with a healthy body and a sound mind.</p>
+
+                    <p>GoodKart promises to provide a great deal of transparency to its users. To fulfill this endeavor, we have compiled truly remarkable products from reliable manufacturers. Most of our health care product ingredients are extracted in a very responsible manner to ensure that all the natural properties remain intact. GoodKart makes it very convenient for its users to find the really good stuff. We bring to you the goodness of nature discovered through research. Staying true to our commitment of providing top, trending, recommended, popular, safe, gentle, and effective products infused with the goodness of mother earth, we consistently keep expanding our health care products list, enabling our users to save time & money both.</p>
+
+                    <p>At GoodKart, we bring to you not only the natural health care products but also different ayurvedic and herbal products to help you address various health concerns and issues. Shop health and wellness products online without standing in any queue. Buy health care products safely and securely with great discounts and cashback offers only at GoodKart.</p>
+
+                    <p> Buy Natural Health Products From Lybrate’s GoodKart
+                        As consumers of GoodKart, you can browse health products from a comprehensive assortment of Vitamins and Supplements, Protein & Fitness, Skin & Hair Care, Sexual Wellness, Weight Management, Food & Drinks, Personal Care and Child Care Products. Not only these wellness products give you exceptional results but they are also extremely cost-effective due to Lybrate’s unique sourcing model. Today’s aware consumers prefer to know their products in terms of ingredients, sourcing of raw materials, manufacturer’s goodwill to make informed choices. Such consumer behavior has forced most of today’s manufacturers to come up with ingenious ways of manufacturing safe and best health care products. This consumerism also has to lead to a lot of companies making false promises to lure more customers and increase revenue.</p>
+                    <h5>Buy Natural Health Products From Lybrate’s GoodKart</h5>
+                    <p>As consumers of GoodKart, you can browse health products from a comprehensive assortment of Vitamins and Supplements, Protein & Fitness, Skin & Hair Care, Sexual Wellness, Weight Management, Food & Drinks, Personal Care and Child Care Products. Not only these wellness products give you exceptional results but they are also extremely cost-effective due to Lybrate’s unique sourcing model. Today’s aware consumers prefer to know their products in terms of ingredients, sourcing of raw materials, manufacturer’s goodwill to make informed choices. Such consumer behavior has forced most of today’s manufacturers to come up with ingenious ways of manufacturing safe and best health care products. This consumerism also has to lead to a lot of companies making false promises to lure more customers and increase revenue.</p>
+                    <h3>VITAMIN AND SUPPLEMENTS - SAFE, EFFECTIVE & EASY TO CONSUME</h3>
+                    <p>Managing stress, cleansing your body, nourishing your cells & tissues with all the essential nutrients is key to a healthy & active lifestyle. High-quality vitamins & supplements are available at GoodKart that provide the necessary nourishment needed to restore your body and bring about optimal health and positivity. The principle is very simple, the best supplements, honest expert advice, quality service, and incredibly effective products. We hope we have earned your trust as a health care partner in taking control of your wellness goals.</p>
+                    <h3>NUTRIENT SUPPLEMENTS</h3>
+                    <p>Good Health and Wellness depend on a lot of factors such as genetics and environment, however, a lot has to do with our dietary habits and nutrient intake. The harsh truth is that it is really difficult to consume all the nutrients we need, due to lifestyle, lack of awareness and regional dietary patterns. We require supplements apart from our daily food intake to ensure that we are nourished. Here at GoodKart, a variety of vitamins and supplements are available from which you can choose as per your requirements. We advise you to read the labels of the product descriptions carefully to ensure that you do not miss out on the most critical ingredients you are looking for.</p>
+                    <h3>PROTEIN AND FITNESS PRODUCTS FOR SEVERAL FITNESS REGIMENS</h3>
+                    <p>Goodkart also brings to you some of the most sought after quality Protein & Fitness products which are suitable for people from all walks of life, including those on vegan diets, low carbohydrate diets or for those with gastrointestinal sensitivities to milk or any other protein sources for that matter. GoodKart aim’s to be a part of your fitness journey. GoodKart helps you choose from the widest range of healthy protein and fitness products. Get detailed product information such as nutritional content along with when, how and why to use details is provided. This makes selecting products easier and convenient. We ensure that our users invest only in authentic natural health products to help them achieve their fitness goals.</p>
+                    <h3>SKIN CARE PRODUCTS FOR HEALTHY SKIN</h3>
+                    <p>This should not come as a surprise that the Skin and Hair Care beauty market is exploded with tonnes of products, both organic & synthetic. GoodKart features an amazing collection of Skincare products that make a difference in your lives. We feel proud to be associated with manufacturers who ensure that cutting edge therapeutic benefits are delivered to your skin. GoodKart’s users can choose from a variety of alternatives for all of their skincare requirements. Most of the Skin and Hair care products available at our platform are derived from natural sources, not from a laboratory. So, you get to experience the goodness of wholly natural ingredients. Skincare products interact sympathetically with your skin and also carry therapeutic benefits as well.</p>
+                    <h3>SEXUAL WELLNESS PRODUCTS TO ENHANCE YOUR SEXUAL LIFE</h3>
+                    <p>Taking care of your sexual health has become simple with online gateways like GoodKart, which has all the sexual wellness products under one roof. Every individual has a distinct way to maintain their sexual health. GoodKart is stacked with a variety of intimate care products and wellness supplements, which are scientifically proven and safe with absolutely no side effects. Most people do not like to talk about intimate hygiene and sexual health care, for the sexual wellbeing products, are a blessing in disguise.</p>
+                    <h3>PICK HERBAL AND NATURAL WEIGHT MANAGEMENT PRODUCTS</h3>
+                    <p>If you need help in searching for the perfect product and health care brands that can assist you in your weight loss and gain journey, then check out GoodKart Weight Management Products to help support recovery from your weight training. Choose from an ever-increasing list of weight management products to help you shed those extra kilos and fit in your favorite pair of jeans. The natural extracts, herbal ingredients, and the right dosage count for giving serious results if you are trying weight loss and gain journey.</p>
+                    <h3>OPT FOR PICK HEALTHY FOOD AND DRINKS PRODUCTS</h3>
+                    <p>Due to hectic routine and fast-paced lives, we generally tend to neglect our health. We easily get enticed to sugary food and caffeinated drinks which harms our health. As a health care platform, we believe that food should be Natural and Organic. We aim to take steps towards a better and healthier planet. We have Organic Food and Healthy drinks which are good for one’s health - not a mere convenience. GoodKart brings different health care products at your doorstep. An incredible range of Food and Drinks are available for every health-conscious family.</p>
+
+                    <p> Nutritional drinks offer numerous health benefits to both children and grown-ups. They help in physical and mental development, improve resistance, sustenance, stamina, and energy by nourishing the body with all the vital nutrients and minerals. Healthy drinks are immensely useful when you are struggling to manage your daily lack of supplement intake. All these healthy food and drink products available at Goodkart are best for sudden hunger cravings and as an evening snack.</p>
+                    <h3>CHECK OUT PERSONAL CARE PRODUCTS FOR OVERALL WELL-BEING</h3>
+                    <p>You can choose from a wide range of personal health care products online at GoodKart. One-stop avenue for all your essential personal care needs. We have worked out to perfection on all the relevant yet diverse aspects of bringing personal care products to our consumers devoid of any harmful chemicals. Right from selecting the ingredients, the processing, the right storage, and packaging, we pay attention to every minute detail. Most of these health products are vegan and cruelty-free. They are not tested on animals and do not cause any damage to the environment. Listed personal health care products are also free of synthetic perfumes, herbicides and pesticides.</p>
+                    <h3>KEEP YOUR CHILD HEALTHY WITH CHILD CARE PRODUCTS ONLINE</h3>
+                    <p>Good Health is the foundation of all things good and godly and should be looked after from an early age. Whether it’s bubble baths or bed snuggles, these everyday rituals with your baby become better if the right senses such as smell and touch are stimulated. GoodKart has an assortment of Child care products that are 100% gentle and safe for your little one. The most trusted names in the field of baby care are affiliated with GoodKart. Health care products are clinically proven safe and have a very gentle formulation. At GoodKart, we only have health products that have purer ingredients and are best for the delicate skin of your baby.</p>
+                    <h3>BEST HEALTH CARE AND WELLNESS PRODUCTS AT LYBRATE’S GOODKART</h3>
+                    <p>At Goodkart, you can buy the best health care supplements online, under one roof for Men, Women, and children. We offer consumer-friendly prices on health and wellness products online. Shop for natural health products from Goodkart platform at best prices, get different great Combo deals, discounts, fast shipping, and Lybrate cashback offers. GoodKart offers you the choice to pick from various health care brands and quality health care products online that can definitely make a difference when it comes to health fitness and overall well being.</p>
+                    <h3>GET LYBRATE CASHBACK</h3>
+                    <p>LybrateCash is your health money at Lybrate. By utilizing LybrateCash, you can pay for your health needs and avail it for buying healthcare products, booking online specialist consultation and lab tests.</p>
+                    <p>1. One LybrateCash point is equivalent to ₹1.
+                    </p>
+                    <p>2. Lybrate is giving 10% cashback as a LybrateCash to its registered users when they buy any product. The cashback is credited to your LybrateCash account.</p>
+                    <p>3. You can keep a check on the expiry date of the LybrateCash earned by checking your LybrateCash history.
+                    </p>
+                    <p>4. You can't transfer this cash to any other financial wallet or to another user.</p>
+                    <h3>RETURN AND REFUND POLICY</h3>
+                    <p>At Lybrate.com, we do our best to ensure that our customers are immensely satisfied with our products. And we are happy to offer a complete refund in the following circumstances.</p>
+                    <p>1. You received a defective/damaged item(s). </p>
+                    <p>2. Delivered item(s) doesn't match your order.</p>
+                    <p>3. The ordered item(s) is/are lost or damaged during transit. </p>
+                    <p>4. The ordered item(s) is/are beyond its expiry date.</p>
+
+                    <h5>Following circumstances do not qualify for Return or Refund.</h5>
+                    <p>1. Return or Refunds are not applicable on products which are ordered incorrectly or by mistake. </p>
+                    <p>2. Return or Refunds are not applicable on products which are not required by the users due to change in prescription.</p>
+                    <p>3. Products without the original label, tag, invoice and bar code are not eligible for returns or refunds.</p>
+                    <p>4. All products which have been used/opened, either partially or fully, do not qualify for return or refund.</p>
+                    <p>5. Return product should have the same batch number as mentioned on the invoice.</p>
+                    <p>6. Non-delivery of product reported after 48 hours of delivery confirmation text message on registered mobile number are not eligible for refund.</p>
+
+                    <h3>HOW TO REQUEST A REFUND?</h3>
+                    <p>To request a refund, simply email us your order details, including the reason why you’re requesting a refund at orders@lybrate.com</p>
+                    <p><strong class="boldFont">Please Note:</strong> Mode of refund may vary from case to case. If the mode of refund is by Credit/Debit Card or Net Banking, allow 7 to 14 working days for the credit to appear in your account. If the mode of refund is by Wallet, credit should be available within 7 to 10 working days.</p>
+                    <p class="smallFont"><strong class="boldFont">Disclaimer:</strong> While we ensure that all product information on the platform is complete and accurate, however, we advise you not to solely rely on this information. It is recommended to refer to the product manual and/or specifications provided by the manufacturer either on their website or along with the product. This is applicable for all warnings, labels, ingredients and usage directions as well. The use of any information provided on this platform is solely at the user's risk. Nothing contained on this platform shall be considered as medical advice. Consumers are advised to contact the manufacturer for any further information and assistance. The results from the products will vary from person to person, No individual result should be seen as typical.</p>
+                    <br>
+                    <br>
                 </div>
             </div>
-        
-
-<!-------------/////-------shop now banner static-------------/////----------------------->
-<br>
-<div class="shopnowBanner">
-    <img src="https://assets.lybrate.com/q_auto:low,f_auto,w_600//rio/800x800/product_banner_01.jpg"/>
-    <img src="https://assets.lybrate.com/q_auto:low,f_auto,w_600//rio/800x800/banner-COVID-19-Protection-Kit_01.jpg"/>
-    <img src="https://assets.lybrate.com/q_auto:low,f_auto,w_600//rio/800x800/banner_Fitness-Supplement-Products_02.jpg"/>
-</div>
-<!------------/////------------shop now banner ending------------------////-------------------------------->
-
-        <div class="products">
-            <div class="productsGrid2x2">
-                <p style="margin-top:2%">New Arrival in Kart | Check Now</p>
-                <div id="newArrival"></div>
-
-                </div>
-                <div class="productsGrid2x2">
-                    <p style="margin-top:2%">Money Saving Deals</p>
-                    <div id="moneySaving"></div>
-
-                </div>
-            </div>
-      
-
-<!-------------/////-------shop now banner static-------------/////----------------------->
-<br>
-<div class="shopnowBanner">
-    <img src="https://assets.lybrate.com/q_auto:low,f_auto,w_600//rio/800x800/banner_Top-Sexual-Wellness-Products_03.jpg"/>
-    <img src="https://assets.lybrate.com/q_auto:low,f_auto,w_600//rio/800x800/banner_Top-Multivitamin-Products_04.jpg"/>
-    <img src="https://assets.lybrate.com/q_auto:low,f_auto,w_600//rio/800x800/banner_Top-Face-Care-Product_05.jpg"/>
-</div>
-<!------------/////------------shop now banner ending------------------////-------------------------------->
-
-
-
-        <div class="products">
-            <div class="productsGrid2x2">
-                <p style="margin-top:2%">Sexual Wellness Products - Feel The Pleasure</p>
-                <div id="sexWell"></div>
-
-                </div>
-                <div class="productsGrid2x2">
-                    <p style="margin-top:2%">Immunity Boosting Products - Boost Immunity</p>
-                    <div id="immunity"></div>
-
-                </div>
-            </div>
-       
-<!-------------//////-------shop now banner static-------------/////----------------------->
-<br>
-<div class="shopnowBanner">
-    <img src="https://assets.lybrate.com/q_auto:low,f_auto,w_600//rio/800x800/banner_Top-Baby-Care-Products.jpg"/>
-    <img src="https://assets.lybrate.com/q_auto:low,f_auto,w_600//rio/800x800/banner_Top-Food-Drink-Products_07.jpg"/>
-    <img src="https://assets.lybrate.com/q_auto:low,f_auto,w_600//rio/800x800/banner_Top-Hair-Care-Products_8.jpg"/>
-</div>
-<!------------/////------------shop now banner ending------------------////-------------------------------->
-
-
-        <div class="products">
-            <div class="productsGrid2x2">
-                <p style="margin-top:2%">Best In Weight Management - Achieve Your Fitness Goals</p>
-                <div id="weightManage"></div>
-
-                </div>
-                <div class="productsGrid2x2">
-                    <p style="margin-top:2%">Best In Vitamins & Joint Care - Get Charged</p>
-                    <div id="vitamines"></div>
-
-                </div>
-            </div>
-           
-            <!---------///--------------bottom part written information-------------///-------------->
-            <br>
-            <div id="informationParagrahBottom">
-
-                <!-------------------------------go back to home------------------------------->
-
-                <p class="backToHomePage"><a href="landingpage.html"><strong id="textRed">Home </strong></a>> GoodKart</p>
-
-                <!----------------------------Information---------------------------------------------->
-                <h4>GoodKart: Buy Health Care and Wellness Products Online</h4>
-                <p>GoodKart is Lybrate’s endeavour to deliver the best of the best Health care products at your doorstep. GoodKart brings to you a vibrant mix of health products, both from reputed international brands to local Indian brands. We feel privileged to offer you the convenience to buy these health care products 24*7 from the comfort of your home through GoodKart. Determined to offer a better choice to our citizens, Lybrate is working against all odds for bringing you specially curated top of the line health products. We firmly believe that healthy living starts with a healthy body and a sound mind.</p>
-
-                <p>GoodKart promises to provide a great deal of transparency to its users. To fulfill this endeavor, we have compiled truly remarkable products from reliable manufacturers. Most of our health care product ingredients are extracted in a very responsible manner to ensure that all the natural properties remain intact. GoodKart makes it very convenient for its users to find the really good stuff. We bring to you the goodness of nature discovered through research. Staying true to our commitment of providing top, trending, recommended, popular, safe, gentle, and effective products infused with the goodness of mother earth, we consistently keep expanding our health care products list, enabling our users to save time & money both.</p>
-
-                <p>At GoodKart, we bring to you not only the natural health care products but also different ayurvedic and herbal products to help you address various health concerns and issues. Shop health and wellness products online without standing in any queue. Buy health care products safely and securely with great discounts and cashback offers only at GoodKart.</p>
-
-                <p> Buy Natural Health Products From Lybrate’s GoodKart
-                    As consumers of GoodKart, you can browse health products from a comprehensive assortment of Vitamins and Supplements, Protein & Fitness, Skin & Hair Care, Sexual Wellness, Weight Management, Food & Drinks, Personal Care and Child Care Products. Not only these wellness products give you exceptional results but they are also extremely cost-effective due to Lybrate’s unique sourcing model. Today’s aware consumers prefer to know their products in terms of ingredients, sourcing of raw materials, manufacturer’s goodwill to make informed choices. Such consumer behavior has forced most of today’s manufacturers to come up with ingenious ways of manufacturing safe and best health care products. This consumerism also has to lead to a lot of companies making false promises to lure more customers and increase revenue.</p>
-                <h5>Buy Natural Health Products From Lybrate’s GoodKart</h5>
-                <p>As consumers of GoodKart, you can browse health products from a comprehensive assortment of Vitamins and Supplements, Protein & Fitness, Skin & Hair Care, Sexual Wellness, Weight Management, Food & Drinks, Personal Care and Child Care Products. Not only these wellness products give you exceptional results but they are also extremely cost-effective due to Lybrate’s unique sourcing model. Today’s aware consumers prefer to know their products in terms of ingredients, sourcing of raw materials, manufacturer’s goodwill to make informed choices. Such consumer behavior has forced most of today’s manufacturers to come up with ingenious ways of manufacturing safe and best health care products. This consumerism also has to lead to a lot of companies making false promises to lure more customers and increase revenue.</p>
-                <h3>VITAMIN AND SUPPLEMENTS - SAFE, EFFECTIVE & EASY TO CONSUME</h3>
-                <p>Managing stress, cleansing your body, nourishing your cells & tissues with all the essential nutrients is key to a healthy & active lifestyle. High-quality vitamins & supplements are available at GoodKart that provide the necessary nourishment needed to restore your body and bring about optimal health and positivity. The principle is very simple, the best supplements, honest expert advice, quality service, and incredibly effective products. We hope we have earned your trust as a health care partner in taking control of your wellness goals.</p>
-                <h3>NUTRIENT SUPPLEMENTS</h3>
-                <p>Good Health and Wellness depend on a lot of factors such as genetics and environment, however, a lot has to do with our dietary habits and nutrient intake. The harsh truth is that it is really difficult to consume all the nutrients we need, due to lifestyle, lack of awareness and regional dietary patterns. We require supplements apart from our daily food intake to ensure that we are nourished. Here at GoodKart, a variety of vitamins and supplements are available from which you can choose as per your requirements. We advise you to read the labels of the product descriptions carefully to ensure that you do not miss out on the most critical ingredients you are looking for.</p>
-                <h3>PROTEIN AND FITNESS PRODUCTS FOR SEVERAL FITNESS REGIMENS</h3>
-                <p>Goodkart also brings to you some of the most sought after quality Protein & Fitness products which are suitable for people from all walks of life, including those on vegan diets, low carbohydrate diets or for those with gastrointestinal sensitivities to milk or any other protein sources for that matter. GoodKart aim’s to be a part of your fitness journey. GoodKart helps you choose from the widest range of healthy protein and fitness products. Get detailed product information such as nutritional content along with when, how and why to use details is provided. This makes selecting products easier and convenient. We ensure that our users invest only in authentic natural health products to help them achieve their fitness goals.</p>
-                <h3>SKIN CARE PRODUCTS FOR HEALTHY SKIN</h3>
-                <p>This should not come as a surprise that the Skin and Hair Care beauty market is exploded with tonnes of products, both organic & synthetic. GoodKart features an amazing collection of Skincare products that make a difference in your lives. We feel proud to be associated with manufacturers who ensure that cutting edge therapeutic benefits are delivered to your skin. GoodKart’s users can choose from a variety of alternatives for all of their skincare requirements. Most of the Skin and Hair care products available at our platform are derived from natural sources, not from a laboratory. So, you get to experience the goodness of wholly natural ingredients. Skincare products interact sympathetically with your skin and also carry therapeutic benefits as well.</p>
-                <h3>SEXUAL WELLNESS PRODUCTS TO ENHANCE YOUR SEXUAL LIFE</h3>
-                <p>Taking care of your sexual health has become simple with online gateways like GoodKart, which has all the sexual wellness products under one roof. Every individual has a distinct way to maintain their sexual health. GoodKart is stacked with a variety of intimate care products and wellness supplements, which are scientifically proven and safe with absolutely no side effects. Most people do not like to talk about intimate hygiene and sexual health care, for the sexual wellbeing products, are a blessing in disguise.</p>
-                <h3>PICK HERBAL AND NATURAL WEIGHT MANAGEMENT PRODUCTS</h3>
-                <p>If you need help in searching for the perfect product and health care brands that can assist you in your weight loss and gain journey, then check out GoodKart Weight Management Products to help support recovery from your weight training. Choose from an ever-increasing list of weight management products to help you shed those extra kilos and fit in your favorite pair of jeans. The natural extracts, herbal ingredients, and the right dosage count for giving serious results if you are trying weight loss and gain journey.</p>
-                <h3>OPT FOR PICK HEALTHY FOOD AND DRINKS PRODUCTS</h3>
-                <p>Due to hectic routine and fast-paced lives, we generally tend to neglect our health. We easily get enticed to sugary food and caffeinated drinks which harms our health. As a health care platform, we believe that food should be Natural and Organic. We aim to take steps towards a better and healthier planet. We have Organic Food and Healthy drinks which are good for one’s health - not a mere convenience. GoodKart brings different health care products at your doorstep. An incredible range of Food and Drinks are available for every health-conscious family.</p>
-
-                <p> Nutritional drinks offer numerous health benefits to both children and grown-ups. They help in physical and mental development, improve resistance, sustenance, stamina, and energy by nourishing the body with all the vital nutrients and minerals. Healthy drinks are immensely useful when you are struggling to manage your daily lack of supplement intake. All these healthy food and drink products available at Goodkart are best for sudden hunger cravings and as an evening snack.</p>
-                <h3>CHECK OUT PERSONAL CARE PRODUCTS FOR OVERALL WELL-BEING</h3>
-                <p>You can choose from a wide range of personal health care products online at GoodKart. One-stop avenue for all your essential personal care needs. We have worked out to perfection on all the relevant yet diverse aspects of bringing personal care products to our consumers devoid of any harmful chemicals. Right from selecting the ingredients, the processing, the right storage, and packaging, we pay attention to every minute detail. Most of these health products are vegan and cruelty-free. They are not tested on animals and do not cause any damage to the environment. Listed personal health care products are also free of synthetic perfumes, herbicides and pesticides.</p>
-                <h3>KEEP YOUR CHILD HEALTHY WITH CHILD CARE PRODUCTS ONLINE</h3>
-                <p>Good Health is the foundation of all things good and godly and should be looked after from an early age. Whether it’s bubble baths or bed snuggles, these everyday rituals with your baby become better if the right senses such as smell and touch are stimulated. GoodKart has an assortment of Child care products that are 100% gentle and safe for your little one. The most trusted names in the field of baby care are affiliated with GoodKart. Health care products are clinically proven safe and have a very gentle formulation. At GoodKart, we only have health products that have purer ingredients and are best for the delicate skin of your baby.</p>
-                <h3>BEST HEALTH CARE AND WELLNESS PRODUCTS AT LYBRATE’S GOODKART</h3>
-                <p>At Goodkart, you can buy the best health care supplements online, under one roof for Men, Women, and children. We offer consumer-friendly prices on health and wellness products online. Shop for natural health products from Goodkart platform at best prices, get different great Combo deals, discounts, fast shipping, and Lybrate cashback offers. GoodKart offers you the choice to pick from various health care brands and quality health care products online that can definitely make a difference when it comes to health fitness and overall well being.</p>
-                <h3>GET LYBRATE CASHBACK</h3>
-                <p>LybrateCash is your health money at Lybrate. By utilizing LybrateCash, you can pay for your health needs and avail it for buying healthcare products, booking online specialist consultation and lab tests.</p>
-                <p>1. One LybrateCash point is equivalent to ₹1.
-                </p>
-                <p>2. Lybrate is giving 10% cashback as a LybrateCash to its registered users when they buy any product. The cashback is credited to your LybrateCash account.</p>
-                <p>3. You can keep a check on the expiry date of the LybrateCash earned by checking your LybrateCash history.
-                </p>
-            <p>4. You can't transfer this cash to any other financial wallet or to another user.</p>
-            <h3>RETURN AND REFUND POLICY</h3>
-            <p>At Lybrate.com, we do our best to ensure that our customers are immensely satisfied with our products. And we are happy to offer a complete refund in the following circumstances.</p>
-            <p>1. You received a defective/damaged item(s). </p>
-            <p>2.  Delivered item(s) doesn't match your order.</p>
-            <p>3. The ordered item(s) is/are lost or damaged during transit. </p>
-            <p>4.  The ordered item(s) is/are beyond its expiry date.</p>
-            
-            <h5>Following circumstances do not qualify for Return or Refund.</h5>
-            <p>1. Return or Refunds are not applicable on products which are ordered incorrectly or by mistake. </p>
-            <p>2.  Return or Refunds are not applicable on products which are not required by the users due to change in prescription.</p>
-            <p>3.  Products without the original label, tag, invoice and bar code are not eligible for returns or refunds.</p>
-            <p>4. All products which have been used/opened, either partially or fully, do not qualify for return or refund.</p>
-            <p>5. Return product should have the same batch number as mentioned on the invoice.</p>
-            <p>6. Non-delivery of product reported after 48 hours of delivery confirmation text message on registered mobile number are not eligible for refund.</p>
-            
-            <h3>HOW TO REQUEST A REFUND?</h3>
-            <p>To request a refund, simply email us your order details, including the reason why you’re requesting a refund at orders@lybrate.com</p>
-            <p><strong class="boldFont">Please Note:</strong> Mode of refund may vary from case to case. If the mode of refund is by Credit/Debit Card or Net Banking, allow 7 to 14 working days for the credit to appear in your account. If the mode of refund is by Wallet, credit should be available within 7 to 10 working days.</p>
-            <p class="smallFont"><strong class="boldFont">Disclaimer:</strong> While we ensure that all product information on the platform is complete and accurate, however, we advise you not to solely rely on this information. It is recommended to refer to the product manual and/or specifications provided by the manufacturer either on their website or along with the product. This is applicable for all warnings, labels, ingredients and usage directions as well. The use of any information provided on this platform is solely at the user's risk. Nothing contained on this platform shall be considered as medical advice. Consumers are advised to contact the manufacturer for any further information and assistance. The results from the products will vary from person to person, No individual result should be seen as typical.</p>
-           <br>
-            <br>
         </div>
-    </div>
-</div>
 </body>
 
 </html>
@@ -373,32 +374,47 @@
 
 
     function showProducts(data, parent) {
-        data.forEach((product) => {
+        data.forEach((element) => {
+
+            let { img, name, newprice, oldprice, off } = element;
 
             let div = document.createElement("div");
             div.onclick = () => {
                 localStorage.setItem("Single_products", JSON.stringify(product));
                 window.location.href = "Product Description.html"
             }
-            let img = document.createElement("img");
-            img.src = product.img;
-            let Name = document.createElement("p");
-            Name.textContent = product.name;
+
+            let image = document.createElement("img");
+            image.src = img;
+            image.setAttribute('class', 'img-fluid');
+
+            let heading = document.createElement("p");
+            heading.textContent = name;
+            heading.setAttribute('class', 'fw-bold')
+
             let price = document.createElement("p");
-            let Newprice = document.createElement("span");
-            Newprice.textContent = product.newprice;
-            let Oldprice = document.createElement("span");
-            Oldprice.textContent = product.oldprce;
-            let off = document.createElement("span");
-            off.textContent = product.off;
-            price.append(Newprice, Oldprice , off)
-            div.append(img, Name, price);
+
+            let priceNew = document.createElement("span");
+            priceNew.textContent = "₹" + Number(newprice).toFixed(2) + " ";
+            priceNew.setAttribute('class', 'fw-bold text-danger')
+
+            let priceOld = document.createElement("span");
+            priceOld.textContent = "₹" + Number(oldprice).toFixed(2) + " ";
+            priceOld.setAttribute('class', 'text-muted text-decoration-line-through')
+
+            let discount = document.createElement("span");
+            discount.textContent = off;
+            discount.setAttribute('class', 'text-success')
+
+
+            price.append(priceNew, priceOld, discount)
+            div.append(image, heading, price);
 
             parent.append(div)
         });
 
     }
-   
+
 
 
 
