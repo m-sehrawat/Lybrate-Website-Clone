@@ -62,16 +62,13 @@
         <button>Search</button>
         <div class="container">
             <div class="row trending">
-                <div class="col-12 col-md-5 col-lg-1 "></div>
-                <div class="col-12 col-md-5 col-lg-2 ">Trending Topics:</div>
-                <div class="col-12 col-md-5 col-lg-1">Depression</div>
-                <div class="col-12 col-md-5 col-lg-1">HairFall</div>
-                <div class="col-12 col-md-5 col-lg-1">Daibeties</div>
-                <div class="col-12 col-md-5 col-lg-1">Asthama</div>
-                <div class="col-12 col-md-5 col-lg-1">Infertility</div>
-                <div class="col-12 col-md-5 col-lg-1">Daibties</div>
-                <div class="col-12 col-md-5 col-lg-1">Dehdryation</div>
                 <div class="col-12 col-md-5 col-lg-1"></div>
+                <div class="col-12 col-md-5 col-lg-1"></div>
+                <div class="col-12 col-md-5 col-lg-1"></div>
+                <div class="col-12 col-md-5 col-lg-2">Trending Topics:</div>
+                <div onclick="displayNews('depression')" class="col-12 col-md-5 col-lg-1">Depression</div>
+                <div class="col-12 col-md-5 col-lg-1">HairFall</div>
+                <div class="col-12 col-md-5 col-lg-1">Diabetes</div>
             </div>
         </div>
         <p style="margin: 50px 0; color: white;text-align: center;"><span style="border: 1px dotted white;">5 min ago</span><span style="margin-left: 2%;">28 Year Old Men from Kolkata asked about Neck Pain</span></p>
@@ -496,4 +493,15 @@
     footer().then((response) => {
         footerDisplay.innerHTML = response;
     })
+</script>
+
+<script>
+
+    function displayNews(name){
+
+        localStorage.setItem('newsTopic', name);
+        window.location.href="aboutPage.html"
+    }
+
+
 </script>
