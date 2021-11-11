@@ -523,11 +523,7 @@ text-decoration: underline;
           
             let btn=document.createElement("button");
             btn.innerText="Add to Cart"
-          
-             div1.append(h4,p1,p,btn);
-             div.append(image,div1);
-             data_div.append(div);
-             btn.onclick=function(){
+            btn.onclick=function(){
                 addProductsToCart(el);
                 btn.innerText="Go to Cart"
                 btn.style.backgroundColor="green"
@@ -536,6 +532,10 @@ text-decoration: underline;
             });
            
         }
+             div1.append(h4,p1,p,btn);
+             div.append(image,div1);
+             data_div.append(div);
+            
         })
       
     }
