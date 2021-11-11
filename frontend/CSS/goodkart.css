@@ -148,10 +148,7 @@
         height: 32px;
         padding-top: 2px;
         text-align: left;
-
         position: relative;
-
-
     }
 
     #Categories li:hover .listitems>li {
@@ -167,20 +164,15 @@
 
     #offersDiv {
         width: 47%;
-       
         background-color: rgb(232, 201, 190);
         justify-content: center;
         margin-left:2%;
     }
 
     #offersDiv>div {
-        margin: 5% 2% 5% 2%;
+        margin: 1% 2% 2% 2%;
         display: flex;
         width: 96%;
-        border: 1px solid blue;
-
-
-
     }
 
     #offersDiv>div>div {

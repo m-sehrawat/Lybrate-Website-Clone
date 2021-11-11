@@ -1,4 +1,4 @@
-function footer(){
+async function footer(){
     return `<div class="footerBox">
     <div class="footerInnerBox">
         <div class="LiBox">
