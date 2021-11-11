@@ -457,9 +457,17 @@
             </div>
         </div>
     </section>
-    <div id="footer"></div>
+    <div id="footerDisplay"></div>
 </body>
 
 </html> 
-<script type="module" src="./JS/landingPage.js">
+<script type="module">
+
+let footerDisplay = document.getElementById('footerDisplay');
+
+import footer from './JS/footer.js';
+
+footer().then((response) => {
+    footerDisplay.innerHTML = response;
+})
 </script>
