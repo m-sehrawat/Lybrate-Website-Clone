@@ -26,6 +26,7 @@
 
 
 
+
 # Roles and Responsibilities
 
 
@@ -55,7 +56,10 @@ You can see the GoodKart page by just clicking on the "GoodKart  icon" on the na
 ![image]()
 ![image]()
 ![image]()
+### Consult online page:
+Here, you can search your health related problems accordingly your prefered doctors near by you and the best available doctors with good experinces. You can consult them online and hence get cured for the issues you have.
 
+![image]()
 ### Cart Page:
 Now you are on the cart page. After adding to cart you are now able to see the order summary. you can here increase the item quantity as well as use coupon code to get discount on selected products. Thereafter, click on the "select address bar" to add you address.
 
