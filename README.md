@@ -136,11 +136,12 @@ After successful payment, this page confirms you that your order is placed.
 
 # Authors
 
+### Mohit Sehrawat :boy:
+> [Linkedin](https://www.linkedin.com/in/m-sehrawat)      
+> [GitHub](https://github.com/m-sehrawat/)
+
 ### Bobby More:boy:
 >  [Linkedin](https://www.linkedin.com/in/)
-
-### Mohit Sehrawat :boy:
-> [Linkedin](https://www.linkedin.com/in/m-sehrawat)
 
 ### Anand gupta:boy:
 > [Linkedin](https://www.linkedin.com/in/)
