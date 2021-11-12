@@ -37,7 +37,8 @@ User need to login before purchasing products from “lybrate”. If user's are 
 ##### login page:
 To login User has to enter their username and password to log into the website.
 
-![image]()
+<img width="911" alt="lybrate1" src="https://user-images.githubusercontent.com/87423101/141506023-5b3ed117-0739-4f7d-8818-31d7cecf5c08.png">
+
 
 ##### Sign Up page:
 To signup User has to register the by entering their name , email, phone number, password and then click on the "create account" button. You are now succesfully logged In.
