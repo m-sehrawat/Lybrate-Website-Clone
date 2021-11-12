@@ -100,13 +100,22 @@ On clicking any of the product, you are taken to the product details page where 
 ### Health feed page:
 This page is for queries that you can ask or read shared experiences by users as well health cure posts which are posted by certified doctors only.
 
+<img width="905" alt="health1" src="https://user-images.githubusercontent.com/87423101/141515632-33228464-a7ae-49f6-8d75-57549ca1f62d.png">
 
-![image]()
+### About page:
+you will get the whole information you searched for and as you see in the right side, you can book apointment and ask your queries as well.
+
+<img width="907" alt="about1" src="https://user-images.githubusercontent.com/87423101/141515129-9170739c-d76a-4861-8941-98134e25ec9d.png">
 
 ### FindDoctors page:
 you can go through this page for finding appropriate doctors for your issues. An easy way to find doctors as well.
 
-![image]()
+<img width="909" alt="findoctors1" src="https://user-images.githubusercontent.com/87423101/141515991-88260ece-cae3-4aef-a64f-ad1eeade0c16.png">
+
+### Health packages page:
+Here, you can find courses or packages of health issues with regarding doctor at payable prices. you can go through for the best package as per your convience.
+
+<img width="896" alt="healthpackage1" src="https://user-images.githubusercontent.com/87423101/141516851-d1154020-5667-48c8-ae9a-e28f4e274375.png">
 
 ### Cart Page:
 Now you are on the cart page. After adding to cart you are now able to see the order summary. you can here increase the item quantity as well as use coupon code to get discount on selected products. Thereafter, click on the "select address bar" to add you address.
