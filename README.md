@@ -13,6 +13,7 @@
 4. API’s
 5. ES6
 6. json server
+7. Bootstrap
 
 
 # Features
@@ -63,6 +64,12 @@ Here, you can search your health related problems accordingly your prefered doct
 
 ### productdescription page:
 On clicking any of the product, you are taken to the product details page where you can see the product details like price, ratings, expiry date and much more.
+
+![image]()
+
+### Health feed page:
+This page is for queries that you can ask or read shared experiences by users as well health cure posts which are posted by certified doctors only.
+
 
 ![image]()
 
