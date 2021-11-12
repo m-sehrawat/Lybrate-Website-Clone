@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./CSS/footer.css">
     <title>shop by cateogary</title>
     <link rel="icon" type="image/x-icon" href="https://nu.lybcdn.com/img/push-crew/logo_192_by_192.png">
     <style>
@@ -20,6 +21,11 @@
             padding: 0px;
             margin: 0px;
             background-color: #eee;
+            overflow-x: hidden;
+        }
+
+        #footerDisplay {
+            margin-top: 30px;
         }
 
         .material-icons {
@@ -48,10 +54,6 @@
             font-feature-settings: 'liga';
         }
 
-
-
-
-
         #topnav {
             max-width: 100%;
             display: flex;
@@ -72,8 +74,8 @@
             padding: 10px;
             background-color: rgb(222, 222, 222);
             border: none;
-
             justify-content: center;
+            margin-bottom: 8px;
         }
 
         #search li {
@@ -110,8 +112,6 @@
             text-align: center;
             text-decoration: none;
             color: white;
-
-
         }
 
         #Categories {
@@ -119,8 +119,6 @@
             background-color: black;
             color: white;
             justify-content: center;
-
-
         }
 
         .listitems {
@@ -150,7 +148,6 @@
             left: -50px;
             justify-content: center;
             padding: 2px 16px;
-
         }
 
         #Categories>ul {
@@ -199,19 +196,14 @@
         .leftFilter {
             width: 25%;
             height: 430px;
-
-            overflow: scroll;
             padding-left: 1%;
             background-color: white;
-            overflow-x: hidden;
-
         }
 
 
         .rightProducts {
             width: 64%;
-            height: 500px;
-
+            height: 800px;
             overflow: scroll;
             padding-left: 1%;
             background-color: white;
@@ -241,12 +233,10 @@
         #grid {
             display: grid;
             grid-template-columns: 47% 47%;
-
             margin-top: 110px;
             column-gap: 3%;
             row-gap: 0.7%;
             margin-left: none;
-
         }
 
         #grid>div {
@@ -254,11 +244,8 @@
             height: 150px;
             box-shadow: 2px 2px 2px 2px #EEEEEE;
             padding-bottom: 15%;
-
             display: flex;
-
             width: 100%;
-
         }
 
         #grid>div div {
@@ -275,7 +262,6 @@
             color: rgb(58, 57, 57);
             font-weight: normal;
             margin-right: 5px;
-
         }
 
         #grid>div span:nth-child(1) {
@@ -283,37 +269,31 @@
             color: red;
             font-weight: 600;
             margin-right: 5px;
-
         }
 
         #grid>div span:nth-child(3) {
-
             color: green;
             font-weight: 600;
-
         }
 
         .rightProducts>div:nth-child(1) {
             position: absolute;
             width: 62%;
             padding: 0px 0px 5px 5px;
-
             z-index: auto;
             background-color: white;
             box-shadow: 0px 10px 10px 0px #EEEEEE;
-
         }
 
         #grid>div button {
             background-color: red;
-
             border-radius: 10px;
-            width: 80px;
+            width: 90px;
             color: white;
-            height: 20px;
+            height: 30px;
             border: none;
             margin-left: 70%;
-
+            padding: 4px;
         }
     </style>
 </head>
@@ -322,17 +302,19 @@
     <div id="alignall">
         <div id="container">
             <div id="topnav">
-                <div id="logo"><img src="https://www.lybrate.com/img/Lybrate-Goodkart-Logo.png" /></div>
+                <div id="logo"><a href="landingpage.html"><img src="https://www.lybrate.com/img/Lybrate-Goodkart-Logo.png" /></a></div>
                 <div id="search">
                     <input type="text" id="searchBox" oninput="debounce(main,1000)" placeholder="Search for Health Products" />
 
                 </div>
 
-                <div>login/signup</div>
-                <span> <img src="https://assets.lybrate.com/q_auto,f_auto,h_15,w_15/imgs/product/d2d/PatientGoldMembership/lybrate_icon_red_large.png" />
-                    LybrateCash </span>
+                <div><a style="color: black;" href="signup.html">login/signup</a></div>
+                <span title="This feature coming soon" style="cursor: pointer;">
+                    <img  src="https://assets.lybrate.com/q_auto,f_auto,h_15,w_15/imgs/product/d2d/PatientGoldMembership/lybrate_icon_red_large.png" />
+                    LybrateCash
+                </span>
                 <a href="landingpage.html"><button id="btn">Home</button></a>
-                <span style=" font-size: 40px;" class="material-icons">shopping_cart</span>
+                <a href="cart.html"><span style="color: black; font-size: 40px;" class="material-icons">shopping_cart</span></a>
 
             </div>
             <div id="search_div"></div>
@@ -455,10 +437,21 @@
     </div>
     </div>
 
-
+    <div id="footerDisplay"></div>
 </body>
 
 </html>
+
+<script type="module">
+    // --------------Footer Imported-------------------------
+    let footerDisplay = document.getElementById('footerDisplay');
+    import footer from './JS/footer.js';
+    footer().then((response) => {
+        footerDisplay.innerHTML = response;
+    })
+</script>
+
+
 <script>
     /*-------------//////---------------slide show-------------------------/////-----------------*/
 
