@@ -67,18 +67,35 @@ we have used debouncing that helps to search the information.
 ### GoodKart Page:
 You can see the GoodKart page by just clicking on the "GoodKart  icon" on the navigation bar. On cliking you can get yourself the latest stuff of health products. click on the item and by selecting the quantity, just add to cart by clicking on "add to cart icon".
 
-![image]()
-![image]()
-![image]()
+###### As, you can see the drop down which allows you to choose any categories from here to shop and explore further.
+
+<img width="856" alt="goodkart1" src="https://user-images.githubusercontent.com/87423101/141510922-574c4453-02a5-4515-943b-b79a3f92f63c.png">
+
+###### Offers and discount on health products.
+
+<img width="911" alt="goodkart2" src="https://user-images.githubusercontent.com/87423101/141511289-5c84ecc1-da85-4694-858a-bab1f6fe998a.png">
+
+###### New arrivals and money saving deals. On clicking on any product you can get full description of the product. 
+
+<img width="912" alt="goodkart3" src="https://user-images.githubusercontent.com/87423101/141511378-f67e37b1-7ea7-4b51-8c4d-6cee62cd3f5c.png">
+
 ### Consult online page:
 Here, you can search your health related problems accordingly your prefered doctors near by you and the best available doctors with good experinces. You can consult them online and hence get cured for the issues you have.
 
-![image]()
+##### search tab is for searching the doctors for online consulting:
+
+<img width="912" alt="consult1" src="https://user-images.githubusercontent.com/87423101/141513083-df44b31a-35eb-4e3d-b93b-cbdf9c76d75f.png">
+
+##### top doctors:
+
+<img width="908" alt="consult2" src="https://user-images.githubusercontent.com/87423101/141513387-78655c6a-36ef-4b68-aac3-27ca522ae6ac.png">
+
 
 ### productdescription page:
-On clicking any of the product, you are taken to the product details page where you can see the product details like price, ratings, expiry date and much more.
+On clicking any of the product, you are taken to the product details page where you can see the product details like price, discount, quantity, brief description on product and much more.
 
-![image]()
+<img width="910" alt="productdescription1" src="https://user-images.githubusercontent.com/87423101/141514016-4a8bbc58-c985-419d-bdbe-9606cf26a1d7.png">
+
 
 ### Health feed page:
 This page is for queries that you can ask or read shared experiences by users as well health cure posts which are posted by certified doctors only.
