@@ -89,7 +89,7 @@
             <div class="col-2">
                 <div class="dropdown">
                     <h5 class="btn  dropdown-toggle" data-bs-toggle="dropdown">Skin & Hair Care</h5>
-                    <ul class="dropdown-menu" onclick="displayNews('diabetes')">
+                    <ul class="dropdown-menu" onclick="displayNews('hairfall')">
                         <li>
                             <h5 class="dropdown-header"><b>Skin Care</b></h5>
                         </li>
@@ -113,7 +113,7 @@
 
                 <div class="dropdown">
                     <h5 class="btn  dropdown-toggle" data-bs-toggle="dropdown">Health Conditions</h5>
-                    <ul class="dropdown-menu" >
+                    <ul class="dropdown-menu" onclick="displayNews('diabetes')">
                         <li>
                             <h5 class="dropdown-header"><b>Cancer</b></h5>
                         </li>
@@ -135,7 +135,7 @@
             <div class="col-2">
                 <div class="dropdown">
                     <h5 class="btn  dropdown-toggle" data-bs-toggle="dropdown">Pregrancy & Kids</h5>
-                    <ul class="dropdown-menu">
+                    <ul class="dropdown-menu" onclick="bookAppointment('depression')">
                         <li>
                             <h5 class="dropdown-header"><b>Pregnancy</b></h5>
                         </li>
@@ -156,7 +156,7 @@
             <div class="col-2">
                 <div class="dropdown">
                     <h5 class="btn  dropdown-toggle" data-bs-toggle="dropdown">Women's Health</h5>
-                    <ul class="dropdown-menu">
+                    <ul class="dropdown-menu" onclick="bookAppointment('hairfall')">
                         <li>
                             <h5 class="dropdown-header"><b>Women</b></h5>
                         </li>
@@ -177,7 +177,7 @@
             <div class="col-2">
                 <div class="dropdown">
                     <h5 class="btn  dropdown-toggle" data-bs-toggle="dropdown">More</h5>
-                    <ul class="dropdown-menu">
+                    <ul class="dropdown-menu" onclick="bookAppointment('diabetes')">
                         <li>
                             <h5 class="dropdown-header"><b>Eye Care</b></h5>
                         </li>
@@ -550,7 +550,8 @@
      
         search_data.forEach((el) => {
             let p = document.createElement("p");
-             p.innerText = search_data[0];;
+             p.innerText = search_data[0];
+             p.style = "cursor:pointer"
              p.onclick=  localStorage.setItem('newsTopic',  search_data[0]);;
              p.addEventListener("click", function () {
                   window.location.href="healthFeed.html"
