@@ -116,9 +116,10 @@ On clicking any of the product, you are taken to the product details page where 
 <img width="910" alt="productdescription1" src="https://user-images.githubusercontent.com/87423101/141514016-4a8bbc58-c985-419d-bdbe-9606cf26a1d7.png">
 
 ### Cart Page:
-Now you are on the cart page. After adding to cart you are now able to see the order summary. you can here increase the item quantity as well as use coupon code to get discount on selected products. Thereafter, click on the "select address bar" to add you address.
+Now you are on the cart page. After adding to cart you are now able to see the order summary. you can here increase the item quantity as well as use coupon code to get discount on selected products. Thereafter, click on the "proceed to checkout" to go further.
 
-![image]()
+<img width="911" alt="cart1" src="https://user-images.githubusercontent.com/87423101/141518315-5afe185e-35ba-4875-a932-6e1067611405.png">
+
 
 ### Add Address:
 You can enter your location accordingly now and then place the order.
