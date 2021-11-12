@@ -90,13 +90,6 @@ Here, you can search your health related problems accordingly your prefered doct
 
 <img width="908" alt="consult2" src="https://user-images.githubusercontent.com/87423101/141513387-78655c6a-36ef-4b68-aac3-27ca522ae6ac.png">
 
-
-### productdescription page:
-On clicking any of the product, you are taken to the product details page where you can see the product details like price, discount, quantity, brief description on product and much more.
-
-<img width="910" alt="productdescription1" src="https://user-images.githubusercontent.com/87423101/141514016-4a8bbc58-c985-419d-bdbe-9606cf26a1d7.png">
-
-
 ### Health feed page:
 This page is for queries that you can ask or read shared experiences by users as well health cure posts which are posted by certified doctors only.
 
@@ -116,6 +109,11 @@ you can go through this page for finding appropriate doctors for your issues. An
 Here, you can find courses or packages of health issues with regarding doctor at payable prices. you can go through for the best package as per your convience.
 
 <img width="896" alt="healthpackage1" src="https://user-images.githubusercontent.com/87423101/141516851-d1154020-5667-48c8-ae9a-e28f4e274375.png">
+
+### productdescription page:
+On clicking any of the product, you are taken to the product details page where you can see the product details like price, discount, quantity, brief description on product and much more.
+
+<img width="910" alt="productdescription1" src="https://user-images.githubusercontent.com/87423101/141514016-4a8bbc58-c985-419d-bdbe-9606cf26a1d7.png">
 
 ### Cart Page:
 Now you are on the cart page. After adding to cart you are now able to see the order summary. you can here increase the item quantity as well as use coupon code to get discount on selected products. Thereafter, click on the "select address bar" to add you address.
