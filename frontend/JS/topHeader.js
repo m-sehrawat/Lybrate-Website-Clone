@@ -20,7 +20,7 @@ async function topHeader() {
         <a><img src="https://assets.lybrate.com/q_auto,f_auto,h_28,w_28,c_fill/imgs/product/Homepage/Ask-Question.png">Ask Question</a>
     </div>
     <div onclick="bookAppointment('hairfall')" class="mt-3" style="cursor: pointer;">
-        <a><img src="https://assets.lybrate.com/q_auto,f_auto,h_28,w_28,c_fill/imgs/product/Homepage/Book-Appointment.png" alt="">Book Appointment</a>
+        <a><img src="https://assets.lybrate.com/q_auto,f_auto,h_28,w_28,c_fill/imgs/product/Homepage/Book-Appointment.png" alt="">BookAppointment</a>
     </div>
     <div class="mt-3">
         <a href="consultOnline.html"><img src="https://assets.lybrate.com/q_auto,f_auto,h_28,w_28,c_fill/imgs/product/Homepage/Consult-Online.png" alt="">Consult Online</a>
@@ -28,10 +28,10 @@ async function topHeader() {
     <div onclick="bookAppointment('diabetes')" class="mt-3" style="cursor: pointer;">
         <a><img src="https://assets.lybrate.com/q_auto,f_auto,h_28,w_28,c_fill/imgs/product/Homepage/Book-Lab-test.png" alt="">Book Lab Test</a>
     </div>
-    <div class="mt-2">
+    <div class="mt-2 ms-3">
         <a href="goodkart.html"><button class="btn btn-danger rounded-pill">goodkart</button></a>
     </div>
-    <div class="mt-1">
+    <div class="mt-1 ms-1">
         <a href="cart.html"><img style="width:80%;" src="https://github.com/adyasha9/medical-website-frontend/blob/master/lybrate-homepage/cart.png?raw=true" alt=""></a>
     </div>
 </div>
