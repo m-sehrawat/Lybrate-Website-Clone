@@ -8,7 +8,7 @@
 # Technology We Used :computer:
 > Tech Stack 
 1. HTML5
-2. CSS
+2. CSS3
 3. Advanced JavaScript
 4. API’s
 5. ES6
