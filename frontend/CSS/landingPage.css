@@ -188,3 +188,13 @@ button {
 .dropdown-header {
   color: black;
 }
+#search_news{
+    width:55%;
+    display:none;
+    position:absolute;
+    background-color: white;
+   z-index: 5;
+   margin-left:16%;
+   top:56.5%;
+
+}

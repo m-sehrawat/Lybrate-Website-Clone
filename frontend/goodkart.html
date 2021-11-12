@@ -35,7 +35,9 @@
                 <span style=" font-size: 40px;" class="material-icons">shopping_cart</span>
 
             </div>
-            <div id="search_div"></div>
+            <div id="search_div">
+                <span>Hot Offers</span>
+            </div>
 
             <div id="allData">
                 <nav id="Categories">
@@ -108,7 +110,9 @@
                 </nav>
 
 
-                <div id="slideShow"></div>
+                <div id="slideShow">
+                    
+                </div>
                 <div class="products">
 
                     <div class="fs-5" id="offersDiv">
@@ -258,18 +262,21 @@
     let search_div = document.getElementById("search_div");
 
     function appendproduct(search_data) {
+        search_div.style.display="block"
         if (search_data === undefined) {
             return false;
         }
+       
         search_div.innerHTML = null;
+     
         search_data.forEach((el) => {
-            let li = document.createElement("li");
-            li.innerText = el.name;
-            li.onclick = () => {
-                addtolocal(el);
+            let p = document.createElement("p");
+            p.innerText = el.name;
+            p.onclick = () => {
+                localStorage.setItem("Single_products", JSON.stringify(element));
                 window.location.href = "Product Description.html"
-            };
-            search_div.append(li)
+            }
+            search_div.append(p)
         });
     }
 
@@ -374,6 +381,7 @@
         }, 2000)
     }
     startSlideshow();
+    
     /*----------/////////////////--------end slideshow--------------/////////////////////--------------------*/
 
 

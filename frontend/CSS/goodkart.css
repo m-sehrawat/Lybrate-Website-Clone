@@ -293,5 +293,16 @@
    #bggray{
        background-color: rgb(238, 238, 238);
    }
+   #search_div{
+       width:41.5%;
+       display:none;
+       position:absolute;
+       background-color: white;
+      z-index: 5;
+      margin-left:20.8%;
+     
+   }
+   
+
 
     /*--------------///////////---------------shop now banner css end----------//////-------------------*/

@@ -36,7 +36,7 @@
 
     <div id="bckimg">
         <h2>Stay at Home.Consult Doctors Online.<b>#India Fights Corona.</b></h2>
-        <input type="text" placeholder="Search for any Health Keyword">
+        <input id= "searchnews"  oninput="debounce(main,1000)"type="text" placeholder="Search for any Health Keyword">
         <button>Search</button>
         <div class="container">
             <div class="row trending">
@@ -52,10 +52,10 @@
         <div id="headline"></div>
 
     </div>
-
+<div id="search_news"></div>
 
     <div class="block">
-        <h4>Coronavirus - Know all about it, watch doctor videos and track numbers across world <span style="border: 1px solid red; background-color: red; border-radius: 10px;" class="badge badge-danger">KNOW MORE</span></h4>
+        <h4>Daibeties - Know all about it, watch doctor videos and track numbers across world <span  onclick="displayNews('diabetes')" style="border: 1px solid red; background-color: red; border-radius: 10px;" class="badge badge-danger">KNOW MORE</span></h4>
     </div>
 
 
@@ -526,6 +526,76 @@
         localStorage.setItem('newsTopic', name);
         window.location.href = "findDoctors.html";
     }
+    var timerId;
+   
+    async function searchnews() {
+        let res = await fetch(`http://localhost:2000/api/feedData`);
+        let data = await res.json();
+        return data;
+    }
+
+    let search_news = document.getElementById("search_news");
+
+    function appendnews(search_data) {
+        search_news.style.display="block"
+        if (search_data === undefined) {
+            return false;
+        }
+       
+        search_news.innerHTML = null;
+     
+        search_data.forEach((el) => {
+            let p = document.createElement("p");
+             p.innerText = search_data[0];;
+             p.onclick=  localStorage.setItem('newsTopic',  search_data[0]);;
+             p.addEventListener("click", function () {
+                  window.location.href="healthFeed.html"
+            });
+            search_news.append(p)
+          
+        });
+       
+    }
+
+    async function main() {
+        let name = document.getElementById( "searchnews").value;
+        if (name.length < 3) {
+            return false;
+        }
+
+        let res = await searchnews();
+
+        let news_data = res;
+      
+      
+
+        var search_data = [];
+       let temp;
+        for(key in news_data){
+            temp=key;
+            if(temp.includes(name)){
+                search_data.push(temp) ;
+              
+            }
+            
+            }
+       
+    
+       
+        appendnews(search_data);
+    }
+
+    function debounce(func, delay) {
+
+        if (timerId) {
+            clearTimeout(timerId)
+        }
+
+        timerID = setTimeout(function () {
+            func();
+        }, delay);
+    }
+
 
 
 </script>
