@@ -123,7 +123,7 @@ Now you are on the cart page. After adding to cart you are now able to see the o
 
 ### Add Address:
 You can enter your location accordingly now and then place the order.
-![image]()
+
 
 ### Payment page:
 You are now on the payment page after placing the order. You can pay using your debit or credit card by just entering card holder's name followed by the card number, Expire date and CVV. Thereafter, click on the "Pay Now bar " to get done by payment.
