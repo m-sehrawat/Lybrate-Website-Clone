@@ -49,9 +49,20 @@ To signup User has to register the by entering their name , email, phone number,
 ### Landing Page:
 You are on our Landing page now. you get to see what are things our website provides you like exploring 
 Health Feed, GoodKart, Ask a Question, Consult Online, Book Lab Test and Gold Membership
+##### Search tab:
+we have used debouncing that helps to search the information.
 
-![image]()
-![image]()
+<img width="913" alt="lybrate3" src="https://user-images.githubusercontent.com/87423101/141508718-e9148092-a7e3-4394-ba9a-4ce78666d9a7.png">
+
+##### Questions that are answers by doctors:
+
+<img width="904" alt="lybrate4" src="https://user-images.githubusercontent.com/87423101/141508828-9933d3d4-529d-446d-8bb2-1bfc55529f37.png">
+
+##### Health tips:
+
+<img width="911" alt="lybrate5" src="https://user-images.githubusercontent.com/87423101/141508940-3b6b11f5-a60b-4a90-9334-bf67623d4948.png">
+
+
 
 ### GoodKart Page:
 You can see the GoodKart page by just clicking on the "GoodKart  icon" on the navigation bar. On cliking you can get yourself the latest stuff of health products. click on the item and by selecting the quantity, just add to cart by clicking on "add to cart icon".
