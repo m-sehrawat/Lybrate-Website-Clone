@@ -20,9 +20,9 @@
 
 2. Online consulting with doctors for any kind of health problems.
 
-3.order health products to your address.
+3. Order health products to your address.
 
-4.get information of any disease or health issue along with preferred doctors.
+4. Get information of any disease or health issue along with preferred doctors.
 
 
 
