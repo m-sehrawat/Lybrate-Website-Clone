@@ -9,9 +9,10 @@
 > Tech Stack 
 1. HTML5
 2. CSS
-3. JavaScript
+3. Advanced JavaScript
 4. API’s
-5. EJS
+5. ES6
+6. json server
 
 
 # Features
@@ -19,7 +20,9 @@
 
 2. Online consulting with doctors for any kind of health problems.
 
+3.order health products to your address.
 
+4.get information of any disease or health issue along with preferred doctors.
 
 
 
