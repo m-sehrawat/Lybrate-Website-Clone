@@ -38,6 +38,8 @@
         <h2>Stay at Home.Consult Doctors Online.<b>#India Fights Corona.</b></h2>
         <input id= "searchnews"  oninput="debounce(main,1000)"type="text" placeholder="Search for any Health Keyword">
         <button>Search</button>
+        <div id="search_news"></div>
+
         <div class="container">
             <div class="row trending">
                 <div class="col-12 col-md-5 col-lg-1"></div>
@@ -52,7 +54,7 @@
         <div id="headline"></div>
 
     </div>
-<div id="search_news"></div>
+
 
     <div class="block">
         <h4>Daibeties - Know all about it, watch doctor videos and track numbers across world <span  onclick="displayNews('diabetes')" style="border: 1px solid red; background-color: red; border-radius: 10px;" class="badge badge-danger">KNOW MORE</span></h4>
@@ -65,7 +67,7 @@
 
                 <div class="dropdown">
                     <ul class="btn  dropdown-toggle" data-bs-toggle="dropdown">Diet, Food & Fitness</ul>
-                    <ul class="dropdown-menu">
+                    <ul class="dropdown-menu" onclick="displayNews('depression')">
                         <li>
                             <h5 class="dropdown-header"><b>Weight Management</b></h5>
                         </li>
@@ -87,7 +89,7 @@
             <div class="col-2">
                 <div class="dropdown">
                     <h5 class="btn  dropdown-toggle" data-bs-toggle="dropdown">Skin & Hair Care</h5>
-                    <ul class="dropdown-menu">
+                    <ul class="dropdown-menu" onclick="displayNews('diabetes')">
                         <li>
                             <h5 class="dropdown-header"><b>Skin Care</b></h5>
                         </li>
@@ -111,7 +113,7 @@
 
                 <div class="dropdown">
                     <h5 class="btn  dropdown-toggle" data-bs-toggle="dropdown">Health Conditions</h5>
-                    <ul class="dropdown-menu">
+                    <ul class="dropdown-menu" >
                         <li>
                             <h5 class="dropdown-header"><b>Cancer</b></h5>
                         </li>
@@ -484,9 +486,6 @@
 <script>
 
     // -------------------Slide Show of Heading---------------------
-
-
-
     function slidingHeadline() {
 
         let arr = ["20 year old Female from Bhopal just asked about Hair Growth", "35 year old Male from Gangtok just asked about Throat Ache", "25 year old Female from Navi Mumbai just asked about Heel Pain", "48 year old Female from Mumbai just asked about Diarrhoea", "31 year old Female from Hyderabad just asked about Rashes", "36 year old Male from Mahabubnagar just asked about Hemorrhoids", "23 year old Female from Bangalore just asked about Avoid Pregnancy", "31 year old Female from Mumbai just asked about Female Hair Loss"]
@@ -516,7 +515,7 @@
 
 
 
-    // ------------Navbar Functions----------------------
+    // ------------------Navbar Functions----------------------
     function displayNews(name) {
         localStorage.setItem('newsTopic', name);
         window.location.href = "aboutPage.html";
@@ -526,6 +525,10 @@
         localStorage.setItem('newsTopic', name);
         window.location.href = "findDoctors.html";
     }
+
+
+
+    // ---------------Debouncing----------------------------
     var timerId;
    
     async function searchnews() {
