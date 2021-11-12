@@ -111,7 +111,7 @@
             <div class="col mainBox m-3">
 
                 <div id="productCompany">
-                    <p class="text-muted">Wel Ark</p>
+                   
                 </div>
                 <div id="productName"></div>
                 <div id="productPrice">
@@ -166,7 +166,7 @@
 
 
 <script>
-
+    let productCompany =document.getElementById("productCompany");
     let productImage = document.getElementById("productImage");
     let productName = document.getElementById("productName");
     let productPrice = document.getElementById("productPrice");
@@ -182,7 +182,7 @@
 
     function displayProducts(data) {
 
-        let { img, name, newprice, oldprice, off } = data;
+        let { img,  companyname, name, newprice, oldprice, off } = data;
 
         let image = document.createElement("img");
         image.src = img[0];
@@ -203,7 +203,11 @@
         img3.src = img[2];
         img3.style = "width:100%";
         img3.setAttribute('class', "img-fluid")
-
+        
+        let company = document.createElement("p");
+        company.innerText = companyname;
+        company.setAttribute('class', "text-muted");
+        
         let heading = document.createElement("p");
         heading.innerText = name;
         heading.setAttribute('class', "fs-5 fw-bold");
@@ -227,7 +231,7 @@
         let totalPrice = document.createElement("div");
         totalPrice.append(priceNew, priceOld, priceOff)
 
-
+        productCompany.append(company);
         productImage.append(image);
         productName.append(heading);
         detailsDiv.append(details);

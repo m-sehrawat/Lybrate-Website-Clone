@@ -273,7 +273,7 @@
             let p = document.createElement("p");
             p.innerText = el.name;
             p.onclick = () => {
-                localStorage.setItem("Single_products", JSON.stringify(element));
+                localStorage.setItem("Single_products", JSON.stringify(el));
                 window.location.href = "Product Description.html"
             }
             search_div.append(p)
