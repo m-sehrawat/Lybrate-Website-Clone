@@ -194,15 +194,15 @@
         }
 
         .leftFilter {
-            width: 25%;
-            height: 430px;
+            width: 16%;
+            height: 300px;
             padding-left: 1%;
             background-color: white;
         }
 
 
         .rightProducts {
-            width: 64%;
+            width: 72%;
             height: 800px;
             overflow: scroll;
             padding-left: 1%;
@@ -220,9 +220,14 @@
             font-weight: normal;
         }
 
+        .colorChange {
+            font-size: 16px;
+            margin-bottom: 8px;
+        }
+
         .colorChange:hover {
             color: rgb(190, 9, 9);
-            text-decoration: underline;
+            text-decoration: none;
         }
 
         .bold {
@@ -295,6 +300,24 @@
             margin-left: 70%;
             padding: 4px;
         }
+
+        .radioBtnMargin {
+            margin: 16px 0px;
+            font-size: 15px;
+        }
+
+        .applyBtn {
+            border-radius: 0px;
+            border: none;
+            color: white;
+            background-color: black;
+            padding: 4px 10px;
+            margin: 5px;
+        }
+
+        .applyBtn:hover {
+            background-color: red;
+        }
     </style>
 </head>
 
@@ -310,7 +333,7 @@
 
                 <div><a style="color: black;" href="signup.html">login/signup</a></div>
                 <span title="This feature coming soon" style="cursor: pointer;">
-                    <img  src="https://assets.lybrate.com/q_auto,f_auto,h_15,w_15/imgs/product/d2d/PatientGoldMembership/lybrate_icon_red_large.png" />
+                    <img src="https://assets.lybrate.com/q_auto,f_auto,h_15,w_15/imgs/product/d2d/PatientGoldMembership/lybrate_icon_red_large.png" />
                     LybrateCash
                 </span>
                 <a href="landingpage.html"><button id="btn">Home</button></a>
@@ -398,29 +421,37 @@
         </div>
         <div id="filterGrid">
             <div class="leftFilter">
-                <div>
-                    <h4>Filters</h4>
+                <div class="radioBtnMargin">
+                    <h3>Filters</h3>
                     <hr>
-                    <h4>Price</h4>
-                    <p><input type="radio" /> ₹ 200</p>
-                    <p><input type="radio" />₹ 200 to ₹ 500</p>
-                    <p><input type="radio" />₹ 500 to ₹ 1000</p>
-                    <p><input type="radio" />Above ₹ 1000</p>
-                    <hr>
-                    <h4>Discount</h4>
-                    <p><input type="radio" />10% or more</p>
-                    <p><input type="radio" />20% or more</p>
-                    <p><input type="radio" />30% or more</p>
-                    <p><input type="radio" />40% or more</p>
+                    <h3>Price</h3>
+                    <div class="radioBtnMargin">
+                        <input type="radio" name="exampleRadios" id="exampleRadios1" value="200">
+                        <label for="exampleRadios1">₹ 200</label>
+                    </div>
+                    <div class="radioBtnMargin">
+                        <input type="radio" name="exampleRadios" id="exampleRadios2" value="500">
+                        <label for="exampleRadios2">₹ 200 to ₹ 500</label>
+                    </div>
+                    <div class="radioBtnMargin">
+                        <input type="radio" name="exampleRadios" id="exampleRadios3" value="1000">
+                        <label for="exampleRadios3">₹ 500 to ₹ 1000</label>
+                    </div>
+                    <div class="radioBtnMargin">
+                        <input type="radio" name="exampleRadios" id="exampleRadios4" value="1001">
+                        <label for="exampleRadios4">Above ₹ 1000</label>
+                    </div>
+                    <div>
+                        <button class="applyBtn">Apply</button>
+                    </div>
                 </div>
             </div>
             <div class="rightProducts">
-                <div id="fixed">
+                <div id="fixed" style="width: 1030px">
                     <p><a href="landingpage.html"><strong class="red">home</strong></a> > <a href="goodkart.html"><strong class="red"> GoodKart</strong></a> > Vitamin & Supplement</p>
-                    <p class="bold">Vitamin & Supplement</p>
+                    <h2>Vitamin & Supplement</h2>
                     <div class="flex">
-                        <div>Sort by</div>
-                        <div class="colorChange">Popularity</div>
+                        <div class="colorChange">Sort by</div>
                         <div onclick="sort1()" class="colorChange" style="cursor: pointer;">Price - Low to High</div>
                         <div onclick="sort2()" class="colorChange" style="cursor: pointer;">Price - High to Low</div>
                     </div>
@@ -599,5 +630,7 @@
 
         localStorage.setItem('addToCart', JSON.stringify(cart));
     }
+
+
 
 </script>
