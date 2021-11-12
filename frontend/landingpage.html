@@ -36,7 +36,7 @@
 
     <div id="bckimg">
         <h2>Stay at Home.Consult Doctors Online.<b>#India Fights Corona.</b></h2>
-        <input id= "searchnews"  oninput="debounce(main,1000)"type="text" placeholder="Search for any Health Keyword">
+        <input id= "searchnews"   oninput="debounce(main,1000)"type="text" placeholder="Search for any Health Keyword">
         <button>Search</button>
         <div id="search_news"></div>
 
@@ -51,13 +51,13 @@
                 <div onclick="displayNews('diabetes')" style="cursor: pointer;" class="col-12 col-md-5 col-lg-1">Diabetes</div>
             </div>
         </div>
-        <div id="headline"></div>
+        <div id="headline" style="cursor: pointer;"></div>
 
     </div>
 
 
     <div class="block">
-        <h4>Daibeties - Know all about it, watch doctor videos and track numbers across world <span  onclick="displayNews('diabetes')" style="border: 1px solid red; background-color: red; border-radius: 10px;" class="badge badge-danger">KNOW MORE</span></h4>
+        <h4>Daibeties - Know all about it, watch doctor videos and track numbers across world <span  onclick="displayNews('diabetes')" style="border: 1px solid red; background-color: red; border-radius: 10px; cursor: pointer;" class="badge badge-danger">KNOW MORE</span></h4>
     </div>
 
     <div class="AllData">
@@ -365,7 +365,7 @@
                 <div class="col-7" style="background-color: rgb(204, 195, 195);">
                     <h4>3 Best Alternatives to IVF</h4>
                     <small>IVF is not the only solution to every infertility problem. You can choose from amongst a number of options.</small><br>
-                    <button>READ MORE</button>
+                    <button class="bg-danger">READ MORE</button>
                     <span style="float: right; padding:0px 10px;" class="fa fa-bookmark-o"></span>
                     <span style="float: right;" class="fa fa-heart-o"></span>
                 </div>
