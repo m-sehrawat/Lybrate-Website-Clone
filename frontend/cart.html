@@ -20,9 +20,10 @@
             background-color: #eeeeee;
         }
 
-        div {
+        /* div {
             border: 1px solid red;
-        }
+            min-height: 50px;
+        } */
 
         #mainBox {
             max-width: 1200px;
@@ -45,20 +46,58 @@
     <div id="mainBox" class="container my-4">
         <div class="row">
             <div class="col-8">
-                <div id="productBox" class=" bg-white"></div>
+                <div id="productBox" class="bg-white"></div>
+                <div class="bg-white shadow d-flex flex-row-reverse">
+                    <a href="goodkart.html"><button class="btn btn-outline-danger rounded-0 fw-bold m-3">Add More Products</button></a>
+                </div>
             </div>
             <div class="col-4">
-                <div class="m-1 bg-white">
+                <div class="bg-white">
                     <div class="row">
                         <div class="col-12">
-                            <p class="px-4 pt-2">ORDER SUMMARY</p>
+                            <p class="px-4 pt-3">ORDER SUMMARY</p>
                         </div>
                         <hr class="col-11 ms-3">
-                        <div id="totalMRP" class="col-12 px-4 pt-2"></div>
+                        <div class="col-12 px-2 pt-2">
+                            <div class="row">
+                                <div class="col-8">
+                                    <p class="px-4">Total MRP</p>
+                                </div>
+                                <div id="totalMRP" class="col-4"></div>
+                                <div class="col-8 ">
+                                    <p class="px-4">Shipping Charges</p>
+                                </div>
+                                <div class="col-4 ">
+                                    <p class="px-4 text-end">₹0</p>
+                                </div>
+                                <div class="col-8">
+                                    <p class="px-4">Discount</p>
+                                </div>
+                                <div id="totalDiscount" class="col-4"></div>
+                            </div>
+                        </div>
                         <hr class="col-10 offset-1">
-                        <div id="cartTotal" class="col-12 px-4 pt-2"></div>
+                        <div class="col-12 px-2 pt-2">
+                            <div class="row">
+                                <div class="col-8">
+                                    <p class="px-4">Quantity</p>
+                                </div>
+                                <div id="totalQuantity" class="col-4 text-end"></div>
+                                <div class="col-8">
+                                    <p class="px-4">Cart Total</p>
+                                </div>
+                                <div id="cartTotalAmount" class="col-4"></div>
+                            </div>
+                        </div>
                         <hr class="col-10 offset-1">
-                        <div id="amountPayable" class="col-12 px-4 pt-2"></div>
+                        <div class="col-12 px-2 pt-2">
+                            <div class="row fs-5">
+                                <div class="col-8">
+                                    <p class="px-4">Amount Payable</p>
+                                </div>
+                                <div id="amountPayable" class="col-4"></div>
+                            </div>
+                        </div>
                         <hr class="col-10 offset-1">
                     </div>
                 </div>
@@ -98,14 +137,13 @@
     console.log('cartdata:', cartdata);
 
     let productBox = document.getElementById('productBox');
-    let totalMRP = document.getElementById('totalMRP');
-    let cartTotal = document.getElementById('cartTotal');
-    let amountPayable = document.getElementById('amountPayable');
+
 
     // Sum of Product Price
     let sumMRP = 0;
     let sumDiscount = 0;
     let sumCartTotal = 0;
+    let count = 0;
 
     function showData(data) {
 
@@ -154,7 +192,7 @@
             removeBtn.textContent = "Remove"
             removeBtn.setAttribute('class', 'btn btn-sm btn-outline-dark rounded-0 mt-4 ms-3');
 
-          div4.textContent = "Quantity"
+            div4.textContent = "Quantity"
 
             div1.append(image)
             div2.append(heading)
@@ -166,16 +204,61 @@
 
             productBox.append(div);
 
-            // Adding price of products & discounts
-            sumMRP += Number(oldprice)
-            sumDiscount += (Number(oldprice) - Number(newprice))
-            sumCartTotal += Number(newprice)
+            // Adding price of products, discounts & quantity
+            sumMRP += Number(oldprice);
+            sumDiscount += (Number(oldprice) - Number(newprice));
+            sumCartTotal += Number(newprice);
+            count++;
         });
     }
     showData(cartdata)
 
     // -----------------Dispkay Total Price---------------------
-    console.log(sumMRP, sumDiscount, sumCartTotal);
+    console.log(sumMRP, sumDiscount, sumCartTotal, count);
+
+
+    function orderSummary() {
+
+        let totalMRP = document.getElementById('totalMRP');
+        let totalDiscount = document.getElementById('totalDiscount');
+        let totalQuantity = document.getElementById('totalQuantity');
+        let cartTotalAmount = document.getElementById('cartTotalAmount');
+        let amountPayable = document.getElementById('amountPayable');
+        
+
+        let MRP = document.createElement('p');
+        MRP.textContent = "₹" + sumMRP;
+        MRP.setAttribute('class', 'pe-4 text-end');
+
+        let discount = document.createElement('p');
+        discount.textContent = "₹" + sumDiscount;
+        discount.setAttribute('class', 'pe-4 text-end');
+
+        let quantity = document.createElement('span');
+        quantity.textContent = "(" + count + " items)";
+        quantity.setAttribute('class', 'pe-4 text-end text-danger ');
+
+        let cartTotal = document.createElement('p');
+        cartTotal.textContent = "₹" + sumCartTotal;
+        cartTotal.setAttribute('class', 'pe-4 text-end');
+
+        let payable = document.createElement('p');
+        payable.textContent = "₹" + sumCartTotal;
+        payable.setAttribute('class', 'pe-4 text-end');
+
+
+
+        totalMRP.append(MRP);
+        totalDiscount.append(discount);
+        totalQuantity.append(quantity);
+        cartTotalAmount.append(cartTotal);
+        amountPayable.append(payable);
+        
+    }
+
+    orderSummary() 
+
+
 
 
 
