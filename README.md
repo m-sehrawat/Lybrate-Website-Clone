@@ -35,7 +35,7 @@
 User need to login before purchasing products from “lybrate”. If user's are existing user they can login and if they are not existing user then they can register using sign up.
 
 ##### login page:
-To login User has to enter their username and password to log into the website.
+To login User has to enter their Phone number and password to log into the website.
 
 <img width="911" alt="lybrate1" src="https://user-images.githubusercontent.com/87423101/141506023-5b3ed117-0739-4f7d-8818-31d7cecf5c08.png">
 
@@ -43,7 +43,8 @@ To login User has to enter their username and password to log into the website.
 ##### Sign Up page:
 To signup User has to register the by entering their name , email, phone number, password and then click on the "create account" button. You are now succesfully logged In.
 
-![image]()
+<img width="913" alt="lybrate2" src="https://user-images.githubusercontent.com/87423101/141506665-048cb770-1fc3-4420-a573-f279fbc4ec7c.png">
+
 
 ### Landing Page:
 You are on our Landing page now. you get to see what are things our website provides you like exploring 
