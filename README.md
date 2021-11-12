@@ -73,6 +73,11 @@ This page is for queries that you can ask or read shared experiences by users as
 
 ![image]()
 
+### FindDoctors page:
+you can go through this page for finding appropriate doctors for your issues. An easy way to find doctors as well.
+
+![image]()
+
 ### Cart Page:
 Now you are on the cart page. After adding to cart you are now able to see the order summary. you can here increase the item quantity as well as use coupon code to get discount on selected products. Thereafter, click on the "select address bar" to add you address.
 
