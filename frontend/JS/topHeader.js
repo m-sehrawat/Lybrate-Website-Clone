@@ -2,7 +2,7 @@ async function topHeader() {
     return `<div id="topnavbar">
     <div class="conatiner-fluid topnavbar">
         <div class="row">
-            <div class="col-12 col-sm-12 col-md-2 col-lg-3"></div>
+            <div id="education" class="col-12 col-sm-12 col-md-2 col-lg-4" style="color:black; text-align:left;">#WebsiteforEducationPurpose</div>
             <div style="cursor: pointer;" title="App will come soon" class="col-12 col-sm-12 col-md-2 col-lg-2">Get theApp</div>
             <div onclick="bookAppointment('diabetes')" style="cursor: pointer;" class="col-12 col-sm-12 col-md-2 col-lg-2 ">for Doctors</div>
             <div onclick="displayNews('depression')" style="cursor: pointer;" class="col-12 col-sm-12 col-md-2 col-lg-2 ">HealthFeed</div>
