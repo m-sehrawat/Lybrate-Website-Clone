@@ -5,7 +5,7 @@ async function showHeader(){
         <input type="text" id="searchBox" placeholder="Search for Health Products" />
     </div>
     <div class="mt-2"><a class="text-decoration-none text-black" href="signup.html">Login/Signup</a></div>
-    <span class="mt-2" title="This feature coming soon" style="cursor: pointer;">
+    <span id="lybrateCashLogo" class="mt-2" title="This feature coming soon" style="cursor: pointer;">
         <img  src="https://assets.lybrate.com/q_auto,f_auto,h_15,w_15/imgs/product/d2d/PatientGoldMembership/lybrate_icon_red_large.png" />
         LybrateCash
     </span>

@@ -20,3 +20,10 @@
     border: none;
     justify-content: center;
 }
+
+@media (max-width: 800px){
+    #search, #lybrateCashLogo {
+        display: none;
+    }
+
+}
