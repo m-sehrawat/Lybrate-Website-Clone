@@ -5,6 +5,11 @@
 > In this project we have tried to enhance the cloning of “lybrate” website. We had build up all our efforts to do our best in this project. As, the Masai School's Mentorship  was specifically to build up our skills and we also accordingly implemented all that teachings in our project to look it at its best.
 > At  “lybrate”, we strive to keep you fit & healthy through a range of holistic offerings that include online consulting with doctors for any health issue. Now anyone can now stay healthy from the safety of their homes with just a single app that Not only does Lybrate give you access to online medical professionals, we also have regular blogs from respected experts that give you tips and advice on health and well being.
 
+# Video link:
+ we have shared a demo presentation of this project "clone-lybrate".
+ 
+ https://drive.google.com/file/d/1R4vDIEcDr5kY9FHiggF9zWh-TGffXSzi/view?usp=sharing
+
 # Technology We Used :computer: 
 1. HTML5
 2. CSS3
