@@ -90,6 +90,12 @@ Here, you can search your health related problems accordingly your prefered doct
 
 <img width="908" alt="consult2" src="https://user-images.githubusercontent.com/87423101/141513387-78655c6a-36ef-4b68-aac3-27ca522ae6ac.png">
 
+### Goldmembership page:
+Here, in this page you can subscribe for gold membership which gives you extra benefits asa well  as you see the relevant answers for mostly asked questions listed below.
+
+<img width="904" alt="goldmembership1" src="https://user-images.githubusercontent.com/87423101/141606956-7a4115b0-b6d1-4fd3-b8ac-c3cf391d33d0.png">
+<img width="905" alt="goldmembership2" src="https://user-images.githubusercontent.com/87423101/141606970-6f9ad46e-2b9c-420e-b6cb-a02d8086624b.png">
+
 ### Health feed page:
 This page is for queries that you can ask or read shared experiences by users as well health cure posts which are posted by certified doctors only.
 
@@ -146,32 +152,32 @@ After successful payment, this page confirms you that your order is placed.
 # Authors
 
 ### Mohit Sehrawat :boy:
-> [Linkedin](https://www.linkedin.com/in/m-sehrawat)  
+>  [Linkedin](https://www.linkedin.com/in/m-sehrawat) 
     
-> [GitHub](https://github.com/m-sehrawat/)
+>  [GitHub](https://github.com/m-sehrawat/)
 
 ### Bobby More:boy:
 >  [Linkedin](https://www.linkedin.com/in/)
 
-> [GitHub](https://github.com/bobbymore2025/)
+>  [GitHub](https://github.com/bobbymore2025/)
 
 ### Anand gupta:boy:
-> [Linkedin](https://www.linkedin.com/in/)
+>  [Linkedin](https://www.linkedin.com/in/)
 
-> [GitHub](https://github.com/anand7071/)
+>  [GitHub](https://github.com/anand7071/)
 
 ### Nitin gupta:boy:
-> [Linkedin](https://www.linkedin.com/in/nitin-gupta-1b4b17209)
+>  [Linkedin](https://www.linkedin.com/in/nitin-gupta-1b4b17209)
 
-> [GitHub](https://github.com/nitin9119/)
+>  [GitHub](https://github.com/nitin9119/)
 
 ### Harish Reyya:boy:
-> [Linkedin](https://www.linkedin.com/in/r-harish-832793218)
+>  [Linkedin](https://www.linkedin.com/in/r-harish-832793218)
 
-> [GitHub](https://github.com/harishreyya/)
+>  [GitHub](https://github.com/harishreyya/)
 
 ### Mahesh Vaitla:boy:
-> [Linkedin](https://www.linkedin.com/in/mahesh-vaitla-81a096125)
+>  [Linkedin](https://www.linkedin.com/in/mahesh-vaitla-81a096125)
 
-> [GitHub](https://github.com/maheshvaitla/)
+>  [GitHub](https://github.com/maheshvaitla/)
 
