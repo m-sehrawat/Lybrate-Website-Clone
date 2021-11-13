@@ -294,9 +294,16 @@
        background-color: white;
       z-index: 5;
       margin-left:20.8%;
+      padding-left:5px;
+      padding:2px;
      
    }
-   
+   #search_div>p:hover{
+       background-color: #c62828;
+       color:white;
+       font-size: 18px;
+       padding:2px;
+   }
 
 
     /*--------------///////////---------------shop now banner css end----------//////-------------------*/
