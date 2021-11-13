@@ -1,6 +1,6 @@
 async function showHeader(){
     return `<div id="topnav" class="border-bottom">
-    <div id="logo"><a href="landingpage.html"><img style="width: 70%;" class="img-fluid" src="https://www.lybrate.com/img/Lybrate-Goodkart-Logo.png" /></a></div>
+    <div id="logo"><a href="goodkart.html"><img style="width: 70%;" class="img-fluid" src="https://www.lybrate.com/img/Lybrate-Goodkart-Logo.png" /></a></div>
     <div id="search">
         <input type="text" id="searchBox" placeholder="Search for Health Products" />
     </div>
