@@ -151,17 +151,21 @@ After successful payment, this page confirms you that your order is placed.
 
 ### Bobby More:boy:
 >  [Linkedin](https://www.linkedin.com/in/)
+> [GitHub](https://github.com/bobbymore2025/)
 
 ### Anand gupta:boy:
 > [Linkedin](https://www.linkedin.com/in/)
+> [GitHub](https://github.com/anand7071/)
 
 ### Nitin gupta:boy:
 > [Linkedin](https://www.linkedin.com/in/nitin-gupta-1b4b17209)
+> [GitHub](https://github.com/nitin9119/)
 
 ### Harish Reyya:boy:
 > [Linkedin](https://www.linkedin.com/in/r-harish-832793218)
+> [GitHub](https://github.com/harishreyya/)
 
 ### Mahesh Vaitla:boy:
 > [Linkedin](https://www.linkedin.com/in/mahesh-vaitla-81a096125)
-
+> [GitHub](https://github.com/maheshvaitla/)
 
