@@ -27,7 +27,13 @@ background-size: contain;
     font-size: medium;
     text-decoration: none;
 }
-
+#searchdiv{
+    width: 99.8%;
+    height: 500px;
+    border: 1px solid rgb(80, 80, 80);
+    background-image: url("/frontend/GoodKartImages/backgroundImage-lybrateKeyboard.jpg");
+    background-size: cover;     
+}
 
 #searhtop{
     width:65%;
@@ -156,6 +162,9 @@ background-size: contain;
     border: 1px solid white;
     display: flex;
     justify-content: space-evenly;
+}
+#topCatagories>div>div:hover{
+    cursor: pointer;
 }
 #topCatagories>div>div{
     margin: auto;
@@ -333,4 +342,7 @@ background-size: contain;
     height: 39px;
     margin-bottom: 4px;
     vertical-align: middle;
+}
+button:hover{
+    cursor: pointer;
 }

@@ -8,16 +8,7 @@
     <title>Online Doctor Consultation - Consult India's Best Doctors Online | Lybrate</title>
     <link rel="icon" type="image/x-icon" href="https://nu.lybcdn.com/img/push-crew/logo_192_by_192.png">
     <link rel="stylesheet" href="./CSS/consultonline.css">
-   <style>
-       
-       #searchdiv{
-     width: 99.8%;
-     height: 500px;
-     border: 1px solid rgb(80, 80, 80);
-     background-image: url("./GoodKartImages/backgroundImage-lybrateKeyboard.jpg");
-     background-size: cover;     
-}
-   </style>
+
 </head>
 <body>
     <div id="navbar" style=" display: flex;background-color:rgb(200, 37, 6);height: 50px;width:100%;margin: auto;">
@@ -38,7 +29,7 @@
             <h1>Get Online Doctor Consultation Anywhere, Anytime</h1>
         </div>
         <div id="searchmid">
-            <input type="text" placeholder="Search by Speciality/Symptom"><button>Search</button>
+            <input type="text" placeholder="Search by Speciality/Symptom"><button id="search">Search</button>
         </div>
         <div id="searchbottom">
             <div><img src="https://www.lybrate.com/img/ic_doctor.png" alt="">
@@ -107,7 +98,7 @@
             <div class="docExp">
                 <p><img src="https://www.lybrate.com/img/i_briefCase.png" alt=""> 31 Years Experience</p>
                 <p><img src="https://www.lybrate.com/img/i_rupee.png" alt=""> INR 250</p>
-                <button>Consult Online</button>
+                <button class="consultbtn">Consult Online</button>
             </div>           
         </div>
         <div class="subdocs">
@@ -125,7 +116,7 @@
             <div class="docExp">
                 <p><img src="https://www.lybrate.com/img/i_briefCase.png" alt=""> 16 Years Experience</p>
                 <p><img src="https://www.lybrate.com/img/i_rupee.png" alt=""> INR 400</p>
-                <button>Consult Online</button>
+                <button class="consultbtn">Consult Online</button>
             </div>           
         </div>
         <div class="subdocs">
@@ -143,7 +134,7 @@
             <div class="docExp">
                 <p><img src="https://www.lybrate.com/img/i_briefCase.png" alt=""> 16 Years Experience</p>
                 <p><img src="https://www.lybrate.com/img/i_rupee.png" alt=""> INR 400</p>
-                <button>Consult Online</button>
+                <button class="consultbtn">Consult Online</button>
             </div>           
         </div>
         <div class="subdocs">
@@ -161,7 +152,7 @@
             <div class="docExp">
                 <p><img src="https://www.lybrate.com/img/i_briefCase.png" alt=""> 25 Years Experience</p>
                 <p><img src="https://www.lybrate.com/img/i_rupee.png" alt=""> INR 700</p>
-                <button>Consult Online</button>
+                <button class="consultbtn">Consult Online</button>
             </div>           
         </div>
         <div class="subdocs">
@@ -179,7 +170,7 @@
             <div class="docExp">
                 <p><img src="https://www.lybrate.com/img/i_briefCase.png" alt=""> 15 Years Experience</p>
                 <p><img src="https://www.lybrate.com/img/i_rupee.png" alt=""> INR 250</p>
-                <button>Consult Online</button>
+                <button class="consultbtn">Consult Online</button>
             </div>           
         </div>
         
@@ -221,22 +212,34 @@
 
         <p>We have a Refund policy on consultation at Lybrate. If a patient is not satisfied with the online consultation, they can write to us. We will evaluate the consultation with the doctor for further clarification. 100% refund will be granted in genuine circumstances.</p>
     </div>
-
-
-
-
     <div id="wrapperdiv">
         <span><img src="./GoodKartImages/outline_mail_white_24dp.png">  Need Help?Leave a Message</span>
     </div>
     <div id="footerDisplay"></div>
 </body>
 </html>
+
+
 <script type="module">
     let footerDisplay = document.getElementById('footerDisplay');
+    import footer from './JS/footer.js';   
 
-import footer from './JS/footer.js';
-
-footer().then((response) => {
+    footer().then((response) => {
     footerDisplay.innerHTML = response;
-})
+        })
+
+
+let search = document.getElementById('search');
+search.onclick = () => {return window.location.href = "landingpage.html"}
+
+let consult = document.getElementsByClassName('consultbtn');
+console.log('consult :>> ', consult);
+for(let i=0;i<consult.length;i++) {
+    consult[i].onclick = () => {return window.location.href ="landingpage.html"}
+}
+
+
+
+
+
 </script>
