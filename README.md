@@ -144,7 +144,7 @@ After successful payment, this page confirms you that your order is placed.
 
 <img width="909" alt="payment2" src="https://user-images.githubusercontent.com/87423101/141606528-a67de66f-8664-4431-9797-928ce364b26c.png">
 
- Lastly, it shows a tick mark that your order is succesfully placed.
+ Lastly, it shows a tick mark that your order is succesfully placed. Thereafter you will be again re-directed to home page.
  
  <img width="443" alt="orderconformed1" src="https://user-images.githubusercontent.com/87423101/141606586-004ce2bb-0116-4f40-9a7e-2371d127e841.png">
 
@@ -157,12 +157,12 @@ After successful payment, this page confirms you that your order is placed.
 >  [GitHub](https://github.com/m-sehrawat/)
 
 ### Bobby More:boy:
->  [Linkedin](https://www.linkedin.com/in/)
+>  [Linkedin](https://www.linkedin.com/in/bobby-more-a094bb216)
 
 >  [GitHub](https://github.com/bobbymore2025/)
 
 ### Anand gupta:boy:
->  [Linkedin](https://www.linkedin.com/in/)
+>  [Linkedin](https://www.linkedin.com/in/anand-gupta-824980158)
 
 >  [GitHub](https://github.com/anand7071/)
 
