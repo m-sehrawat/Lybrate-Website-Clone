@@ -5,14 +5,13 @@
 > In this project we have tried to enhance the cloning of “lybrate” website. We had build up all our efforts to do our best in this project. As, the Masai School's Mentorship  was specifically to build up our skills and we also accordingly implemented all that teachings in our project to look it at its best.
 > At  “lybrate”, we strive to keep you fit & healthy through a range of holistic offerings that include online consulting with doctors for any health issue. Now anyone can now stay healthy from the safety of their homes with just a single app that Not only does Lybrate give you access to online medical professionals, we also have regular blogs from respected experts that give you tips and advice on health and well being.
 
-# Technology We Used :computer:
-> Tech Stack 
+# Technology We Used :computer: 
 1. HTML5
 2. CSS3
 3. Advanced JavaScript
 4. API’s
 5. ES6
-6. json server
+6. Json Server
 7. Bootstrap
 
 
@@ -33,6 +32,9 @@
 
 ### Login and Sign up Page:
 User need to login before purchasing products from “lybrate”. If user's are existing user they can login and if they are not existing user then they can register using sign up.
+
+#### Note:
+We created our own Json server so if you want to run our code then please read the instructions below
 
 ##### login page:
 To login User has to enter their Phone number and password to log into the website.
@@ -154,6 +156,15 @@ After successful payment, this page confirms you that your order is placed.
  
  <img width="443" alt="orderconformed1" src="https://user-images.githubusercontent.com/87423101/141606586-004ce2bb-0116-4f40-9a7e-2371d127e841.png">
 
+
+## Instructions to Run the Code 
+
+- Clone my repository `https://github.com/m-sehrawat/Lybrate-Website-Clone.git`
+- Open that code in your VS code `frontend/landingpage.html`
+- Open the `landingpage.html` on Live server
+- Open terminal in your VS Code and run the command `node server.js`
+- It will show a message that `JSON Server is running on port 2000`
+- Then you can Navigate through other pages from Landing page like `goodcart.html`, `healthFeed.html` etc
 
 # Authors
 
