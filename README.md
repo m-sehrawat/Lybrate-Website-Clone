@@ -79,6 +79,12 @@ You can see the GoodKart page by just clicking on the "GoodKart  icon" on the na
 
 <img width="912" alt="goodkart3" src="https://user-images.githubusercontent.com/87423101/141511378-f67e37b1-7ea7-4b51-8c4d-6cee62cd3f5c.png">
 
+#### shop by Categories:
+On clicking on shop by categories. You are re-directed to the products page having filters like price high to low and vice-versa.
+
+<img width="912" alt="shopcategory1" src="https://user-images.githubusercontent.com/87423101/141613022-11e5b3ea-aeb2-4e03-96cf-4ea21c694cdb.png">
+
+
 ### Consult online page:
 Here, you can search your health related problems accordingly your prefered doctors near by you and the best available doctors with good experinces. You can consult them online and hence get cured for the issues you have.
 
