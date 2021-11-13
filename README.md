@@ -162,7 +162,7 @@ After successful payment, this page confirms you that your order is placed.
 >  [GitHub](https://github.com/bobbymore2025/)
 
 ### Anand gupta:boy:
->  [Linkedin](https://www.linkedin.com/in/)
+>  [Linkedin](https://www.linkedin.com/in/anand-gupta-824980158)
 
 >  [GitHub](https://github.com/anand7071/)
 
