@@ -124,15 +124,24 @@ Now you are on the cart page. After adding to cart you are now able to see the o
 ### Add Address:
 You can enter your location accordingly now and then place the order.
 
+<img width="913" alt="address1" src="https://user-images.githubusercontent.com/87423101/141606194-14232ea2-1a91-416b-a02f-17caaf0aba30.png">
 
 ### Payment page:
-You are now on the payment page after placing the order. You can pay using your debit or credit card by just entering card holder's name followed by the card number, Expire date and CVV. Thereafter, click on the "Pay Now bar " to get done by payment.
+You are now on the payment page after placing the order. You can pay by cash on delivery and by using your debit or credit card by just entering card holder's name followed by the card number, Expire date and CVV. Thereafter, click on the "proceed " to get done by payment.
 
+<img width="910" alt="payment1" src="https://user-images.githubusercontent.com/87423101/141606509-eb2e9aab-43d2-4471-a0d9-d6ce62cb9b3f.png">
 
 
 ### Order placed:
 
 After successful payment, this page confirms you that your order is placed.
+
+<img width="909" alt="payment2" src="https://user-images.githubusercontent.com/87423101/141606528-a67de66f-8664-4431-9797-928ce364b26c.png">
+
+ Lastly, it shows a tick mark that your order is succesfully placed.
+ 
+ <img width="443" alt="orderconformed1" src="https://user-images.githubusercontent.com/87423101/141606586-004ce2bb-0116-4f40-9a7e-2371d127e841.png">
+
 
 # Authors
 
